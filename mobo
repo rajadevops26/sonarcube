@@ -1,0 +1,1725 @@
+Authenticating with public key "imported-openssh-key"
+     ┌────────────────────────────────────────────────────────────────────┐
+     │                        • MobaXterm 11.0 •                          │
+     │            (SSH client, X-server and networking tools)             │
+     │                                                                    │
+     │ ➤ SSH session to ubuntu@54.208.66.53                               │
+     │   • SSH compression : ✔                                            │
+     │   • SSH-browser     : ✔                                            │
+     │   • X11-forwarding  : ✔  (remote display is forwarded through SSH) │
+     │   • DISPLAY         : ✔  (automatically set on remote server)      │
+     │                                                                    │
+     │ ➤ For more info, ctrl+click on help or visit our website           │
+     └────────────────────────────────────────────────────────────────────┘
+
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.0-1072-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+0 packages can be updated.
+0 updates are security updates.
+
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+/usr/bin/xauth:  file /home/ubuntu/.Xauthority does not exist
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@ip-172-31-85-74:~$ sudo -i
+root@ip-172-31-85-74:~# apt-get update
+Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial InRelease
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates InRelease [109 k       B]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports InRelease [107        kB]
+Get:4 http://security.ubuntu.com/ubuntu xenial-security InRelease [107 kB]
+Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main Sources [868 kB]
+Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/restricted Sources [4,80       8 B]
+Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/universe Sources [7,728        kB]
+Get:8 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/multiverse Sources [179        kB]
+Get:9 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/universe amd64 Packages        [7,532 kB]
+Get:10 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/universe Translation-en        [4,354 kB]
+Get:11 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packag       es [144 kB]
+Get:12 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/multiverse Translation-       en [106 kB]
+Get:13 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main Sources [3       27 kB]
+Get:14 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/restricted Sour       ces [2,528 B]
+Get:15 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/universe Source       s [237 kB]
+Get:16 http://security.ubuntu.com/ubuntu xenial-security/main Sources [139 kB]
+Get:17 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/multiverse Sour       ces [8,744 B]
+Get:18 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 Pack       ages [900 kB]
+Get:19 http://security.ubuntu.com/ubuntu xenial-security/restricted Sources [2,116 B       ]
+Get:20 http://security.ubuntu.com/ubuntu xenial-security/universe Sources [91.3 kB]
+Get:21 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main Translatio       n-en [363 kB]
+Get:22 http://security.ubuntu.com/ubuntu xenial-security/multiverse Sources [2,472 B       ]
+Get:23 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/universe amd64        Packages [717 kB]
+Get:24 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [596 kB       ]
+Get:25 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/universe Transl       ation-en [294 kB]
+Get:26 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en [248 kB       ]
+Get:27 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/multiverse amd6       4 Packages [16.6 kB]
+Get:28 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/multiverse Tran       slation-en [8,440 B]
+Get:29 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/main Sources        [4,848 B]
+Get:30 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/universe Sour       ces [6,740 B]
+Get:31 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/main amd64 Pa       ckages [7,280 B]
+Get:32 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [41       1 kB]
+Get:33 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/main Translat       ion-en [4,456 B]
+Get:34 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/universe amd6       4 Packages [7,804 B]
+Get:35 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/universe Tran       slation-en [4,184 B]
+Get:36 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en [16       1 kB]
+Get:37 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [       3,724 B]
+Get:38 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en [       1,844 B]
+Fetched 25.8 MB in 4s (5,436 kB/s)
+Reading package lists... Done
+root@ip-172-31-85-74:~# apt install oracle-java8-installer
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Package oracle-java8-installer is not available, but is referred to by another packa       ge.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+E: Package 'oracle-java8-installer' has no installation candidate
+root@ip-172-31-85-74:~# apt install oracle-java8-installer
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Package oracle-java8-installer is not available, but is referred to by another packa       ge.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+E: Package 'oracle-java8-installer' has no installation candidate
+root@ip-172-31-85-74:~#
+root@ip-172-31-85-74:~# add-apt-repository ppa:webupd8team/java
+ Oracle Java (JDK) Installer (automatically downloads and installs Oracle JDK8). The       re are no actual Java files in this PPA.
+
+Important -> Why Oracle Java 7 And 6 Installers No Longer Work: http://www.webupd8.o       rg/2017/06/why-oracle-java-7-and-6-installers-no.html
+
+Update: Oracle Java 9 has reached end of life: http://www.oracle.com/technetwork/jav       a/javase/downloads/jdk9-downloads-3848520.html
+
+The PPA supports Ubuntu 18.10, 18.04, 16.04, 14.04 and 12.04.
+
+More info (and Ubuntu installation instructions):
+- http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html
+
+Debian installation instructions:
+- Oracle Java 8: http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-debi       an.html
+
+For Oracle Java 11, see a different PPA -> https://www.linuxuprising.com/2018/10/how       -to-install-oracle-java-11-in-ubuntu.html
+ More info: https://launchpad.net/~webupd8team/+archive/ubuntu/java
+Press [ENTER] to continue or ctrl-c to cancel adding it
+
+gpg: keyring `/tmp/tmplmvzu8rd/secring.gpg' created
+gpg: keyring `/tmp/tmplmvzu8rd/pubring.gpg' created
+gpg: requesting key EEA14886 from hkp server keyserver.ubuntu.com
+gpg: /tmp/tmplmvzu8rd/trustdb.gpg: trustdb created
+gpg: key EEA14886: public key "Launchpad VLC" imported
+gpg: no ultimately trusted keys found
+gpg: Total number processed: 1
+gpg:               imported: 1  (RSA: 1)
+OK
+root@ip-172-31-85-74:~# apt-get install oracle-java8-installer
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Package oracle-java8-installer is not available, but is referred to by another packa       ge.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+E: Package 'oracle-java8-installer' has no installation candidate
+root@ip-172-31-85-74:~# apt-get update
+Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial InRelease
+Hit:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates InRelease
+Hit:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports InRelease
+Get:4 http://security.ubuntu.com/ubuntu xenial-security InRelease [107 kB]
+Get:5 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial InRelease [17.5 kB]
+Get:6 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial/main amd64 Packages [1       ,556 B]
+Get:7 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial/main Translation-en [9       28 B]
+Fetched 127 kB in 0s (217 kB/s)
+Reading package lists... Done
+root@ip-172-31-85-74:~# apt-get install oracle-java8-installer
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  binutils gsfonts gsfonts-x11 java-common libfontenc1 libxfont1
+  oracle-java8-set-default x11-common xfonts-encodings xfonts-utils
+Suggested packages:
+  binutils-doc binfmt-support visualvm ttf-baekmuk | ttf-unfonts
+  | ttf-unfonts-core ttf-kochi-gothic | ttf-sazanami-gothic ttf-kochi-mincho
+  | ttf-sazanami-mincho ttf-arphic-uming firefox | firefox-2 | iceweasel
+  | mozilla-firefox | iceape-browser | mozilla-browser | epiphany-gecko
+  | epiphany-webkit | epiphany-browser | galeon | midbrowser | moblin-web-browser
+  | xulrunner | xulrunner-1.9 | konqueror | chromium-browser | midori
+  | google-chrome
+The following NEW packages will be installed:
+  binutils gsfonts gsfonts-x11 java-common libfontenc1 libxfont1
+  oracle-java8-installer oracle-java8-set-default x11-common xfonts-encodings
+  xfonts-utils
+0 upgraded, 11 newly installed, 0 to remove and 33 not upgraded.
+Need to get 6,518 kB of archives.
+After this operation, 20.5 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 binut       ils amd64 2.26.1-1ubuntu1~16.04.7 [2,309 kB]
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 java-common a       ll 0.56ubuntu2 [7,742 B]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 gsfonts all 1       :8.11+urwcyr1.0.7~pre44-4.2ubuntu1 [3,374 kB]
+Get:4 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 libfontenc1 a       md64 1:1.1.3-1 [13.9 kB]
+Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libxf       ont1 amd64 1:1.5.1-1ubuntu0.16.04.4 [95.0 kB]
+Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 x11-c       ommon all 1:7.7+13ubuntu3.1 [22.9 kB]
+Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 xfonts-encodi       ngs all 1:1.0.4-2 [573 kB]
+Get:8 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 xfont       s-utils amd64 1:7.7+3ubuntu0.16.04.2 [74.6 kB]
+Get:9 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/universe amd64 gsfonts-x       11 all 0.24 [7,314 B]
+Get:10 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial/main amd64 oracle-jav       a8-installer all 8u191-1~webupd8~1 [33.1 kB]
+Get:11 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial/main amd64 oracle-jav       a8-set-default all 8u191-1~webupd8~1 [6,968 B]
+Fetched 6,518 kB in 0s (13.4 MB/s)
+Preconfiguring packages ...
+Selecting previously unselected package binutils.
+(Reading database ... 51302 files and directories currently installed.)
+Preparing to unpack .../binutils_2.26.1-1ubuntu1~16.04.7_amd64.deb ...
+Unpacking binutils (2.26.1-1ubuntu1~16.04.7) ...
+Selecting previously unselected package java-common.
+Preparing to unpack .../java-common_0.56ubuntu2_all.deb ...
+Unpacking java-common (0.56ubuntu2) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up binutils (2.26.1-1ubuntu1~16.04.7) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Selecting previously unselected package oracle-java8-installer.
+(Reading database ... 51518 files and directories currently installed.)
+Preparing to unpack .../oracle-java8-installer_8u191-1~webupd8~1_all.deb ...
+Unpacking oracle-java8-installer (8u191-1~webupd8~1) ...
+Processing triggers for mime-support (3.59ubuntu1) ...
+Processing triggers for shared-mime-info (1.5-2ubuntu0.2) ...
+Setting up java-common (0.56ubuntu2) ...
+Setting up oracle-java8-installer (8u191-1~webupd8~1) ...
+No /var/cache/oracle-jdk8-installer/wgetrc file found.
+Creating /var/cache/oracle-jdk8-installer/wgetrc and
+using default oracle-java8-installer wgetrc settings for it.
+Downloading Oracle Java 8...
+--2019-01-06 08:36:41--  http://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e       4a523244c269598db4e85c51e0c/jdk-8u191-linux-x64.tar.gz
+Resolving download.oracle.com (download.oracle.com)... 23.52.160.194
+Connecting to download.oracle.com (download.oracle.com)|23.52.160.194|:80... connect       ed.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://edelivery.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c2695       98db4e85c51e0c/jdk-8u191-linux-x64.tar.gz [following]
+--2019-01-06 08:36:41--  https://edelivery.oracle.com/otn-pub/java/jdk/8u191-b12/278       7e4a523244c269598db4e85c51e0c/jdk-8u191-linux-x64.tar.gz
+Resolving edelivery.oracle.com (edelivery.oracle.com)... 96.6.58.35, 2600:1408:17:18       8::2d3e, 2600:1408:17:186::2d3e
+Connecting to edelivery.oracle.com (edelivery.oracle.com)|96.6.58.35|:443... connect       ed.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: http://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c269598       db4e85c51e0c/jdk-8u191-linux-x64.tar.gz?AuthParam=1546763921_872af82916e5d0fc1d5b583       cdb36efcd [following]
+--2019-01-06 08:36:41--  http://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e       4a523244c269598db4e85c51e0c/jdk-8u191-linux-x64.tar.gz?AuthParam=1546763921_872af829       16e5d0fc1d5b583cdb36efcd
+Connecting to download.oracle.com (download.oracle.com)|23.52.160.194|:80... connect       ed.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c26959       8db4e85c51e0c/jdk-8u191-linux-x64.tar.gz?AuthParam=1546763921_872af82916e5d0fc1d5b58       3cdb36efcd [following]
+--2019-01-06 08:36:42--  https://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787       e4a523244c269598db4e85c51e0c/jdk-8u191-linux-x64.tar.gz?AuthParam=1546763921_872af82       916e5d0fc1d5b583cdb36efcd
+Connecting to download.oracle.com (download.oracle.com)|23.52.160.194|:443... connec       ted.
+HTTP request sent, awaiting response... 200 OK
+Length: 191753373 (183M) [application/x-gzip]
+Saving to: ‘jdk-8u191-linux-x64.tar.gz’
+
+     0K ........ ........ ........ ........ ........ ........  1% 7.31M 25s
+  3072K ........ ........ ........ ........ ........ ........  3% 13.0M 19s
+  6144K ........ ........ ........ ........ ........ ........  4% 11.0M 18s
+  9216K ........ ........ ........ ........ ........ ........  6% 16.0M 16s
+ 12288K ........ ........ ........ ........ ........ ........  8% 12.2M 15s
+ 15360K ........ ........ ........ ........ ........ ........  9% 18.0M 14s
+ 18432K ........ ........ ........ ........ ........ ........ 11% 12.2M 14s
+ 21504K ........ ........ ........ ........ ........ ........ 13% 19.4M 13s
+ 24576K ........ ........ ........ ........ ........ ........ 14% 13.3M 12s
+ 27648K ........ ........ ........ ........ ........ ........ 16% 20.3M 12s
+ 30720K ........ ........ ........ ........ ........ ........ 18% 13.1M 11s
+ 33792K ........ ........ ........ ........ ........ ........ 19% 20.8M 11s
+ 36864K ........ ........ ........ ........ ........ ........ 21% 13.4M 11s
+ 39936K ........ ........ ........ ........ ........ ........ 22% 20.8M 10s
+ 43008K ........ ........ ........ ........ ........ ........ 24% 13.7M 10s
+ 46080K ........ ........ ........ ........ ........ ........ 26% 20.6M 10s
+ 49152K ........ ........ ........ ........ ........ ........ 27% 13.9M 9s
+ 52224K ........ ........ ........ ........ ........ ........ 29% 21.2M 9s
+ 55296K ........ ........ ........ ........ ........ ........ 31% 13.8M 9s
+ 58368K ........ ........ ........ ........ ........ ........ 32% 21.2M 8s
+ 61440K ........ ........ ........ ........ ........ ........ 34% 14.0M 8s
+ 64512K ........ ........ ........ ........ ........ ........ 36% 21.4M 8s
+ 67584K ........ ........ ........ ........ ........ ........ 37% 14.0M 8s
+ 70656K ........ ........ ........ ........ ........ ........ 39% 21.4M 7s
+ 73728K ........ ........ ........ ........ ........ ........ 41% 13.6M 7s
+ 76800K ........ ........ ........ ........ ........ ........ 42% 20.9M 7s
+ 79872K ........ ........ ........ ........ ........ ........ 44% 14.1M 7s
+ 82944K ........ ........ ........ ........ ........ ........ 45% 21.1M 7s
+ 86016K ........ ........ ........ ........ ........ ........ 47% 12.8M 6s
+ 89088K ........ ........ ........ ........ ........ ........ 49% 19.2M 6s
+ 92160K ........ ........ ........ ........ ........ ........ 50% 13.1M 6s
+ 95232K ........ ........ ........ ........ ........ ........ 52% 19.5M 6s
+ 98304K ........ ........ ........ ........ ........ ........ 54% 13.5M 6s
+101376K ........ ........ ........ ........ ........ ........ 55% 19.4M 5s
+104448K ........ ........ ........ ........ ........ ........ 57% 10.2M 5s
+107520K ........ ........ ........ ........ ........ ........ 59% 21.0M 5s
+110592K ........ ........ ........ ........ ........ ........ 60% 14.0M 5s
+113664K ........ ........ ........ ........ ........ ........ 62% 20.7M 5s
+116736K ........ ........ ........ ........ ........ ........ 63% 13.3M 4s
+119808K ........ ........ ........ ........ ........ ........ 65% 21.3M 4s
+122880K ........ ........ ........ ........ ........ ........ 67% 13.3M 4s
+125952K ........ ........ ........ ........ ........ ........ 68% 18.0M 4s
+129024K ........ ........ ........ ........ ........ ........ 70% 12.8M 4s
+132096K ........ ........ ........ ........ ........ ........ 72% 18.8M 3s
+135168K ........ ........ ........ ........ ........ ........ 73% 13.3M 3s
+138240K ........ ........ ........ ........ ........ ........ 75% 20.1M 3s
+141312K ........ ........ ........ ........ ........ ........ 77% 13.2M 3s
+144384K ........ ........ ........ ........ ........ ........ 78% 16.2M 3s
+147456K ........ ........ ........ ........ ........ ........ 80% 11.8M 2s
+150528K ........ ........ ........ ........ ........ ........ 82% 17.5M 2s
+153600K ........ ........ ........ ........ ........ ........ 83% 12.4M 2s
+156672K ........ ........ ........ ........ ........ ........ 85% 17.8M 2s
+159744K ........ ........ ........ ........ ........ ........ 86% 10.7M 2s
+162816K ........ ........ ........ ........ ........ ........ 88% 15.6M 1s
+165888K ........ ........ ........ ........ ........ ........ 90% 11.8M 1s
+168960K ........ ........ ........ ........ ........ ........ 91% 17.7M 1s
+172032K ........ ........ ........ ........ ........ ........ 93% 12.5M 1s
+175104K ........ ........ ........ ........ ........ ........ 95% 19.1M 1s
+178176K ........ ........ ........ ........ ........ ........ 96% 13.0M 0s
+181248K ........ ........ ........ ........ ........ ........ 98% 20.1M 0s
+184320K ........ ........ ........ ........ ........ .....   100% 12.4M=12s
+
+2019-01-06 08:36:54 (15.0 MB/s) - ‘jdk-8u191-linux-x64.tar.gz’ saved [191753373/1917       53373]
+
+Download done.
+Removing outdated cached downloads...
+update-alternatives: error: no alternatives for java
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/ControlPanel to provid       e /usr/bin/ControlPanel (ControlPanel) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/java to provide /usr/b       in/java (java) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/javaws to provide /usr       /bin/javaws (javaws) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/jcontrol to provide /u       sr/bin/jcontrol (jcontrol) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/jjs to provide /usr/bi       n/jjs (jjs) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/keytool to provide /us       r/bin/keytool (keytool) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/orbd to provide /usr/b       in/orbd (orbd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/pack200 to provide /us       r/bin/pack200 (pack200) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/policytool to provide        /usr/bin/policytool (policytool) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/rmid to provide /usr/b       in/rmid (rmid) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/rmiregistry to provide        /usr/bin/rmiregistry (rmiregistry) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/servertool to provide        /usr/bin/servertool (servertool) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/tnameserv to provide /       usr/bin/tnameserv (tnameserv) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/unpack200 to provide /       usr/bin/unpack200 (unpack200) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/lib/jexec to provide /usr/       bin/jexec (jexec) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/appletviewer to provide /u       sr/bin/appletviewer (appletviewer) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/extcheck to provide /usr/b       in/extcheck (extcheck) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/idlj to provide /usr/bin/i       dlj (idlj) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jar to provide /usr/bin/ja       r (jar) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jarsigner to provide /usr/       bin/jarsigner (jarsigner) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javac to provide /usr/bin/       javac (javac) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javadoc to provide /usr/bi       n/javadoc (javadoc) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javafxpackager to provide        /usr/bin/javafxpackager (javafxpackager) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javah to provide /usr/bin/       javah (javah) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javap to provide /usr/bin/       javap (javap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javapackager to provide /u       sr/bin/javapackager (javapackager) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jcmd to provide /usr/bin/j       cmd (jcmd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jconsole to provide /usr/b       in/jconsole (jconsole) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jdb to provide /usr/bin/jd       b (jdb) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jdeps to provide /usr/bin/       jdeps (jdeps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jhat to provide /usr/bin/j       hat (jhat) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jinfo to provide /usr/bin/       jinfo (jinfo) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jmap to provide /usr/bin/j       map (jmap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jmc to provide /usr/bin/jm       c (jmc) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jps to provide /usr/bin/jp       s (jps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jrunscript to provide /usr       /bin/jrunscript (jrunscript) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jsadebugd to provide /usr/       bin/jsadebugd (jsadebugd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jstack to provide /usr/bin       /jstack (jstack) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jstat to provide /usr/bin/       jstat (jstat) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jstatd to provide /usr/bin       /jstatd (jstatd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jvisualvm to provide /usr/       bin/jvisualvm (jvisualvm) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/native2ascii to provide /u       sr/bin/native2ascii (native2ascii) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/rmic to provide /usr/bin/r       mic (rmic) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/schemagen to provide /usr/       bin/schemagen (schemagen) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/serialver to provide /usr/       bin/serialver (serialver) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/wsgen to provide /usr/bin/       wsgen (wsgen) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/wsimport to provide /usr/b       in/wsimport (wsimport) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/xjc to provide /usr/bin/xj       c (xjc) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/lib/amd64/libnpjp2.so to p       rovide /usr/lib/mozilla/plugins/libjavaplugin.so (mozilla-javaplugin.so) in auto mod       e
+Oracle JDK 8 installed
+
+#####Important########
+To set Oracle JDK8 as default, install the "oracle-java8-set-default" package.
+E.g.: sudo apt install oracle-java8-set-default
+On Ubuntu systems, oracle-java8-set-default is most probably installed
+automatically with this package.
+######################
+
+Selecting previously unselected package oracle-java8-set-default.
+(Reading database ... 51559 files and directories currently installed.)
+Preparing to unpack .../oracle-java8-set-default_8u191-1~webupd8~1_all.deb ...
+Unpacking oracle-java8-set-default (8u191-1~webupd8~1) ...
+Selecting previously unselected package gsfonts.
+Preparing to unpack .../gsfonts_1%3a8.11+urwcyr1.0.7~pre44-4.2ubuntu1_all.deb ...
+Unpacking gsfonts (1:8.11+urwcyr1.0.7~pre44-4.2ubuntu1) ...
+Selecting previously unselected package libfontenc1:amd64.
+Preparing to unpack .../libfontenc1_1%3a1.1.3-1_amd64.deb ...
+Unpacking libfontenc1:amd64 (1:1.1.3-1) ...
+Selecting previously unselected package libxfont1:amd64.
+Preparing to unpack .../libxfont1_1%3a1.5.1-1ubuntu0.16.04.4_amd64.deb ...
+Unpacking libxfont1:amd64 (1:1.5.1-1ubuntu0.16.04.4) ...
+Selecting previously unselected package x11-common.
+Preparing to unpack .../x11-common_1%3a7.7+13ubuntu3.1_all.deb ...
+dpkg-query: no packages found matching nux-tools
+Unpacking x11-common (1:7.7+13ubuntu3.1) ...
+Selecting previously unselected package xfonts-encodings.
+Preparing to unpack .../xfonts-encodings_1%3a1.0.4-2_all.deb ...
+Unpacking xfonts-encodings (1:1.0.4-2) ...
+Selecting previously unselected package xfonts-utils.
+Preparing to unpack .../xfonts-utils_1%3a7.7+3ubuntu0.16.04.2_amd64.deb ...
+Unpacking xfonts-utils (1:7.7+3ubuntu0.16.04.2) ...
+Selecting previously unselected package gsfonts-x11.
+Preparing to unpack .../gsfonts-x11_0.24_all.deb ...
+Unpacking gsfonts-x11 (0.24) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for systemd (229-4ubuntu21.8) ...
+Processing triggers for ureadahead (0.100.0-19) ...
+Setting up oracle-java8-set-default (8u191-1~webupd8~1) ...
+Setting up gsfonts (1:8.11+urwcyr1.0.7~pre44-4.2ubuntu1) ...
+Setting up libfontenc1:amd64 (1:1.1.3-1) ...
+Setting up libxfont1:amd64 (1:1.5.1-1ubuntu0.16.04.4) ...
+Setting up x11-common (1:7.7+13ubuntu3.1) ...
+update-rc.d: warning: start and stop actions are no longer supported; falling back t       o defaults
+Setting up xfonts-encodings (1:1.0.4-2) ...
+Setting up xfonts-utils (1:7.7+3ubuntu0.16.04.2) ...
+Setting up gsfonts-x11 (0.24) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for systemd (229-4ubuntu21.8) ...
+Processing triggers for ureadahead (0.100.0-19) ...
+root@ip-172-31-85-74:~# java -version
+java version "1.8.0_191"
+Java(TM) SE Runtime Environment (build 1.8.0_191-b12)
+Java HotSpot(TM) 64-Bit Server VM (build 25.191-b12, mixed mode)
+root@ip-172-31-85-74:~# sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/ap       t/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+root@ip-172-31-85-74:~# wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -       O - | sudo apt-key add -
+OK
+root@ip-172-31-85-74:~# sudo apt-get -y install postgresql postgresql-contrib
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  libpq5 libsensors4 postgresql-9.5 postgresql-client-9.5 postgresql-client-common
+  postgresql-common postgresql-contrib-9.5 ssl-cert sysstat
+Suggested packages:
+  lm-sensors postgresql-doc locales-all postgresql-doc-9.5 libdbd-pg-perl
+  openssl-blacklist isag
+The following NEW packages will be installed:
+  libpq5 libsensors4 postgresql postgresql-9.5 postgresql-client-9.5
+  postgresql-client-common postgresql-common postgresql-contrib
+  postgresql-contrib-9.5 ssl-cert sysstat
+0 upgraded, 11 newly installed, 0 to remove and 33 not upgraded.
+Need to get 4,886 kB of archives.
+After this operation, 19.8 MB of additional disk space will be used.
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpq       5 amd64 9.5.14-0ubuntu0.16.04 [78.8 kB]
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 libsensors4 a       md64 1:3.4.0-2 [28.4 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 postg       resql-client-common all 173ubuntu0.2 [28.4 kB]
+Get:4 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 postg       resql-client-9.5 amd64 9.5.14-0ubuntu0.16.04 [872 kB]
+Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 ssl-cert all        1.0.37 [16.9 kB]
+Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 postg       resql-common all 173ubuntu0.2 [154 kB]
+Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 postg       resql-9.5 amd64 9.5.14-0ubuntu0.16.04 [3,005 kB]
+Get:8 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 postg       resql all 9.5+173ubuntu0.2 [5,450 B]
+Get:9 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 postg       resql-contrib-9.5 amd64 9.5.14-0ubuntu0.16.04 [448 kB]
+Get:10 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 post       gresql-contrib all 9.5+173ubuntu0.2 [5,460 B]
+Get:11 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 syss       tat amd64 11.2.0-1ubuntu0.2 [243 kB]
+Fetched 4,886 kB in 0s (33.1 MB/s)
+Preconfiguring packages ...
+Selecting previously unselected package libpq5:amd64.
+(Reading database ... 51864 files and directories currently installed.)
+Preparing to unpack .../libpq5_9.5.14-0ubuntu0.16.04_amd64.deb ...
+Unpacking libpq5:amd64 (9.5.14-0ubuntu0.16.04) ...
+Selecting previously unselected package libsensors4:amd64.
+Preparing to unpack .../libsensors4_1%3a3.4.0-2_amd64.deb ...
+Unpacking libsensors4:amd64 (1:3.4.0-2) ...
+Selecting previously unselected package postgresql-client-common.
+Preparing to unpack .../postgresql-client-common_173ubuntu0.2_all.deb ...
+Unpacking postgresql-client-common (173ubuntu0.2) ...
+Selecting previously unselected package postgresql-client-9.5.
+Preparing to unpack .../postgresql-client-9.5_9.5.14-0ubuntu0.16.04_amd64.deb ...
+Unpacking postgresql-client-9.5 (9.5.14-0ubuntu0.16.04) ...
+Selecting previously unselected package ssl-cert.
+Preparing to unpack .../ssl-cert_1.0.37_all.deb ...
+Unpacking ssl-cert (1.0.37) ...
+Selecting previously unselected package postgresql-common.
+Preparing to unpack .../postgresql-common_173ubuntu0.2_all.deb ...
+Adding 'diversion of /usr/bin/pg_config to /usr/bin/pg_config.libpq-dev by postgresq       l-common'
+Unpacking postgresql-common (173ubuntu0.2) ...
+Selecting previously unselected package postgresql-9.5.
+Preparing to unpack .../postgresql-9.5_9.5.14-0ubuntu0.16.04_amd64.deb ...
+Unpacking postgresql-9.5 (9.5.14-0ubuntu0.16.04) ...
+Selecting previously unselected package postgresql.
+Preparing to unpack .../postgresql_9.5+173ubuntu0.2_all.deb ...
+Unpacking postgresql (9.5+173ubuntu0.2) ...
+Selecting previously unselected package postgresql-contrib-9.5.
+Preparing to unpack .../postgresql-contrib-9.5_9.5.14-0ubuntu0.16.04_amd64.deb ...
+Unpacking postgresql-contrib-9.5 (9.5.14-0ubuntu0.16.04) ...
+Selecting previously unselected package postgresql-contrib.
+Preparing to unpack .../postgresql-contrib_9.5+173ubuntu0.2_all.deb ...
+Unpacking postgresql-contrib (9.5+173ubuntu0.2) ...
+Selecting previously unselected package sysstat.
+Preparing to unpack .../sysstat_11.2.0-1ubuntu0.2_amd64.deb ...
+Unpacking sysstat (11.2.0-1ubuntu0.2) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for systemd (229-4ubuntu21.8) ...
+Processing triggers for ureadahead (0.100.0-19) ...
+Setting up libpq5:amd64 (9.5.14-0ubuntu0.16.04) ...
+Setting up libsensors4:amd64 (1:3.4.0-2) ...
+Setting up postgresql-client-common (173ubuntu0.2) ...
+Setting up postgresql-client-9.5 (9.5.14-0ubuntu0.16.04) ...
+update-alternatives: using /usr/share/postgresql/9.5/man/man1/psql.1.gz to provide /       usr/share/man/man1/psql.1.gz (psql.1.gz) in auto mode
+Setting up ssl-cert (1.0.37) ...
+Setting up postgresql-common (173ubuntu0.2) ...
+Adding user postgres to group ssl-cert
+
+Creating config file /etc/postgresql-common/createcluster.conf with new version
+
+Creating config file /etc/logrotate.d/postgresql-common with new version
+Building PostgreSQL dictionaries from installed myspell/hunspell packages...
+Removing obsolete dictionary files:
+Setting up postgresql-9.5 (9.5.14-0ubuntu0.16.04) ...
+Creating new cluster 9.5/main ...
+  config /etc/postgresql/9.5/main
+  data   /var/lib/postgresql/9.5/main
+  locale en_US.UTF-8
+  socket /var/run/postgresql
+  port   5432
+update-alternatives: using /usr/share/postgresql/9.5/man/man1/postmaster.1.gz to pro       vide /usr/share/man/man1/postmaster.1.gz (postmaster.1.gz) in auto mode
+Setting up postgresql (9.5+173ubuntu0.2) ...
+Setting up postgresql-contrib-9.5 (9.5.14-0ubuntu0.16.04) ...
+Setting up postgresql-contrib (9.5+173ubuntu0.2) ...
+Setting up sysstat (11.2.0-1ubuntu0.2) ...
+
+Creating config file /etc/default/sysstat with new version
+update-alternatives: using /usr/bin/sar.sysstat to provide /usr/bin/sar (sar) in aut       o mode
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for systemd (229-4ubuntu21.8) ...
+Processing triggers for ureadahead (0.100.0-19) ...
+root@ip-172-31-85-74:~# systemctl start postgresql
+root@ip-172-31-85-74:~# sytemctl enable postgresql
+No command 'sytemctl' found, did you mean:
+ Command 'systemctl' from package 'systemd' (main)
+sytemctl: command not found
+root@ip-172-31-85-74:~# systemctl enable postgresql
+Synchronizing state of postgresql.service with SysV init with /lib/systemd/systemd-s       ysv-install...
+Executing /lib/systemd/systemd-sysv-install enable postgresql
+root@ip-172-31-85-74:~# passwd postgres
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
+root@ip-172-31-85-74:~# su - postgres
+postgres@ip-172-31-85-74:~$ createuser sonar
+postgres@ip-172-31-85-74:~$ plsql
+No command 'plsql' found, did you mean:
+ Command 'psql' from package 'postgresql-client-common' (main)
+plsql: command not found
+postgres@ip-172-31-85-74:~$ psql
+psql (9.5.14)
+Type "help" for help.
+
+postgres=# alter user sonar with encrpted password 'sonar';
+ERROR:  unrecognized role option "encrpted"
+LINE 1: alter user sonar with encrpted password 'sonar';
+                              ^
+postgres=# alter user sonar with encrypted password 'sonar';
+ALTER ROLE
+postgres=# create database sonar owner sonar;
+CREATE DATABASE
+postgres=# \q
+postgres@ip-172-31-85-74:~$ exit
+logout
+root@ip-172-31-85-74:~# top
+top - 08:59:56 up 31 min,  1 user,  load average: 0.08, 0.03, 0.01
+Tasks: 118 total,   1 running, 117 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem :  1014492 total,   136680 free,    70924 used,   806888 buff/cache
+KiB Swap:        0 total,        0 free,        0 used.   754864 avail Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND
+    1 root      20   0   37664   5688   3988 S  0.0  0.6   0:03.77 systemd
+    2 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kthreadd
+    3 root      20   0       0      0      0 S  0.0  0.0   0:00.09 ksoftirqd/0
+    5 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker/0:0H
+    6 root      20   0       0      0      0 S  0.0  0.0   0:00.05 kworker/u30:0
+    7 root      20   0       0      0      0 S  0.0  0.0   0:00.23 rcu_sched
+    8 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_bh
+    9 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration/0
+   10 root      rt   0       0      0      0 S  0.0  0.0   0:00.01 watchdog/0
+   11 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs
+   12 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 netns
+   13 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 perf
+   14 root      20   0       0      0      0 S  0.0  0.0   0:00.00 xenwatch
+   15 root      20   0       0      0      0 S  0.0  0.0   0:00.00 xenbus
+   17 root      20   0       0      0      0 S  0.0  0.0   0:00.00 khungtaskd
+   18 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 writeback
+   19 root      25   5       0      0      0 S  0.0  0.0   0:00.00 ksmd
+root@ip-172-31-85-74:~# wget https://sonarsource.bintray.com/Distribution/sonarqube/       sonarqube-6.4.zip
+--2019-01-06 09:00:01--  https://sonarsource.bintray.com/Distribution/sonarqube/sona       rqube-6.4.zip
+Resolving sonarsource.bintray.com (sonarsource.bintray.com)... 75.126.118.188
+Connecting to sonarsource.bintray.com (sonarsource.bintray.com)|75.126.118.188|:443.       .. connected.
+HTTP request sent, awaiting response... 404 Not Found
+2019-01-06 09:00:01 ERROR 404: Not Found.
+
+root@ip-172-31-85-74:~# top
+top - 09:03:42 up 34 min,  1 user,  load average: 0.00, 0.01, 0.00
+Tasks: 118 total,   1 running, 117 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem :  1014492 total,   136748 free,    70840 used,   806904 buff/cache
+KiB Swap:        0 total,        0 free,        0 used.   754944 avail Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND
+ 7070 root      20   0   40496   3640   3072 R  0.3  0.4   0:00.13 top
+    1 root      20   0   37664   5688   3988 S  0.0  0.6   0:03.78 systemd
+    2 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kthreadd
+    3 root      20   0       0      0      0 S  0.0  0.0   0:00.09 ksoftirqd/0
+    5 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker/0:0H
+    6 root      20   0       0      0      0 S  0.0  0.0   0:00.05 kworker/u30:0
+    7 root      20   0       0      0      0 S  0.0  0.0   0:00.24 rcu_sched
+    8 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_bh
+    9 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration/0
+   10 root      rt   0       0      0      0 S  0.0  0.0   0:00.01 watchdog/0
+   11 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs
+   12 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 netns
+   13 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 perf
+   14 root      20   0       0      0      0 S  0.0  0.0   0:00.00 xenwatch
+   15 root      20   0       0      0      0 S  0.0  0.0   0:00.00 xenbus
+   17 root      20   0       0      0      0 S  0.0  0.0   0:00.00 khungtaskd
+   18 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 writeback
+root@ip-172-31-85-74:~# wget https://binaries.sonarsource.com/Distribution/sonarqube       /sonarqube-7.0.zip
+--2019-01-06 09:03:57--  https://binaries.sonarsource.com/Distribution/sonarqube/son       arqube-7.0.zip
+Resolving binaries.sonarsource.com (binaries.sonarsource.com)... 91.134.125.245
+Connecting to binaries.sonarsource.com (binaries.sonarsource.com)|91.134.125.245|:44       3... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 155709573 (148M) [application/zip]
+Saving to: ‘sonarqube-7.0.zip’
+
+sonarqube-7.0.zip    100%[======================>] 148.50M  17.0MB/s    in 9.2s
+
+2019-01-06 09:04:07 (16.1 MB/s) - ‘sonarqube-7.0.zip’ saved [155709573/155709573]
+
+root@ip-172-31-85-74:~# apt-get -y install unzip
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Suggested packages:
+  zip
+The following NEW packages will be installed:
+  unzip
+0 upgraded, 1 newly installed, 0 to remove and 33 not upgraded.
+Need to get 158 kB of archives.
+After this operation, 530 kB of additional disk space will be used.
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 unzip amd64 6       .0-20ubuntu1 [158 kB]
+Fetched 158 kB in 0s (7,415 kB/s)
+Selecting previously unselected package unzip.
+(Reading database ... 52612 files and directories currently installed.)
+Preparing to unpack .../unzip_6.0-20ubuntu1_amd64.deb ...
+Unpacking unzip (6.0-20ubuntu1) ...
+Processing triggers for mime-support (3.59ubuntu1) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up unzip (6.0-20ubuntu1) ...
+root@ip-172-31-85-74:~# ls
+snap  sonarqube-7.0.zip
+root@ip-172-31-85-74:~# unzip sonarqube-7.0.zip  -d /opt
+Archive:  sonarqube-7.0.zip
+   creating: /opt/sonarqube-7.0/
+   creating: /opt/sonarqube-7.0/lib/
+   creating: /opt/sonarqube-7.0/lib/common/
+   creating: /opt/sonarqube-7.0/bin/
+   creating: /opt/sonarqube-7.0/bin/macosx-universal-64/
+   creating: /opt/sonarqube-7.0/bin/macosx-universal-64/lib/
+   creating: /opt/sonarqube-7.0/bin/linux-x86-64/
+   creating: /opt/sonarqube-7.0/bin/linux-x86-64/lib/
+   creating: /opt/sonarqube-7.0/bin/linux-x86-32/
+   creating: /opt/sonarqube-7.0/bin/linux-x86-32/lib/
+   creating: /opt/sonarqube-7.0/bin/windows-x86-32/
+   creating: /opt/sonarqube-7.0/bin/windows-x86-32/lib/
+   creating: /opt/sonarqube-7.0/bin/windows-x86-64/
+   creating: /opt/sonarqube-7.0/bin/windows-x86-64/lib/
+   creating: /opt/sonarqube-7.0/elasticsearch/
+   creating: /opt/sonarqube-7.0/elasticsearch/bin/
+   creating: /opt/sonarqube-7.0/conf/
+   creating: /opt/sonarqube-7.0/extensions/
+   creating: /opt/sonarqube-7.0/extensions/plugins/
+   creating: /opt/sonarqube-7.0/extensions/jdbc-driver/
+   creating: /opt/sonarqube-7.0/extensions/jdbc-driver/oracle/
+   creating: /opt/sonarqube-7.0/temp/
+   creating: /opt/sonarqube-7.0/data/
+   creating: /opt/sonarqube-7.0/bin/jsw-license/
+   creating: /opt/sonarqube-7.0/elasticsearch/modules/
+   creating: /opt/sonarqube-7.0/elasticsearch/modules/ingest-common/
+   creating: /opt/sonarqube-7.0/elasticsearch/modules/transport-netty4/
+   creating: /opt/sonarqube-7.0/elasticsearch/modules/parent-join/
+   creating: /opt/sonarqube-7.0/elasticsearch/modules/reindex/
+   creating: /opt/sonarqube-7.0/elasticsearch/modules/aggs-matrix-stats/
+   creating: /opt/sonarqube-7.0/elasticsearch/modules/percolator/
+   creating: /opt/sonarqube-7.0/elasticsearch/lib/
+   creating: /opt/sonarqube-7.0/elasticsearch/config/
+   creating: /opt/sonarqube-7.0/logs/
+   creating: /opt/sonarqube-7.0/elasticsearch/plugins/
+   creating: /opt/sonarqube-7.0/lib/jsw/
+   creating: /opt/sonarqube-7.0/lib/server/
+   creating: /opt/sonarqube-7.0/lib/ce/
+   creating: /opt/sonarqube-7.0/lib/scanner/
+   creating: /opt/sonarqube-7.0/lib/bundled-plugins/
+   creating: /opt/sonarqube-7.0/web/
+   creating: /opt/sonarqube-7.0/web/META-INF/
+   creating: /opt/sonarqube-7.0/web/src/
+   creating: /opt/sonarqube-7.0/web/src/main/
+   creating: /opt/sonarqube-7.0/web/src/main/js/
+   creating: /opt/sonarqube-7.0/web/src/main/js/app/
+   creating: /opt/sonarqube-7.0/web/src/main/js/app/components/
+   creating: /opt/sonarqube-7.0/web/src/main/webapp/
+   creating: /opt/sonarqube-7.0/web/src/main/webapp/images/
+   creating: /opt/sonarqube-7.0/web/META-INF/maven/
+   creating: /opt/sonarqube-7.0/web/META-INF/maven/com.sonarsource/
+   creating: /opt/sonarqube-7.0/web/META-INF/maven/com.sonarsource/sonarsource-brand       ing/
+   creating: /opt/sonarqube-7.0/web/WEB-INF/
+   creating: /opt/sonarqube-7.0/web/WEB-INF/classes/
+   creating: /opt/sonarqube-7.0/web/WEB-INF/classes/com/
+   creating: /opt/sonarqube-7.0/web/WEB-INF/classes/com/sonarsource/
+   creating: /opt/sonarqube-7.0/web/fonts/
+   creating: /opt/sonarqube-7.0/web/images/
+   creating: /opt/sonarqube-7.0/web/images/scanner-logos/
+   creating: /opt/sonarqube-7.0/web/js/
+   creating: /opt/sonarqube-7.0/web/css/
+   creating: /opt/sonarqube-7.0/web/META-INF/maven/org.sonarsource.sonarqube/
+   creating: /opt/sonarqube-7.0/web/META-INF/maven/org.sonarsource.sonarqube/sonar-w       eb/
+   creating: /opt/sonarqube-7.0/lib/jdbc/
+   creating: /opt/sonarqube-7.0/lib/jdbc/mssql/
+   creating: /opt/sonarqube-7.0/lib/jdbc/mysql/
+   creating: /opt/sonarqube-7.0/lib/jdbc/postgresql/
+   creating: /opt/sonarqube-7.0/lib/jdbc/h2/
+  inflating: /opt/sonarqube-7.0/web/META-INF/MANIFEST.MF
+  inflating: /opt/sonarqube-7.0/web/src/main/js/app/components/GlobalFooterBranding.       js
+  inflating: /opt/sonarqube-7.0/web/apple-touch-icon-76x76.png
+  inflating: /opt/sonarqube-7.0/web/apple-touch-icon-144x144.png
+  inflating: /opt/sonarqube-7.0/web/robots.txt
+  inflating: /opt/sonarqube-7.0/web/apple-touch-icon-57x57.png
+  inflating: /opt/sonarqube-7.0/web/.htaccess
+  inflating: /opt/sonarqube-7.0/web/apple-touch-icon-120x120.png
+  inflating: /opt/sonarqube-7.0/web/apple-touch-icon-60x60.png
+  inflating: /opt/sonarqube-7.0/web/apple-touch-icon-precomposed.png
+  inflating: /opt/sonarqube-7.0/web/apple-touch-icon-152x152.png
+  inflating: /opt/sonarqube-7.0/web/apple-touch-icon-114x114.png
+  inflating: /opt/sonarqube-7.0/web/META-INF/maven/com.sonarsource/sonarsource-brand       ing/pom.properties
+  inflating: /opt/sonarqube-7.0/web/WEB-INF/classes/com/sonarsource/branding
+  inflating: /opt/sonarqube-7.0/web/WEB-INF/web.xml
+  inflating: /opt/sonarqube-7.0/web/fonts/sonar-5.2.eot
+  inflating: /opt/sonarqube-7.0/web/fonts/sonar-5.2.ttf
+  inflating: /opt/sonarqube-7.0/web/js/56.3f6f4977.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/58.9b07282f.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/60.4dcf3742.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/63.d1a499ea.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/65.1cdd80b8.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/67.c9b4d211.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/70.714ad4ff.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/71.54286713.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/73.ac8bc1b4.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/76.22ce9644.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/78.64c3817a.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/81.425f7abb.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/83.805ef451.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/85.a288afc7.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/87.a4cdaeb2.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/89.ca0973d0.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/91.b74396db.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/93.7f1ffb8f.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/95.3d9f19b1.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/97.3a252b75.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/99.2974efc6.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/101.db27e6ec.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/102.72f65fb7.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/104.410cb688.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/106.d126bf2e.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/108.ad6d85a0.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/111.fdc631aa.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/113.962ab6e4.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/115.0c73fff5.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/120.072b9a7b.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/122.ec0ec5e7.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/123.dff520dc.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/125.133426a4.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/127.2f8bb0f6.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/129.743fa7f4.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/130.5d0db790.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/131.86a03810.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/132.f871e8cb.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/133.6ed4db1b.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/134.a4f99b5c.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/135.4e8d3c95.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/136.95f6c271.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/137.ee72ebe3.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/138.31ea123d.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/139.fb5e7584.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/140.78273f9a.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/141.c1c5952e.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/142.12810ac7.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/143.ab6f9380.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/144.22c2bd55.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/145.2873a3ad.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/146.29bd234f.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/147.b73d14ea.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/148.b7e268ac.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/149.b60eaf3c.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/150.fbb47752.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/151.4259bd1d.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/152.c95022db.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/153.3604fc41.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/154.11e6f048.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/155.fa340c1a.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/156.7dbd99d1.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/157.23a5977c.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/158.e7c915ac.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/159.efbdbb2f.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/160.36b5c963.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/161.35489719.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/162.16bc23b0.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/163.0cf184d6.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/164.a4f2fbe5.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/165.af68d118.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/166.941dcf55.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/167.13802cfd.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/168.712661a0.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/169.73a91298.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/170.e4a2f918.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/171.9d86357c.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/172.12eb4257.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/173.a90db643.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/174.2223bbbe.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/175.1dd6262e.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/176.d00f56db.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/243.47eb6d68.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/244.8dce7c94.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/245.f525d1be.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/117.c648ff5a.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/248.cd919614.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/249.c4f45bb5.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/259.868d2ba1.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/261.1d238406.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/263.3144edad.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/265.bf7b5393.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/268.38697766.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/270.6667f29f.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/272.52f37cd5.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/274.a2469201.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/278.fc2bc611.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/280.ad9d8ec1.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/0.7229f4e8.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/1.404b9ebf.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/2.3503449d.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/3.99a88f69.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/4.e9ef3ae7.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/5.e98c885a.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/6.e779ce66.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/7.4ca7d832.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/8.b2ee42cf.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/9.0ef96b64.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/10.f4d186a3.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/11.468c2018.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/12.00e2cc68.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/13.d37a4a65.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/14.54423002.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/15.b3df9a27.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/16.9a9890ee.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/17.a12b965b.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/18.a95a8dd6.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/19.fd8830a0.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/20.51b42ec1.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/21.d68a8fbc.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/22.28afb7d6.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/23.bc916edb.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/24.1ea0ac5d.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/25.426bc53b.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/26.4c2c300f.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/27.dce30ade.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/28.58ae2284.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/29.4cd14c1c.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/30.93765867.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/31.7aa04400.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/32.f2fe7528.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/33.b974b2aa.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/34.31970207.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/35.628f31d5.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/36.79bd5ca0.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/37.a50c666c.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/38.7cf3b144.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/128.453912b6.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/129.743fa7f4.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/130.5d0db790.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/131.86a03810.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/132.f871e8cb.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/133.6ed4db1b.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/134.a4f99b5c.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/135.4e8d3c95.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/136.95f6c271.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/137.ee72ebe3.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/138.31ea123d.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/139.fb5e7584.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/140.78273f9a.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/141.c1c5952e.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/142.12810ac7.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/143.ab6f9380.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/144.22c2bd55.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/145.2873a3ad.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/146.29bd234f.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/147.b73d14ea.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/148.b7e268ac.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/149.b60eaf3c.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/150.fbb47752.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/151.4259bd1d.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/152.c95022db.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/153.3604fc41.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/154.11e6f048.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/155.fa340c1a.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/156.7dbd99d1.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/157.23a5977c.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/158.e7c915ac.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/159.efbdbb2f.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/160.36b5c963.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/161.35489719.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/162.16bc23b0.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/163.0cf184d6.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/164.a4f2fbe5.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/165.af68d118.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/166.941dcf55.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/167.13802cfd.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/168.712661a0.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/169.73a91298.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/170.e4a2f918.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/171.9d86357c.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/172.12eb4257.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/173.a90db643.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/174.2223bbbe.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/175.1dd6262e.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/176.d00f56db.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/177.adb516e4.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/178.eb278983.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/179.468ab7c1.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/180.6fc1370d.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/181.33e0347d.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/182.51bfd0ca.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/183.a7de4a96.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/184.8a156f11.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/185.59364282.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/186.4b790f9b.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/187.d49cdb6f.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/188.3311bace.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/189.8074c466.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/239.174d4bdf.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/240.09a844f8.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/246.09000fbf.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/249.c4f45bb5.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/254.bcd132e5.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/255.e667897d.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/256.9e38a937.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/261.1d238406.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/263.3144edad.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/280.ad9d8ec1.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/281.26636231.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/282.64bc4c5b.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/app.b5628b8d.js.map
+  inflating: /opt/sonarqube-7.0/web/src/main/webapp/images/logo.svg
+  inflating: /opt/sonarqube-7.0/web/mstile-512x512.png
+  inflating: /opt/sonarqube-7.0/web/apple-touch-icon-180x180.png
+  inflating: /opt/sonarqube-7.0/web/favicon.ico
+  inflating: /opt/sonarqube-7.0/web/index.html
+  inflating: /opt/sonarqube-7.0/web/META-INF/maven/com.sonarsource/sonarsource-brand       ing/pom.xml
+  inflating: /opt/sonarqube-7.0/web/fonts/sonar-5.2.woff
+  inflating: /opt/sonarqube-7.0/web/fonts/sonar-5.2.svg
+  inflating: /opt/sonarqube-7.0/web/js/1.404b9ebf.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/2.3503449d.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/3.99a88f69.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/49.cdb60c73.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/50.4090b9a1.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/51.67ee5256.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/52.bfb59c4c.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/53.6627564b.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/54.4826e5a4.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/55.c7de5972.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/57.4789ee35.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/59.a830e4c5.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/61.eea5bd67.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/62.27593a70.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/64.514e1cad.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/66.c3e9b54c.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/68.e054b433.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/69.e42d1770.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/72.8628e813.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/74.3cbe6999.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/75.810230e0.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/77.c1ef6518.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/79.54fdf7f9.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/80.97ea7e4e.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/82.7d5f2322.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/84.2378ecd3.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/86.a64d41e3.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/88.f59ba2af.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/90.baa66ff3.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/92.ec5efd97.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/94.ad893bb3.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/96.ae010e7c.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/98.4cc2abce.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/100.94e24666.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/103.4384d953.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/105.e765513b.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/107.af062a75.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/109.89d7affe.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/110.82ebbf25.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/112.d7915034.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/114.7d7de031.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/116.ac596392.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/121.50107bc5.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/119.8c5819d1.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/124.027d38c1.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/126.158f1ab8.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/128.453912b6.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/221.1d14584e.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/222.81ce24cb.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/223.eea6815b.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/224.2b79bb31.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/225.88096ff9.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/226.278eb016.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/227.97ed71e2.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/228.56cd598c.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/229.0ae15c80.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/230.620e5eba.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/231.64bb29bd.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/232.bb4c8472.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/233.925f6455.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/234.1098860c.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/235.4dd1161a.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/236.8a8c615e.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/237.ad7cb1af.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/238.7b9c7c0c.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/241.9afb1164.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/250.1338d15f.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/252.66c76f8e.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/118.20fca5b1.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/vendor.d9aca469.js
+  inflating: /opt/sonarqube-7.0/web/js/242.14b3151f.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/css/sonar.b5628b8d.css
+  inflating: /opt/sonarqube-7.0/web/apple-touch-icon-72x72.png
+  inflating: /opt/sonarqube-7.0/web/images/logo.svg
+  inflating: /opt/sonarqube-7.0/web/images/select2.png
+  inflating: /opt/sonarqube-7.0/web/images/loading.gif
+  inflating: /opt/sonarqube-7.0/web/images/select2x2.png
+  inflating: /opt/sonarqube-7.0/web/images/scanner-logos/msbuild.svg
+  inflating: /opt/sonarqube-7.0/web/images/scanner-logos/maven.svg
+  inflating: /opt/sonarqube-7.0/web/images/scanner-logos/jenkins.svg
+  inflating: /opt/sonarqube-7.0/web/images/scanner-logos/sonarqube.svg
+  inflating: /opt/sonarqube-7.0/web/images/scanner-logos/ant.svg
+  inflating: /opt/sonarqube-7.0/web/images/scanner-logos/gradle.svg
+  inflating: /opt/sonarqube-7.0/web/js/0.7229f4e8.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/4.e9ef3ae7.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/5.e98c885a.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/6.e779ce66.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/7.4ca7d832.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/8.b2ee42cf.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/9.0ef96b64.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/10.f4d186a3.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/11.468c2018.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/12.00e2cc68.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/13.d37a4a65.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/14.54423002.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/15.b3df9a27.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/16.9a9890ee.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/17.a12b965b.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/18.a95a8dd6.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/19.fd8830a0.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/20.51b42ec1.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/21.d68a8fbc.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/22.28afb7d6.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/23.bc916edb.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/24.1ea0ac5d.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/25.426bc53b.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/26.4c2c300f.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/27.dce30ade.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/28.58ae2284.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/29.4cd14c1c.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/30.93765867.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/31.7aa04400.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/32.f2fe7528.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/33.b974b2aa.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/34.31970207.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/35.628f31d5.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/36.79bd5ca0.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/37.a50c666c.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/38.7cf3b144.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/39.d3774779.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/40.3bf8e06d.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/41.bc9b723b.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/42.614b8a43.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/43.b444a45e.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/44.28d3741e.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/45.70f5435a.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/46.d394949d.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/47.3e391c3d.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/48.43d29c4b.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/177.adb516e4.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/178.eb278983.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/179.468ab7c1.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/180.6fc1370d.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/181.33e0347d.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/182.51bfd0ca.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/183.a7de4a96.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/184.8a156f11.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/185.59364282.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/186.4b790f9b.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/187.d49cdb6f.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/188.3311bace.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/189.8074c466.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/190.9384bf80.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/191.314582a2.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/192.8e287a36.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/194.265833f3.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/195.8e3806a0.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/197.653b62b4.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/199.bd0b879f.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/201.bee96c37.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/202.dfa4eb69.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/203.cdbec492.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/204.7d1e8bd1.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/205.99854354.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/206.54ed4c37.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/207.ddfd6350.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/208.b23d5034.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/209.4797a8cb.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/210.4030c30b.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/211.1a64bcd5.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/212.ad3edb42.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/213.b3544353.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/214.f76f99e8.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/215.dc4d1935.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/216.d188bec4.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/217.d32b0ac8.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/218.374305ba.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/219.675aec0e.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/220.02c72805.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/239.174d4bdf.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/246.09000fbf.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/247.77ae32ba.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/260.3e95f4ba.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/262.b0d9fe3d.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/264.3184ea2c.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/266.7fcd1a60.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/267.597ee000.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/269.968c028e.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/271.f3b6f7f9.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/273.1a2a7bf9.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/275.d7555ec2.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/276.82169f54.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/277.647410d8.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/279.e4da0665.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/281.26636231.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/282.64bc4c5b.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/app.b5628b8d.js
+  inflating: /opt/sonarqube-7.0/web/js/243.47eb6d68.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/245.f525d1be.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/247.77ae32ba.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/250.1338d15f.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/251.6b8c9016.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/257.419e1092.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/259.868d2ba1.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/260.3e95f4ba.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/262.b0d9fe3d.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/264.3184ea2c.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/266.7fcd1a60.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/267.597ee000.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/vendor.d9aca469.js.map
+  inflating: /opt/sonarqube-7.0/web/apple-touch-icon.png
+  inflating: /opt/sonarqube-7.0/web/js/193.b9817266.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/196.d58ab60a.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/198.99276896.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/200.1eb31ab1.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/240.09a844f8.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/242.14b3151f.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/251.6b8c9016.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/253.0863fc77.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/254.bcd132e5.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/255.e667897d.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/256.9e38a937.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/257.419e1092.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/258.b7fda991.chunk.js
+  inflating: /opt/sonarqube-7.0/web/js/39.d3774779.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/40.3bf8e06d.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/41.bc9b723b.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/42.614b8a43.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/43.b444a45e.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/44.28d3741e.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/45.70f5435a.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/46.d394949d.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/47.3e391c3d.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/48.43d29c4b.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/49.cdb60c73.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/50.4090b9a1.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/51.67ee5256.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/52.bfb59c4c.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/53.6627564b.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/54.4826e5a4.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/55.c7de5972.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/56.3f6f4977.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/57.4789ee35.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/58.9b07282f.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/59.a830e4c5.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/60.4dcf3742.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/61.eea5bd67.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/62.27593a70.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/63.d1a499ea.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/64.514e1cad.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/65.1cdd80b8.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/66.c3e9b54c.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/67.c9b4d211.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/68.e054b433.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/69.e42d1770.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/70.714ad4ff.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/71.54286713.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/72.8628e813.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/73.ac8bc1b4.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/74.3cbe6999.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/75.810230e0.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/76.22ce9644.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/77.c1ef6518.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/78.64c3817a.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/79.54fdf7f9.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/80.97ea7e4e.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/81.425f7abb.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/82.7d5f2322.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/83.805ef451.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/84.2378ecd3.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/85.a288afc7.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/86.a64d41e3.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/87.a4cdaeb2.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/88.f59ba2af.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/89.ca0973d0.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/90.baa66ff3.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/91.b74396db.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/92.ec5efd97.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/93.7f1ffb8f.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/94.ad893bb3.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/95.3d9f19b1.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/96.ae010e7c.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/97.3a252b75.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/98.4cc2abce.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/99.2974efc6.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/100.94e24666.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/101.db27e6ec.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/102.72f65fb7.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/103.4384d953.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/104.410cb688.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/105.e765513b.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/106.d126bf2e.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/107.af062a75.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/108.ad6d85a0.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/109.89d7affe.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/110.82ebbf25.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/111.fdc631aa.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/112.d7915034.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/113.962ab6e4.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/114.7d7de031.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/115.0c73fff5.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/116.ac596392.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/117.c648ff5a.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/118.20fca5b1.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/119.8c5819d1.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/120.072b9a7b.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/121.50107bc5.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/122.ec0ec5e7.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/123.dff520dc.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/124.027d38c1.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/125.133426a4.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/126.158f1ab8.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/127.2f8bb0f6.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/190.9384bf80.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/191.314582a2.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/192.8e287a36.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/193.b9817266.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/194.265833f3.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/195.8e3806a0.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/196.d58ab60a.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/197.653b62b4.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/198.99276896.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/199.bd0b879f.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/200.1eb31ab1.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/201.bee96c37.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/202.dfa4eb69.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/203.cdbec492.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/204.7d1e8bd1.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/205.99854354.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/206.54ed4c37.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/207.ddfd6350.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/208.b23d5034.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/209.4797a8cb.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/210.4030c30b.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/211.1a64bcd5.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/212.ad3edb42.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/213.b3544353.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/214.f76f99e8.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/215.dc4d1935.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/219.675aec0e.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/220.02c72805.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/221.1d14584e.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/222.81ce24cb.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/223.eea6815b.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/224.2b79bb31.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/225.88096ff9.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/226.278eb016.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/227.97ed71e2.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/228.56cd598c.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/229.0ae15c80.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/230.620e5eba.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/231.64bb29bd.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/232.bb4c8472.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/233.925f6455.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/234.1098860c.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/235.4dd1161a.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/236.8a8c615e.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/237.ad7cb1af.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/238.7b9c7c0c.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/216.d188bec4.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/218.374305ba.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/217.d32b0ac8.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/241.9afb1164.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/244.8dce7c94.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/248.cd919614.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/252.66c76f8e.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/253.0863fc77.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/258.b7fda991.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/265.bf7b5393.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/268.38697766.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/269.968c028e.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/270.6667f29f.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/271.f3b6f7f9.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/272.52f37cd5.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/273.1a2a7bf9.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/274.a2469201.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/275.d7555ec2.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/276.82169f54.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/277.647410d8.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/278.fc2bc611.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/js/279.e4da0665.chunk.js.map
+  inflating: /opt/sonarqube-7.0/web/css/sonar.b5628b8d.css.map
+  inflating: /opt/sonarqube-7.0/web/META-INF/maven/org.sonarsource.sonarqube/sonar-w       eb/pom.xml
+  inflating: /opt/sonarqube-7.0/web/META-INF/maven/org.sonarsource.sonarqube/sonar-w       eb/pom.properties
+  inflating: /opt/sonarqube-7.0/lib/common/parent-join-client-5.6.3.jar
+  inflating: /opt/sonarqube-7.0/lib/common/httpasyncclient-4.1.2.jar
+  inflating: /opt/sonarqube-7.0/lib/common/httpclient-4.5.2.jar
+  inflating: /opt/sonarqube-7.0/lib/common/netty-codec-4.1.13.Final.jar
+  inflating: /opt/sonarqube-7.0/lib/common/HdrHistogram-2.1.9.jar
+  inflating: /opt/sonarqube-7.0/lib/common/t-digest-3.0.jar
+  inflating: /opt/sonarqube-7.0/lib/common/jackson-dataformat-cbor-2.8.6.jar
+  inflating: /opt/sonarqube-7.0/lib/common/jackson-dataformat-yaml-2.8.6.jar
+  inflating: /opt/sonarqube-7.0/lib/common/hppc-0.7.1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/transport-5.6.3.jar
+  inflating: /opt/sonarqube-7.0/lib/common/snakeyaml-1.15.jar
+  inflating: /opt/sonarqube-7.0/lib/common/hazelcast-client-3.8.6.jar
+  inflating: /opt/sonarqube-7.0/lib/common/log4j-api-2.8.2.jar
+  inflating: /opt/sonarqube-7.0/lib/common/log4j-to-slf4j-2.8.2.jar
+  inflating: /opt/sonarqube-7.0/lib/common/sonar-main-7.0.jar
+  inflating: /opt/sonarqube-7.0/lib/common/guava-18.0.jar
+  inflating: /opt/sonarqube-7.0/bin/linux-x86-32/lib/libwrapper.so
+  inflating: /opt/sonarqube-7.0/bin/linux-x86-32/wrapper
+  inflating: /opt/sonarqube-7.0/bin/windows-x86-32/wrapper.exe
+  inflating: /opt/sonarqube-7.0/elasticsearch/bin/elasticsearch.bat
+  inflating: /opt/sonarqube-7.0/elasticsearch/bin/elasticsearch
+  inflating: /opt/sonarqube-7.0/conf/wrapper.conf
+  inflating: /opt/sonarqube-7.0/conf/sonar.properties
+  inflating: /opt/sonarqube-7.0/bin/windows-x86-32/StopNTService.bat
+  inflating: /opt/sonarqube-7.0/bin/windows-x86-32/StartSonar.bat
+  inflating: /opt/sonarqube-7.0/bin/windows-x86-32/UninstallNTService.bat
+  inflating: /opt/sonarqube-7.0/bin/windows-x86-32/StartNTService.bat
+  inflating: /opt/sonarqube-7.0/bin/windows-x86-32/InstallNTService.bat
+  inflating: /opt/sonarqube-7.0/bin/windows-x86-64/StopNTService.bat
+  inflating: /opt/sonarqube-7.0/bin/windows-x86-64/StartSonar.bat
+  inflating: /opt/sonarqube-7.0/bin/windows-x86-64/UninstallNTService.bat
+  inflating: /opt/sonarqube-7.0/bin/windows-x86-64/StartNTService.bat
+  inflating: /opt/sonarqube-7.0/bin/windows-x86-64/InstallNTService.bat
+  inflating: /opt/sonarqube-7.0/elasticsearch/bin/elasticsearch.in.bat
+  inflating: /opt/sonarqube-7.0/elasticsearch/bin/elasticsearch-keystore.bat
+  inflating: /opt/sonarqube-7.0/elasticsearch/bin/elasticsearch-translog.bat
+  inflating: /opt/sonarqube-7.0/elasticsearch/bin/elasticsearch-plugin.bat
+  inflating: /opt/sonarqube-7.0/elasticsearch/bin/elasticsearch-service.bat
+  inflating: /opt/sonarqube-7.0/bin/macosx-universal-64/sonar.sh
+  inflating: /opt/sonarqube-7.0/bin/linux-x86-64/sonar.sh
+  inflating: /opt/sonarqube-7.0/bin/linux-x86-32/sonar.sh
+  inflating: /opt/sonarqube-7.0/elasticsearch/bin/elasticsearch.in.sh
+  inflating: /opt/sonarqube-7.0/extensions/plugins/README.txt
+  inflating: /opt/sonarqube-7.0/extensions/jdbc-driver/oracle/README.txt
+  inflating: /opt/sonarqube-7.0/temp/README.txt
+  inflating: /opt/sonarqube-7.0/data/README.txt
+  inflating: /opt/sonarqube-7.0/bin/jsw-license/LICENSE.txt
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/ingest-common/joni-2.1.6.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/ingest-common/ingest-common-5.       6.3.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/ingest-common/jcodings-1.0.12.       jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/transport-netty4/netty-codec-4       .1.13.Final.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/transport-netty4/transport-net       ty4-5.6.3.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/transport-netty4/netty-resolve       r-4.1.13.Final.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/transport-netty4/netty-codec-h       ttp-4.1.13.Final.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/transport-netty4/plugin-securi       ty.policy
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/transport-netty4/netty-buffer-       4.1.13.Final.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/transport-netty4/plugin-descri       ptor.properties
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/parent-join/parent-join-5.6.3.       jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/parent-join/plugin-descriptor.       properties
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/reindex/httpasyncclient-4.1.2.       jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/reindex/commons-logging-1.1.3.       jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/reindex/httpcore-nio-4.4.5.jar       
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/reindex/elasticsearch-rest-cli       ent-5.6.3.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/reindex/commons-codec-1.10.jar       
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/reindex/httpcore-4.4.5.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/reindex/plugin-descriptor.prop       erties
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/reindex/reindex-5.6.3.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/aggs-matrix-stats/aggs-matrix-       stats-5.6.3.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/aggs-matrix-stats/plugin-descr       iptor.properties
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/percolator/percolator-5.6.3.ja       r
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/percolator/plugin-descriptor.p       roperties
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/joda-time-2.9.5.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/plugin-cli-5.6.3.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/jackson-dataformat-cbor-2.8.6.jar        
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/lucene-core-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/lucene-misc-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/jts-1.13.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/lucene-highlighter-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/lucene-memory-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/jackson-core-2.8.6.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/README.textile
+  inflating: /opt/sonarqube-7.0/elasticsearch/bin/elasticsearch-translog
+  inflating: /opt/sonarqube-7.0/elasticsearch/bin/elasticsearch-service-x86.exe
+  inflating: /opt/sonarqube-7.0/elasticsearch/bin/elasticsearch-service-mgr.exe
+  inflating: /opt/sonarqube-7.0/elasticsearch/config/log4j2.properties
+  inflating: /opt/sonarqube-7.0/elasticsearch/config/elasticsearch.yml
+  inflating: /opt/sonarqube-7.0/elasticsearch/config/jvm.options
+  inflating: /opt/sonarqube-7.0/elasticsearch/LICENSE.txt
+  inflating: /opt/sonarqube-7.0/COPYING
+  inflating: /opt/sonarqube-7.0/lib/sonar-application-7.0.jar
+  inflating: /opt/sonarqube-7.0/lib/jsw/wrapper-3.2.3.jar
+  inflating: /opt/sonarqube-7.0/lib/server/sonar-server-7.0.jar
+  inflating: /opt/sonarqube-7.0/lib/server/picocontainer-2.15.jar
+  inflating: /opt/sonarqube-7.0/lib/server/sonar-classloader-1.0.jar
+  inflating: /opt/sonarqube-7.0/lib/server/sonar-plugin-api-7.0.jar
+  inflating: /opt/sonarqube-7.0/lib/server/sonar-db-core-7.0.jar
+  inflating: /opt/sonarqube-7.0/lib/server/commons-csv-1.4.jar
+  inflating: /opt/sonarqube-7.0/lib/server/lz4-1.3.0.jar
+  inflating: /opt/sonarqube-7.0/lib/server/mybatis-3.4.4.jar
+  inflating: /opt/sonarqube-7.0/lib/server/activation-1.1.jar
+  inflating: /opt/sonarqube-7.0/lib/server/jaxb-api-2.3.0.jar
+  inflating: /opt/sonarqube-7.0/lib/server/jjwt-0.9.0.jar
+  inflating: /opt/sonarqube-7.0/lib/server/jackson-databind-2.6.6.jar
+  inflating: /opt/sonarqube-7.0/lib/bundled-plugins/sonar-java-plugin-5.1.0.13090.ja       r
+  inflating: /opt/sonarqube-7.0/lib/bundled-plugins/sonar-scm-git-plugin-1.3.0.869.j       ar
+  inflating: /opt/sonarqube-7.0/lib/bundled-plugins/sonar-typescript-plugin-1.5.0.21       22.jar
+  inflating: /opt/sonarqube-7.0/lib/jdbc/mssql/mssql-jdbc-6.2.2.jre8.jar
+  inflating: /opt/sonarqube-7.0/lib/jdbc/postgresql/postgresql-42.2.1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/percolator-client-5.6.3.jar
+  inflating: /opt/sonarqube-7.0/lib/common/httpcore-4.4.5.jar
+  inflating: /opt/sonarqube-7.0/lib/common/netty-resolver-4.1.13.Final.jar
+  inflating: /opt/sonarqube-7.0/lib/common/netty-handler-4.1.13.Final.jar
+  inflating: /opt/sonarqube-7.0/lib/common/netty-codec-http-4.1.13.Final.jar
+  inflating: /opt/sonarqube-7.0/lib/common/jackson-dataformat-smile-2.8.6.jar
+  inflating: /opt/sonarqube-7.0/lib/common/jackson-core-2.6.6.jar
+  inflating: /opt/sonarqube-7.0/lib/common/jopt-simple-5.0.2.jar
+  inflating: /opt/sonarqube-7.0/lib/common/securesm-1.1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/lucene-suggest-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/lucene-spatial3d-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/lucene-sandbox-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/lucene-queries-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/lucene-join-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/lucene-grouping-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/lucene-backward-codecs-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/lucene-core-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/logback-classic-1.2.3.jar
+  inflating: /opt/sonarqube-7.0/lib/common/sonar-process-7.0.jar
+  inflating: /opt/sonarqube-7.0/bin/macosx-universal-64/lib/libwrapper.jnilib
+  inflating: /opt/sonarqube-7.0/bin/macosx-universal-64/wrapper
+  inflating: /opt/sonarqube-7.0/bin/linux-x86-64/lib/libwrapper.so
+  inflating: /opt/sonarqube-7.0/bin/linux-x86-64/wrapper
+  inflating: /opt/sonarqube-7.0/bin/windows-x86-32/lib/wrapper.dll
+  inflating: /opt/sonarqube-7.0/bin/windows-x86-64/lib/wrapper.dll
+  inflating: /opt/sonarqube-7.0/bin/windows-x86-64/wrapper.exe
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/ingest-common/plugin-descripto       r.properties
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/transport-netty4/netty-handler       -4.1.13.Final.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/transport-netty4/netty-transpo       rt-4.1.13.Final.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/transport-netty4/netty-common-       4.1.13.Final.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/reindex/plugin-security.policy       
+  inflating: /opt/sonarqube-7.0/elasticsearch/modules/reindex/httpclient-4.5.2.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/lucene-spatial-extras-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/lucene-sandbox-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/lucene-spatial-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/t-digest-3.0.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/lucene-backward-codecs-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/lucene-grouping-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/lucene-suggest-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/lucene-join-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/jopt-simple-5.0.2.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/hppc-0.7.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/securesm-1.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/lucene-queries-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/snakeyaml-1.15.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/log4j-core-2.9.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/VERSION.txt
+  inflating: /opt/sonarqube-7.0/elasticsearch/NOTICE.txt
+  inflating: /opt/sonarqube-7.0/elasticsearch/bin/elasticsearch-systemd-pre-exec
+  inflating: /opt/sonarqube-7.0/elasticsearch/bin/elasticsearch-keystore
+  inflating: /opt/sonarqube-7.0/elasticsearch/bin/elasticsearch-service-x64.exe
+  inflating: /opt/sonarqube-7.0/lib/server/tomcat-embed-core-8.5.23.jar
+  inflating: /opt/sonarqube-7.0/lib/server/protobuf-java-3.0.0-beta-2.jar
+  inflating: /opt/sonarqube-7.0/lib/server/woodstox-core-lgpl-4.4.0.jar
+  inflating: /opt/sonarqube-7.0/lib/server/stax2-api-3.1.4.jar
+  inflating: /opt/sonarqube-7.0/lib/server/staxmate-2.0.1.jar
+  inflating: /opt/sonarqube-7.0/lib/server/sonar-update-center-common-1.18.0.487.jar       
+  inflating: /opt/sonarqube-7.0/lib/server/log4j-over-slf4j-1.7.25.jar
+  inflating: /opt/sonarqube-7.0/lib/server/sonar-db-dao-7.0.jar
+  inflating: /opt/sonarqube-7.0/lib/server/sonar-scanner-protocol-7.0.jar
+  inflating: /opt/sonarqube-7.0/lib/server/commons-dbcp-1.4.jar
+  inflating: /opt/sonarqube-7.0/lib/server/commons-pool-1.5.4.jar
+  inflating: /opt/sonarqube-7.0/lib/server/sonar-markdown-7.0.jar
+  inflating: /opt/sonarqube-7.0/lib/server/sonar-ws-7.0.jar
+  inflating: /opt/sonarqube-7.0/lib/bundled-plugins/sonar-csharp-plugin-6.7.1.4347.j       ar
+  inflating: /opt/sonarqube-7.0/lib/bundled-plugins/sonar-php-plugin-2.12.1.3018.jar       
+  inflating: /opt/sonarqube-7.0/lib/bundled-plugins/sonar-python-plugin-1.9.0.2010.j       ar
+  inflating: /opt/sonarqube-7.0/lib/bundled-plugins/sonar-xml-plugin-1.4.3.1027.jar        
+  inflating: /opt/sonarqube-7.0/lib/common/httpcore-nio-4.4.5.jar
+  inflating: /opt/sonarqube-7.0/lib/common/netty-common-4.1.13.Final.jar
+  inflating: /opt/sonarqube-7.0/lib/common/transport-netty4-client-5.6.3.jar
+  inflating: /opt/sonarqube-7.0/lib/common/joda-time-2.9.5.jar
+  inflating: /opt/sonarqube-7.0/lib/common/lucene-misc-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/elasticsearch-5.6.3.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/java-version-checker-5.6.3.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/jna-4.4.0-1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/spatial4j-0.6.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/HdrHistogram-2.1.9.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/lucene-spatial3d-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/jackson-dataformat-yaml-2.8.6.jar        
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/log4j-api-2.9.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/lucene-analyzers-common-6.6.1.jar        
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/lucene-queryparser-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/bin/elasticsearch-plugin
+  inflating: /opt/sonarqube-7.0/lib/server/jcl-over-slf4j-1.7.25.jar
+  inflating: /opt/sonarqube-7.0/lib/server/logback-access-1.2.3.jar
+  inflating: /opt/sonarqube-7.0/lib/server/tomcat-annotations-api-8.5.23.jar
+  inflating: /opt/sonarqube-7.0/lib/server/gson-2.3.1.jar
+  inflating: /opt/sonarqube-7.0/lib/server/sonar-core-7.0.jar
+  inflating: /opt/sonarqube-7.0/lib/server/commons-dbutils-1.5.jar
+  inflating: /opt/sonarqube-7.0/lib/server/sonar-db-migration-7.0.jar
+  inflating: /opt/sonarqube-7.0/lib/server/okhttp-3.7.0.jar
+  inflating: /opt/sonarqube-7.0/lib/server/okio-1.12.0.jar
+  inflating: /opt/sonarqube-7.0/lib/server/sonar-plugin-bridge-7.0.jar
+  inflating: /opt/sonarqube-7.0/lib/server/commons-email-1.5.jar
+  inflating: /opt/sonarqube-7.0/lib/server/javax.mail-1.5.6.jar
+  inflating: /opt/sonarqube-7.0/lib/server/jackson-annotations-2.6.6.jar
+  inflating: /opt/sonarqube-7.0/lib/ce/sonar-ce-7.0.jar
+  inflating: /opt/sonarqube-7.0/lib/ce/nanohttpd-2.3.0.jar
+  inflating: /opt/sonarqube-7.0/lib/scanner/sonar-scanner-engine-shaded-7.0.jar
+  inflating: /opt/sonarqube-7.0/lib/common/commons-logging-1.1.3.jar
+  inflating: /opt/sonarqube-7.0/lib/common/elasticsearch-rest-client-5.6.3.jar
+  inflating: /opt/sonarqube-7.0/lib/common/reindex-client-5.6.3.jar
+  inflating: /opt/sonarqube-7.0/lib/common/netty-transport-4.1.13.Final.jar
+  inflating: /opt/sonarqube-7.0/lib/common/netty-buffer-4.1.13.Final.jar
+  inflating: /opt/sonarqube-7.0/lib/common/jna-4.4.0-1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/lucene-spatial-extras-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/lucene-spatial-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/lucene-queryparser-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/lucene-memory-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/lucene-highlighter-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/lucene-analyzers-common-6.6.1.jar
+  inflating: /opt/sonarqube-7.0/lib/common/log4j-core-2.8.2.jar
+  inflating: /opt/sonarqube-7.0/lib/common/commons-lang-2.6.jar
+  inflating: /opt/sonarqube-7.0/lib/common/commons-io-2.4.jar
+  inflating: /opt/sonarqube-7.0/lib/common/commons-codec-1.8.jar
+  inflating: /opt/sonarqube-7.0/lib/common/logback-core-1.2.3.jar
+  inflating: /opt/sonarqube-7.0/lib/common/jul-to-slf4j-1.7.25.jar
+  inflating: /opt/sonarqube-7.0/lib/common/slf4j-api-1.7.25.jar
+  inflating: /opt/sonarqube-7.0/lib/common/hazelcast-3.8.6.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/log4j-1.2-api-2.9.1.jar
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/jackson-dataformat-smile-2.8.6.jar       
+  inflating: /opt/sonarqube-7.0/elasticsearch/lib/elasticsearch-5.6.3.jar
+  inflating: /opt/sonarqube-7.0/lib/bundled-plugins/sonar-javascript-plugin-4.0.0.58       62.jar
+  inflating: /opt/sonarqube-7.0/lib/bundled-plugins/sonar-flex-plugin-2.3.jar
+  inflating: /opt/sonarqube-7.0/lib/bundled-plugins/sonar-scm-svn-plugin-1.6.0.860.j       ar
+  inflating: /opt/sonarqube-7.0/lib/jdbc/mysql/mysql-connector-java-5.1.42.jar
+  inflating: /opt/sonarqube-7.0/lib/jdbc/h2/h2-1.3.176.jar
+root@ip-172-31-85-74:~# cd /opt
+root@ip-172-31-85-74:/opt# ls
+sonarqube-7.0
+root@ip-172-31-85-74:/opt# mv sonarqube-7.0 sonarqube
+root@ip-172-31-85-74:/opt# cd sonarqube/
+root@ip-172-31-85-74:/opt/sonarqube# ls
+bin  conf  COPYING  data  elasticsearch  extensions  lib  logs  temp  web
+root@ip-172-31-85-74:/opt/sonarqube# cd conf/
+root@ip-172-31-85-74:/opt/sonarqube/conf# ls
+sonar.properties  wrapper.conf
+root@ip-172-31-85-74:/opt/sonarqube/conf# vi sonar.properties
+root@ip-172-31-85-74:/opt/sonarqube/conf# sonar.jdbc.url=jdbc:postgresql://localhost       /sonar
+-bash: sonar.jdbc.url=jdbc:postgresql://localhost/sonar: No such file or directory
+root@ip-172-31-85-74:/opt/sonarqube/conf# vi /etc/systemd/system/sonar.service
+root@ip-172-31-85-74:/opt/sonarqube/conf# sytemctl start sonar
+No command 'sytemctl' found, did you mean:
+ Command 'systemctl' from package 'systemd' (main)
+sytemctl: command not found
+root@ip-172-31-85-74:/opt/sonarqube/conf# systemctl start sonar
+root@ip-172-31-85-74:/opt/sonarqube/conf# systemctl enable sonar
+Created symlink from /etc/systemd/system/multi-user.target.wants/sonar.service to /e       tc/systemd/system/sonar.service.
+root@ip-172-31-85-74:/opt/sonarqube/conf# systemctl status sonar
+● sonar.service - SonarQube service
+   Loaded: loaded (/etc/systemd/system/sonar.service; enabled; vendor preset: enable
+   Active: active (running) since Sun 2019-01-06 09:12:56 UTC; 1s ago
+  Process: 9462 ExecStop=/opt/sonarqube/bin/linux-x86-64/sonar.sh stop (code=exited,
+  Process: 9507 ExecStart=/opt/sonarqube/bin/linux-x86-64/sonar.sh start (code=exite
+ Main PID: 9552 (wrapper)
+    Tasks: 35
+   Memory: 617.6M
+      CPU: 1.964s
+   CGroup: /system.slice/sonar.service
+           ├─9552 /opt/sonarqube/bin/linux-x86-64/./wrapper /opt/sonarqube/bin/linux
+           ├─9554 java -Dsonar.wrapped=true -Djava.awt.headless=true -Xms8m -Xmx32m
+           └─9574 /usr/lib/jvm/java-8-oracle/jre/bin/java -XX:+UseConcMarkSweepGC -X
+
+Jan 06 09:12:56 ip-172-31-85-74 systemd[1]: Stopped SonarQube service.
+Jan 06 09:12:56 ip-172-31-85-74 systemd[1]: Starting SonarQube service...
+Jan 06 09:12:56 ip-172-31-85-74 sonar.sh[9507]: Starting SonarQube...
+Jan 06 09:12:56 ip-172-31-85-74 sonar.sh[9507]: Started SonarQube.
+Jan 06 09:12:56 ip-172-31-85-74 systemd[1]: Started SonarQube service.
+lines 1-19/19 (END)
+root@ip-172-31-85-74:/opt/sonarqube/conf# apt-get -y install apache2
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.1-0
+Suggested packages:
+  www-browser apache2-doc apache2-suexec-pristine | apache2-suexec-custom
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.1-0
+0 upgraded, 9 newly installed, 0 to remove and 33 not upgraded.
+Need to get 1,540 kB of archives.
+After this operation, 6,373 kB of additional disk space will be used.
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 libapr1 amd64        1.5.2-3 [86.0 kB]
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1 a       md64 1.5.4-1build1 [77.1 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1-d       bd-sqlite3 amd64 1.5.4-1build1 [10.6 kB]
+Get:4 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1-l       dap amd64 1.5.4-1build1 [8,720 B]
+Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 liblua5.1-0 a       md64 5.1.5-8ubuntu1 [102 kB]
+Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 apach       e2-bin amd64 2.4.18-2ubuntu3.9 [925 kB]
+Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 apach       e2-utils amd64 2.4.18-2ubuntu3.9 [81.8 kB]
+Get:8 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 apach       e2-data all 2.4.18-2ubuntu3.9 [162 kB]
+Get:9 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 apach       e2 amd64 2.4.18-2ubuntu3.9 [86.6 kB]
+Fetched 1,540 kB in 0s (12.4 MB/s)
+Selecting previously unselected package libapr1:amd64.
+(Reading database ... 52630 files and directories currently installed.)
+Preparing to unpack .../libapr1_1.5.2-3_amd64.deb ...
+Unpacking libapr1:amd64 (1.5.2-3) ...
+Selecting previously unselected package libaprutil1:amd64.
+Preparing to unpack .../libaprutil1_1.5.4-1build1_amd64.deb ...
+Unpacking libaprutil1:amd64 (1.5.4-1build1) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.4-1build1_amd64.deb ...
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.4-1build1) ...
+Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../libaprutil1-ldap_1.5.4-1build1_amd64.deb ...
+Unpacking libaprutil1-ldap:amd64 (1.5.4-1build1) ...
+Selecting previously unselected package liblua5.1-0:amd64.
+Preparing to unpack .../liblua5.1-0_5.1.5-8ubuntu1_amd64.deb ...
+Unpacking liblua5.1-0:amd64 (5.1.5-8ubuntu1) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../apache2-bin_2.4.18-2ubuntu3.9_amd64.deb ...
+Unpacking apache2-bin (2.4.18-2ubuntu3.9) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../apache2-utils_2.4.18-2ubuntu3.9_amd64.deb ...
+Unpacking apache2-utils (2.4.18-2ubuntu3.9) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../apache2-data_2.4.18-2ubuntu3.9_all.deb ...
+Unpacking apache2-data (2.4.18-2ubuntu3.9) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../apache2_2.4.18-2ubuntu3.9_amd64.deb ...
+Unpacking apache2 (2.4.18-2ubuntu3.9) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for systemd (229-4ubuntu21.8) ...
+Processing triggers for ureadahead (0.100.0-19) ...
+Processing triggers for ufw (0.35-0ubuntu2) ...
+Setting up libapr1:amd64 (1.5.2-3) ...
+Setting up libaprutil1:amd64 (1.5.4-1build1) ...
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.4-1build1) ...
+Setting up libaprutil1-ldap:amd64 (1.5.4-1build1) ...
+Setting up liblua5.1-0:amd64 (5.1.5-8ubuntu1) ...
+Setting up apache2-bin (2.4.18-2ubuntu3.9) ...
+Setting up apache2-utils (2.4.18-2ubuntu3.9) ...
+Setting up apache2-data (2.4.18-2ubuntu3.9) ...
+Setting up apache2 (2.4.18-2ubuntu3.9) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for systemd (229-4ubuntu21.8) ...
+Processing triggers for ureadahead (0.100.0-19) ...
+Processing triggers for ufw (0.35-0ubuntu2) ...
+root@ip-172-31-85-74:/opt/sonarqube/conf# a2enmod proxy
+Enabling module proxy.
+To activate the new configuration, you need to run:
+  service apache2 restart
+root@ip-172-31-85-74:/opt/sonarqube/conf# a2enmod proxy_http
+Considering dependency proxy for proxy_http:
+Module proxy already enabled
+Enabling module proxy_http.
+To activate the new configuration, you need to run:
+  service apache2 restart
+root@ip-172-31-85-74:/opt/sonarqube/conf# vi /etc/apache2/sites-available/sonar.yourdomain.com.conf
+root@ip-172-31-85-74:/opt/sonarqube/conf# a2ensite sonar.yourdomain.com.conf
+Enabling site sonar.yourdomain.com.
+To activate the new configuration, you need to run:
+  service apache2 reload
+root@ip-172-31-85-74:/opt/sonarqube/conf# systemctl start apache2
+root@ip-172-31-85-74:/opt/sonarqube/conf# systemctl enable apache2
+apache2.service is not a native service, redirecting to systemd-sysv-install
+Executing /lib/systemd/systemd-sysv-install enable apache2
+root@ip-172-31-85-74:/opt/sonarqube/conf# systemctl restart apache2
+root@ip-172-31-85-74:/opt/sonarqube/conf# systemctl start sonar
+root@ip-172-31-85-74:/opt/sonarqube/conf# top
+top - 09:26:25 up 57 min,  1 user,  load average: 1.85, 1.89, 1.26
+Tasks: 125 total,   1 running, 124 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 94.0 us,  6.0 sy,  0.0 ni,  0.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem :  1014492 total,   676996 free,   155324 used,   182172 buff/cache
+KiB Swap:        0 total,        0 free,        0 used.   681104 avail Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND
+29879 root      20   0 1953512  63380  18388 S 42.3  6.2   0:01.27 java
+29899 root      20   0 2462592 593340  15664 S  6.3 58.5   0:00.19 java
+    1 root      20   0   37700   4696   2960 S  0.3  0.5   0:05.63 systemd
+26586 root      20   0   40504   3724   3144 R  0.3  0.4   0:00.12 top
+    2 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kthreadd
+    3 root      20   0       0      0      0 S  0.0  0.0   0:00.22 ksoftirqd/0
+    5 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker/0:0H
+    6 root      20   0       0      0      0 S  0.0  0.0   0:00.09 kworker/u30:0
+    7 root      20   0       0      0      0 S  0.0  0.0   0:00.68 rcu_sched
+    8 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_bh
+    9 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration/0
+   10 root      rt   0       0      0      0 S  0.0  0.0   0:00.02 watchdog/0
+   11 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs
+   12 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 netns
+   13 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 perf
+   14 root      20   0       0      0      0 S  0.0  0.0   0:00.00 xenwatch
+   15 root      20   0       0      0      0 S  0.0  0.0   0:00.00 xenbus

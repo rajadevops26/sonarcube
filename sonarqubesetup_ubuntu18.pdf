@@ -1,0 +1,78 @@
+sudo -i
+apt-get update
+************************************************** JAVA 1.8 install *****************************************
+add-apt-repository ppa:webupd8team/java
+apt-get update
+apt-get install oracle-java8-installer
+java -version
+update-alternatives --config java
+cat>>/etc/environment
+JAVA_HOME="/usr/lib/jvm/java-8-oracle"
+source /etc/environment
+echo $JAVA_HOME
+**************************************************** SONARQUBE AND RUNNER INSTALLATION *************************
+apt-get install unzip
+
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-6.7.6.zip
+unzip sonarqube-6.7.6.zip
+wget http://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-runner-dist/2.4/sonar-runner-dist-2.4.zip
+unzip sonar-runner-dist-2.4.zip
+apt-get install mysql-server -y
+mv sonarqube-6.7.6 /opt
+mv sonar-runner-2.4 /opt
+ls -a
+vi /etc/profile
+***************
+export SONARQUBE_HOME=/opt/sonarqube-6.7.6
+export PATH=${PATH}:${SONARQUBE_HOME}/bin
+
+exprt SONAR_RUNNER_HOME=/opt/sonar-runner-2.4
+export PATH=${PATH}:${SONAR_RUNNER_HOME}/bin
+***************
+source /etc/profile
+echo $SONARQUBE_HOME
+echo $SONAR_RUNNER_HOME
+
+************************************************* MYSQL DATABASE CREATION ****************************************
+
+apt-get install mysql-server -y
+
+mysql –u root –p
+****************
+username:root
+password:root
+***************
+CREATE DATABASE sonar CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE USER 'sonar' IDENTIFIED BY 'sonar';
+GRANT ALL ON sonar.* TO 'sonar'@'%' IDENTIFIED BY 'sonar';
+GRANT ALL ON sonar.* TO 'sonar'@'web.kasrls.in' IDENTIFIED BY 'sonar';
+FLUSH PRIVILEGES;
+exit
+*************************************************** SONARQUBE AND RUNNER CONF TO START *****************************
+cd $SONARQUBE_HOME/conf
+ls
+vi sonar.properties
+*******************
+ENABLE BELOW IN PROPERTIES
+
+sonar.jdbc.username=sonar
+sonar.jdbc.password=sonar
+sonar.jdbc.url=jdbc:mysql://web.kasrls.in:3306/.............
+*******************
+cd $SONAR_RUNNER_HOME/conf
+vi sonar-runner.properties
+**************************
+sonar.host.url=http://web.kasrls.in:9000
+sonar.jdbc.url=jdbc:mysql://web.kasrls.in:3306/.............
+sonar.jdbc.username=sonar
+sonar.jdbc.password=sonar
+**************************
+cd $SONARQUBE_HOME/bin/linux-x86-64
+ls
+sh sonar.sh start
+or
+./sonar.sh start
+ln -s /opt/sonarqube-6.7.6/bin/linux-x86-64/sonar.sh /usr/local/bin/sonar
+sonar start
+
+

@@ -1,0 +1,3122 @@
+
+────────────────────────────────────────────────────────────────────────────────
+
+Session stopped
+    - Press <return> to exit tab
+    - Press R to restart session
+    - Press S to save terminal output to file
+
+Network error: Connection refused
+
+────────────────────────────────────────────────────────────────────────────────
+
+Session stopped
+    - Press <return> to exit tab
+    - Press R to restart session
+    - Press S to save terminal output to file
+
+Network error: Connection refused
+Authenticating with public key "Imported-Openssh-Key: C:\Users\user\Downloads\nv_rajendra.pem"
+     ┌────────────────────────────────────────────────────────────────────┐
+     │                        • MobaXterm 11.0 •                          │
+     │            (SSH client, X-server and networking tools)             │
+     │                                                                    │
+     │ ➤ SSH session to ec2-user@3.91.239.234                             │
+     │   • SSH compression : ✔                                            │
+     │   • SSH-browser     : ✔                                            │
+     │   • X11-forwarding  : ✘  (disabled or not supported by server)     │
+     │   • DISPLAY         : 192.168.1.6:0.0                              │
+     │                                                                    │
+     │ ➤ For more info, ctrl+click on help or visit our website           │
+     └────────────────────────────────────────────────────────────────────┘
+
+[ec2-user@ip-172-31-87-210 ~]$ sudo -i
+[root@ip-172-31-87-210 ~]# top
+top - 08:45:55 up 4 min,  1 user,  load average: 0.04, 0.15, 0.08
+Tasks:  96 total,   2 running,  94 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem :  3878876 total,  3556700 free,    95972 used,   226204 buff/cache
+KiB Swap:        0 total,        0 free,        0 used.  3530440 avail Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+    1 root      20   0  128028   6580   4144 S   0.0  0.2   0:02.75 systemd
+    2 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kthreadd
+    3 root      20   0       0      0      0 S   0.0  0.0   0:00.03 ksoftirqd/0
+    4 root      20   0       0      0      0 S   0.0  0.0   0:00.01 kworker/0:0
+    5 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:+
+    6 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/u3+
+    7 root      rt   0       0      0      0 S   0.0  0.0   0:00.00 migration/0
+    8 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh
+    9 root      20   0       0      0      0 S   0.0  0.0   0:00.13 rcu_sched
+   10 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 lru-add-dr+
+   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.00 watchdog/0
+   12 root      rt   0       0      0      0 S   0.0  0.0   0:00.00 watchdog/1
+   13 root      rt   0       0      0      0 S   0.0  0.0   0:00.00 migration/1
+   14 root      20   0       0      0      0 S   0.0  0.0   0:00.01 ksoftirqd/1
+   15 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/1:0
+   16 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/1:+
+   18 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kdevtmpfs
+   19 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 netns
+   20 root      20   0       0      0      0 S   0.0  0.0   0:00.00 xenwatch
+[root@ip-172-31-87-210 ~]# yum install java -y
+Loaded plugins: amazon-id, rhui-lb, search-disabled-repos
+rhui-REGION-client-config-server-7                       | 2.9 kB     00:00
+rhui-REGION-rhel-server-releases                         | 3.5 kB     00:00
+rhui-REGION-rhel-server-rh-common                        | 3.8 kB     00:00
+(1/7): rhui-REGION-client-config-server-7/x86_64/primary_d | 3.3 kB   00:00
+(2/7): rhui-REGION-rhel-server-releases/7Server/x86_64/gro | 856 kB   00:00
+(3/7): rhui-REGION-rhel-server-rh-common/7Server/x86_64/gr |  104 B   00:00
+(4/7): rhui-REGION-rhel-server-rh-common/7Server/x86_64/up |  33 kB   00:00
+(5/7): rhui-REGION-rhel-server-releases/7Server/x86_64/upd | 3.2 MB   00:00
+(6/7): rhui-REGION-rhel-server-rh-common/7Server/x86_64/pr | 116 kB   00:00
+(7/7): rhui-REGION-rhel-server-releases/7Server/x86_64/pri |  54 MB   00:01
+Resolving Dependencies
+--> Running transaction check
+---> Package java-1.8.0-openjdk.x86_64 1:1.8.0.191.b12-1.el7_6 will be installed
+--> Processing Dependency: java-1.8.0-openjdk-headless(x86-64) = 1:1.8.0.191.b12-1.el7_6 for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: fontconfig(x86-64) for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: libasound.so.2(ALSA_0.9)(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: libasound.so.2(ALSA_0.9.0rc4)(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: libjava.so(SUNWprivate_1.1)(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: libjpeg.so.62(LIBJPEG_6.2)(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: libjvm.so(SUNWprivate_1.1)(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: xorg-x11-fonts-Type1 for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: libX11.so.6()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: libXcomposite.so.1()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: libXext.so.6()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: libXi.so.6()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: libXrender.so.1()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: libXtst.so.6()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: libasound.so.2()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: libgif.so.4()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: libjava.so()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: libjpeg.so.62()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: libjvm.so()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+--> Running transaction check
+---> Package alsa-lib.x86_64 0:1.1.6-2.el7 will be installed
+---> Package fontconfig.x86_64 0:2.13.0-4.3.el7 will be installed
+--> Processing Dependency: dejavu-sans-fonts for package: fontconfig-2.13.0-4.3.el7.x86_64
+--> Processing Dependency: fontpackages-filesystem for package: fontconfig-2.13.0-4.3.el7.x86_64
+---> Package giflib.x86_64 0:4.1.6-9.el7 will be installed
+--> Processing Dependency: libICE.so.6()(64bit) for package: giflib-4.1.6-9.el7.x86_64
+--> Processing Dependency: libSM.so.6()(64bit) for package: giflib-4.1.6-9.el7.x86_64
+---> Package java-1.8.0-openjdk-headless.x86_64 1:1.8.0.191.b12-1.el7_6 will be installed
+--> Processing Dependency: copy-jdk-configs >= 2.2 for package: 1:java-1.8.0-openjdk-headless-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: tzdata-java >= 2015d for package: 1:java-1.8.0-openjdk-headless-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: jpackage-utils for package: 1:java-1.8.0-openjdk-headless-1.8.0.191.b12-1.el7_6.x86_64
+--> Processing Dependency: lksctp-tools(x86-64) for package: 1:java-1.8.0-openjdk-headless-1.8.0.191.b12-1.el7_6.x86_64
+---> Package libX11.x86_64 0:1.6.5-2.el7 will be installed
+--> Processing Dependency: libX11-common >= 1.6.5-2.el7 for package: libX11-1.6.5-2.el7.x86_64
+--> Processing Dependency: libxcb.so.1()(64bit) for package: libX11-1.6.5-2.el7.x86_64
+---> Package libXcomposite.x86_64 0:0.4.4-4.1.el7 will be installed
+---> Package libXext.x86_64 0:1.3.3-3.el7 will be installed
+---> Package libXi.x86_64 0:1.7.9-1.el7 will be installed
+---> Package libXrender.x86_64 0:0.9.10-1.el7 will be installed
+---> Package libXtst.x86_64 0:1.2.3-1.el7 will be installed
+---> Package libjpeg-turbo.x86_64 0:1.2.90-6.el7 will be installed
+---> Package xorg-x11-fonts-Type1.noarch 0:7.5-9.el7 will be installed
+--> Processing Dependency: mkfontdir for package: xorg-x11-fonts-Type1-7.5-9.el7.noarch
+--> Processing Dependency: mkfontdir for package: xorg-x11-fonts-Type1-7.5-9.el7.noarch
+--> Processing Dependency: ttmkfdir for package: xorg-x11-fonts-Type1-7.5-9.el7.noarch
+--> Processing Dependency: ttmkfdir for package: xorg-x11-fonts-Type1-7.5-9.el7.noarch
+--> Running transaction check
+---> Package copy-jdk-configs.noarch 0:3.3-10.el7_5 will be installed
+---> Package dejavu-sans-fonts.noarch 0:2.33-6.el7 will be installed
+--> Processing Dependency: dejavu-fonts-common = 2.33-6.el7 for package: dejavu-sans-fonts-2.33-6.el7.noarch
+---> Package fontpackages-filesystem.noarch 0:1.44-8.el7 will be installed
+---> Package javapackages-tools.noarch 0:3.4.1-11.el7 will be installed
+--> Processing Dependency: python-javapackages = 3.4.1-11.el7 for package: javapackages-tools-3.4.1-11.el7.noarch
+---> Package libICE.x86_64 0:1.0.9-9.el7 will be installed
+---> Package libSM.x86_64 0:1.2.2-2.el7 will be installed
+---> Package libX11-common.noarch 0:1.6.5-2.el7 will be installed
+---> Package libxcb.x86_64 0:1.13-1.el7 will be installed
+--> Processing Dependency: libXau.so.6()(64bit) for package: libxcb-1.13-1.el7.x86_64
+---> Package lksctp-tools.x86_64 0:1.0.17-2.el7 will be installed
+---> Package ttmkfdir.x86_64 0:3.0.9-42.el7 will be installed
+---> Package tzdata-java.noarch 0:2018i-1.el7 will be installed
+---> Package xorg-x11-font-utils.x86_64 1:7.5-21.el7 will be installed
+--> Processing Dependency: libfontenc.so.1()(64bit) for package: 1:xorg-x11-font-utils-7.5-21.el7.x86_64
+--> Running transaction check
+---> Package dejavu-fonts-common.noarch 0:2.33-6.el7 will be installed
+---> Package libXau.x86_64 0:1.0.8-2.1.el7 will be installed
+---> Package libfontenc.x86_64 0:1.1.3-3.el7 will be installed
+---> Package python-javapackages.noarch 0:3.4.1-11.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package             Arch   Version      Repository                        Size
+================================================================================
+Installing:
+ java-1.8.0-openjdk  x86_64 1:1.8.0.191.b12-1.el7_6
+                                         rhui-REGION-rhel-server-releases 254 k
+Installing for dependencies:
+ alsa-lib            x86_64 1.1.6-2.el7  rhui-REGION-rhel-server-releases 424 k
+ copy-jdk-configs    noarch 3.3-10.el7_5 rhui-REGION-rhel-server-releases  21 k
+ dejavu-fonts-common noarch 2.33-6.el7   rhui-REGION-rhel-server-releases  64 k
+ dejavu-sans-fonts   noarch 2.33-6.el7   rhui-REGION-rhel-server-releases 1.4 M
+ fontconfig          x86_64 2.13.0-4.3.el7
+                                         rhui-REGION-rhel-server-releases 254 k
+ fontpackages-filesystem
+                     noarch 1.44-8.el7   rhui-REGION-rhel-server-releases 9.9 k
+ giflib              x86_64 4.1.6-9.el7  rhui-REGION-rhel-server-releases  40 k
+ java-1.8.0-openjdk-headless
+                     x86_64 1:1.8.0.191.b12-1.el7_6
+                                         rhui-REGION-rhel-server-releases  32 M
+ javapackages-tools  noarch 3.4.1-11.el7 rhui-REGION-rhel-server-releases  73 k
+ libICE              x86_64 1.0.9-9.el7  rhui-REGION-rhel-server-releases  66 k
+ libSM               x86_64 1.2.2-2.el7  rhui-REGION-rhel-server-releases  39 k
+ libX11              x86_64 1.6.5-2.el7  rhui-REGION-rhel-server-releases 606 k
+ libX11-common       noarch 1.6.5-2.el7  rhui-REGION-rhel-server-releases 164 k
+ libXau              x86_64 1.0.8-2.1.el7
+                                         rhui-REGION-rhel-server-releases  29 k
+ libXcomposite       x86_64 0.4.4-4.1.el7
+                                         rhui-REGION-rhel-server-releases  22 k
+ libXext             x86_64 1.3.3-3.el7  rhui-REGION-rhel-server-releases  39 k
+ libXi               x86_64 1.7.9-1.el7  rhui-REGION-rhel-server-releases  40 k
+ libXrender          x86_64 0.9.10-1.el7 rhui-REGION-rhel-server-releases  26 k
+ libXtst             x86_64 1.2.3-1.el7  rhui-REGION-rhel-server-releases  20 k
+ libfontenc          x86_64 1.1.3-3.el7  rhui-REGION-rhel-server-releases  31 k
+ libjpeg-turbo       x86_64 1.2.90-6.el7 rhui-REGION-rhel-server-releases 134 k
+ libxcb              x86_64 1.13-1.el7   rhui-REGION-rhel-server-releases 214 k
+ lksctp-tools        x86_64 1.0.17-2.el7 rhui-REGION-rhel-server-releases  88 k
+ python-javapackages noarch 3.4.1-11.el7 rhui-REGION-rhel-server-releases  31 k
+ ttmkfdir            x86_64 3.0.9-42.el7 rhui-REGION-rhel-server-releases  48 k
+ tzdata-java         noarch 2018i-1.el7  rhui-REGION-rhel-server-releases 187 k
+ xorg-x11-font-utils x86_64 1:7.5-21.el7 rhui-REGION-rhel-server-releases 104 k
+ xorg-x11-fonts-Type1
+                     noarch 7.5-9.el7    rhui-REGION-rhel-server-releases 521 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+28 Dependent packages)
+
+Total download size: 37 M
+Installed size: 118 M
+Downloading packages:
+(1/29): copy-jdk-configs-3.3-10.el7_5.noarch.rpm           |  21 kB   00:00
+(2/29): alsa-lib-1.1.6-2.el7.x86_64.rpm                    | 424 kB   00:00
+(3/29): dejavu-fonts-common-2.33-6.el7.noarch.rpm          |  64 kB   00:00
+(4/29): fontconfig-2.13.0-4.3.el7.x86_64.rpm               | 254 kB   00:00
+(5/29): fontpackages-filesystem-1.44-8.el7.noarch.rpm      | 9.9 kB   00:00
+(6/29): dejavu-sans-fonts-2.33-6.el7.noarch.rpm            | 1.4 MB   00:00
+(7/29): giflib-4.1.6-9.el7.x86_64.rpm                      |  40 kB   00:00
+(8/29): java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64.rp | 254 kB   00:00
+(9/29): javapackages-tools-3.4.1-11.el7.noarch.rpm         |  73 kB   00:00
+(10/29): libSM-1.2.2-2.el7.x86_64.rpm                      |  39 kB   00:00
+(11/29): libICE-1.0.9-9.el7.x86_64.rpm                     |  66 kB   00:00
+(12/29): libX11-common-1.6.5-2.el7.noarch.rpm              | 164 kB   00:00
+(13/29): libX11-1.6.5-2.el7.x86_64.rpm                     | 606 kB   00:00
+(14/29): libXcomposite-0.4.4-4.1.el7.x86_64.rpm            |  22 kB   00:00
+(15/29): libXau-1.0.8-2.1.el7.x86_64.rpm                   |  29 kB   00:00
+(16/29): libXi-1.7.9-1.el7.x86_64.rpm                      |  40 kB   00:00
+(17/29): libXext-1.3.3-3.el7.x86_64.rpm                    |  39 kB   00:00
+(18/29): libXtst-1.2.3-1.el7.x86_64.rpm                    |  20 kB   00:00
+(19/29): libXrender-0.9.10-1.el7.x86_64.rpm                |  26 kB   00:00
+(20/29): java-1.8.0-openjdk-headless-1.8.0.191.b12-1.el7_6 |  32 MB   00:00
+(21/29): libfontenc-1.1.3-3.el7.x86_64.rpm                 |  31 kB   00:00
+(22/29): libjpeg-turbo-1.2.90-6.el7.x86_64.rpm             | 134 kB   00:00
+(23/29): lksctp-tools-1.0.17-2.el7.x86_64.rpm              |  88 kB   00:00
+(24/29): libxcb-1.13-1.el7.x86_64.rpm                      | 214 kB   00:00
+(25/29): ttmkfdir-3.0.9-42.el7.x86_64.rpm                  |  48 kB   00:00
+(26/29): python-javapackages-3.4.1-11.el7.noarch.rpm       |  31 kB   00:00
+(27/29): tzdata-java-2018i-1.el7.noarch.rpm                | 187 kB   00:00
+(28/29): xorg-x11-font-utils-7.5-21.el7.x86_64.rpm         | 104 kB   00:00
+(29/29): xorg-x11-fonts-Type1-7.5-9.el7.noarch.rpm         | 521 kB   00:00
+--------------------------------------------------------------------------------
+Total                                               34 MB/s |  37 MB  00:01
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : libjpeg-turbo-1.2.90-6.el7.x86_64                           1/29
+  Installing : fontpackages-filesystem-1.44-8.el7.noarch                   2/29
+  Installing : libICE-1.0.9-9.el7.x86_64                                   3/29
+  Installing : libSM-1.2.2-2.el7.x86_64                                    4/29
+  Installing : dejavu-fonts-common-2.33-6.el7.noarch                       5/29
+  Installing : dejavu-sans-fonts-2.33-6.el7.noarch                         6/29
+  Installing : fontconfig-2.13.0-4.3.el7.x86_64                            7/29
+  Installing : libfontenc-1.1.3-3.el7.x86_64                               8/29
+  Installing : 1:xorg-x11-font-utils-7.5-21.el7.x86_64                     9/29
+  Installing : libX11-common-1.6.5-2.el7.noarch                           10/29
+  Installing : libXau-1.0.8-2.1.el7.x86_64                                11/29
+  Installing : libxcb-1.13-1.el7.x86_64                                   12/29
+  Installing : libX11-1.6.5-2.el7.x86_64                                  13/29
+  Installing : libXext-1.3.3-3.el7.x86_64                                 14/29
+  Installing : libXi-1.7.9-1.el7.x86_64                                   15/29
+  Installing : libXtst-1.2.3-1.el7.x86_64                                 16/29
+  Installing : giflib-4.1.6-9.el7.x86_64                                  17/29
+  Installing : libXrender-0.9.10-1.el7.x86_64                             18/29
+  Installing : libXcomposite-0.4.4-4.1.el7.x86_64                         19/29
+  Installing : lksctp-tools-1.0.17-2.el7.x86_64                           20/29
+  Installing : alsa-lib-1.1.6-2.el7.x86_64                                21/29
+  Installing : python-javapackages-3.4.1-11.el7.noarch                    22/29
+  Installing : javapackages-tools-3.4.1-11.el7.noarch                     23/29
+  Installing : copy-jdk-configs-3.3-10.el7_5.noarch                       24/29
+  Installing : ttmkfdir-3.0.9-42.el7.x86_64                               25/29
+  Installing : xorg-x11-fonts-Type1-7.5-9.el7.noarch                      26/29
+  Installing : tzdata-java-2018i-1.el7.noarch                             27/29
+  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.191.b12-1.el7_6.x86_   28/29
+  Installing : 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64          29/29
+  Verifying  : libXext-1.3.3-3.el7.x86_64                                  1/29
+  Verifying  : libXi-1.7.9-1.el7.x86_64                                    2/29
+  Verifying  : fontconfig-2.13.0-4.3.el7.x86_64                            3/29
+  Verifying  : giflib-4.1.6-9.el7.x86_64                                   4/29
+  Verifying  : libXrender-0.9.10-1.el7.x86_64                              5/29
+  Verifying  : 1:xorg-x11-font-utils-7.5-21.el7.x86_64                     6/29
+  Verifying  : tzdata-java-2018i-1.el7.noarch                              7/29
+  Verifying  : libICE-1.0.9-9.el7.x86_64                                   8/29
+  Verifying  : fontpackages-filesystem-1.44-8.el7.noarch                   9/29
+  Verifying  : ttmkfdir-3.0.9-42.el7.x86_64                               10/29
+  Verifying  : libjpeg-turbo-1.2.90-6.el7.x86_64                          11/29
+  Verifying  : copy-jdk-configs-3.3-10.el7_5.noarch                       12/29
+  Verifying  : python-javapackages-3.4.1-11.el7.noarch                    13/29
+  Verifying  : dejavu-fonts-common-2.33-6.el7.noarch                      14/29
+  Verifying  : alsa-lib-1.1.6-2.el7.x86_64                                15/29
+  Verifying  : libXcomposite-0.4.4-4.1.el7.x86_64                         16/29
+  Verifying  : libXtst-1.2.3-1.el7.x86_64                                 17/29
+  Verifying  : libxcb-1.13-1.el7.x86_64                                   18/29
+  Verifying  : lksctp-tools-1.0.17-2.el7.x86_64                           19/29
+  Verifying  : xorg-x11-fonts-Type1-7.5-9.el7.noarch                      20/29
+  Verifying  : libX11-1.6.5-2.el7.x86_64                                  21/29
+  Verifying  : 1:java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64          22/29
+  Verifying  : dejavu-sans-fonts-2.33-6.el7.noarch                        23/29
+  Verifying  : javapackages-tools-3.4.1-11.el7.noarch                     24/29
+  Verifying  : 1:java-1.8.0-openjdk-headless-1.8.0.191.b12-1.el7_6.x86_   25/29
+  Verifying  : libXau-1.0.8-2.1.el7.x86_64                                26/29
+  Verifying  : libSM-1.2.2-2.el7.x86_64                                   27/29
+  Verifying  : libX11-common-1.6.5-2.el7.noarch                           28/29
+  Verifying  : libfontenc-1.1.3-3.el7.x86_64                              29/29
+
+Installed:
+  java-1.8.0-openjdk.x86_64 1:1.8.0.191.b12-1.el7_6
+
+Dependency Installed:
+  alsa-lib.x86_64 0:1.1.6-2.el7
+  copy-jdk-configs.noarch 0:3.3-10.el7_5
+  dejavu-fonts-common.noarch 0:2.33-6.el7
+  dejavu-sans-fonts.noarch 0:2.33-6.el7
+  fontconfig.x86_64 0:2.13.0-4.3.el7
+  fontpackages-filesystem.noarch 0:1.44-8.el7
+  giflib.x86_64 0:4.1.6-9.el7
+  java-1.8.0-openjdk-headless.x86_64 1:1.8.0.191.b12-1.el7_6
+  javapackages-tools.noarch 0:3.4.1-11.el7
+  libICE.x86_64 0:1.0.9-9.el7
+  libSM.x86_64 0:1.2.2-2.el7
+  libX11.x86_64 0:1.6.5-2.el7
+  libX11-common.noarch 0:1.6.5-2.el7
+  libXau.x86_64 0:1.0.8-2.1.el7
+  libXcomposite.x86_64 0:0.4.4-4.1.el7
+  libXext.x86_64 0:1.3.3-3.el7
+  libXi.x86_64 0:1.7.9-1.el7
+  libXrender.x86_64 0:0.9.10-1.el7
+  libXtst.x86_64 0:1.2.3-1.el7
+  libfontenc.x86_64 0:1.1.3-3.el7
+  libjpeg-turbo.x86_64 0:1.2.90-6.el7
+  libxcb.x86_64 0:1.13-1.el7
+  lksctp-tools.x86_64 0:1.0.17-2.el7
+  python-javapackages.noarch 0:3.4.1-11.el7
+  ttmkfdir.x86_64 0:3.0.9-42.el7
+  tzdata-java.noarch 0:2018i-1.el7
+  xorg-x11-font-utils.x86_64 1:7.5-21.el7
+  xorg-x11-fonts-Type1.noarch 0:7.5-9.el7
+
+Complete!
+[root@ip-172-31-87-210 ~]# which java
+/bin/java
+[root@ip-172-31-87-210 ~]# export JAVA-HOME=/bin/java
+-bash: export: `JAVA-HOME=/bin/java': not a valid identifier
+[root@ip-172-31-87-210 ~]# export JAVA_HOME=/bin/java
+[root@ip-172-31-87-210 ~]# export JRE_HOME=/bin/java/jre
+[root@ip-172-31-87-210 ~]# export PATH=$PATH:/
+bin/   data/  etc/   lib/   media/ opt/   root/  sbin/  sys/   usr/
+boot/  dev/   home/  lib64/ mnt/   proc/  run/   srv/   tmp/   var/
+[root@ip-172-31-87-210 ~]# export PATH=$PATH:/bin/java:/bin/java/jre
+[root@ip-172-31-87-210 ~]# vi /etc/environment
+[root@ip-172-31-87-210 ~]# source /etc/environment
+[root@ip-172-31-87-210 ~]# echo $JAVA_HOME
+/bin/java
+[root@ip-172-31-87-210 ~]# echo $JRE_HOME
+/bin/java/jre
+[root@ip-172-31-87-210 ~]# yum install wget -y
+Loaded plugins: amazon-id, rhui-lb, search-disabled-repos
+Resolving Dependencies
+--> Running transaction check
+---> Package wget.x86_64 0:1.14-18.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package  Arch       Version         Repository                            Size
+================================================================================
+Installing:
+ wget     x86_64     1.14-18.el7     rhui-REGION-rhel-server-releases     547 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 547 k
+Installed size: 2.0 M
+Downloading packages:
+wget-1.14-18.el7.x86_64.rpm                                | 547 kB   00:00
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : wget-1.14-18.el7.x86_64                                      1/1
+  Verifying  : wget-1.14-18.el7.x86_64                                      1/1
+
+Installed:
+  wget.x86_64 0:1.14-18.el7
+
+Complete!
+[root@ip-172-31-87-210 ~]# wget https://repo.mysql.com/mysql80-community-release-el7-1.noarch.rpm
+--2019-02-04 08:53:32--  https://repo.mysql.com/mysql80-community-release-el7-1.noarch.rpm
+Resolving repo.mysql.com (repo.mysql.com)... 23.52.165.231
+Connecting to repo.mysql.com (repo.mysql.com)|23.52.165.231|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 25820 (25K) [application/x-redhat-package-manager]
+Saving to: ‘mysql80-community-release-el7-1.noarch.rpm’
+
+100%[======================================>] 25,820      --.-K/s   in 0.007s
+
+2019-02-04 08:53:32 (3.58 MB/s) - ‘mysql80-community-release-el7-1.noarch.rpm’ saved [25820/25820]
+
+[root@ip-172-31-87-210 ~]# ls
+anaconda-ks.cfg  mysql80-community-release-el7-1.noarch.rpm  original-ks.cfg
+[root@ip-172-31-87-210 ~]# cd /opt/
+[root@ip-172-31-87-210 opt]# wget https://repo.mysql.com/mysql80-community-release-el7-1.noarch.rpm
+--2019-02-04 08:54:05--  https://repo.mysql.com/mysql80-community-release-el7-1.noarch.rpm
+Resolving repo.mysql.com (repo.mysql.com)... 104.91.33.12
+Connecting to repo.mysql.com (repo.mysql.com)|104.91.33.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 25820 (25K) [application/x-redhat-package-manager]
+Saving to: ‘mysql80-community-release-el7-1.noarch.rpm’
+
+100%[======================================>] 25,820      --.-K/s   in 0.006s
+
+2019-02-04 08:54:05 (4.34 MB/s) - ‘mysql80-community-release-el7-1.noarch.rpm’ saved [25820/25820]
+
+[root@ip-172-31-87-210 opt]# ls
+mysql80-community-release-el7-1.noarch.rpm
+[root@ip-172-31-87-210 opt]# rpm -ivh mysql80-community-release-el7-1.noarch.rpm
+warning: mysql80-community-release-el7-1.noarch.rpm: Header V3 DSA/SHA1 Signature, key ID 5072e1f5: NOKEY
+Preparing...                          ################################# [100%]
+Updating / installing...
+   1:mysql80-community-release-el7-1  ################################# [100%]
+[root@ip-172-31-87-210 opt]# yum install mysql-community-server
+Loaded plugins: amazon-id, rhui-lb, search-disabled-repos
+mysql-connectors-community                               | 2.5 kB     00:00
+mysql-tools-community                                    | 2.5 kB     00:00
+mysql80-community                                        | 2.5 kB     00:00
+(1/3): mysql-connectors-community/x86_64/primary_db        |  37 kB   00:00
+(2/3): mysql-tools-community/x86_64/primary_db             |  54 kB   00:00
+(3/3): mysql80-community/x86_64/primary_db                 |  53 kB   00:00
+Resolving Dependencies
+--> Running transaction check
+---> Package mysql-community-server.x86_64 0:8.0.15-1.el7 will be installed
+--> Processing Dependency: mysql-community-common(x86-64) = 8.0.15-1.el7 for package: mysql-community-server-8.0.15-1.el7.x86_64
+--> Processing Dependency: mysql-community-client(x86-64) >= 8.0.0 for package: mysql-community-server-8.0.15-1.el7.x86_64
+--> Processing Dependency: perl(strict) for package: mysql-community-server-8.0.15-1.el7.x86_64
+--> Processing Dependency: perl(Getopt::Long) for package: mysql-community-server-8.0.15-1.el7.x86_64
+--> Processing Dependency: libaio.so.1(LIBAIO_0.4)(64bit) for package: mysql-community-server-8.0.15-1.el7.x86_64
+--> Processing Dependency: libaio.so.1(LIBAIO_0.1)(64bit) for package: mysql-community-server-8.0.15-1.el7.x86_64
+--> Processing Dependency: /usr/bin/perl for package: mysql-community-server-8.0.15-1.el7.x86_64
+--> Processing Dependency: libaio.so.1()(64bit) for package: mysql-community-server-8.0.15-1.el7.x86_64
+--> Running transaction check
+---> Package libaio.x86_64 0:0.3.109-13.el7 will be installed
+---> Package mysql-community-client.x86_64 0:8.0.15-1.el7 will be installed
+--> Processing Dependency: mysql-community-libs(x86-64) >= 8.0.0 for package: mysql-community-client-8.0.15-1.el7.x86_64
+---> Package mysql-community-common.x86_64 0:8.0.15-1.el7 will be installed
+---> Package perl.x86_64 4:5.16.3-294.el7_6 will be installed
+--> Processing Dependency: perl-libs = 4:5.16.3-294.el7_6 for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Scalar::Util) >= 1.10 for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Socket) >= 1.3 for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Carp) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Cwd) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Exporter) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(File::Path) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(File::Spec) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(File::Spec::Functions) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(File::Spec::Unix) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(File::Temp) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Filter::Util::Call) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Pod::Simple::Search) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Pod::Simple::XHTML) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Scalar::Util) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Socket) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Storable) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Time::HiRes) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Time::Local) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(constant) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(threads) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(threads::shared) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl-libs for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl-macros for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: libperl.so()(64bit) for package: 4:perl-5.16.3-294.el7_6.x86_64
+---> Package perl-Getopt-Long.noarch 0:2.40-3.el7 will be installed
+--> Processing Dependency: perl(Pod::Usage) >= 1.14 for package: perl-Getopt-Long-2.40-3.el7.noarch
+--> Processing Dependency: perl(Text::ParseWords) for package: perl-Getopt-Long-2.40-3.el7.noarch
+--> Running transaction check
+---> Package mariadb-libs.x86_64 1:5.5.60-1.el7_5 will be obsoleted
+--> Processing Dependency: libmysqlclient.so.18()(64bit) for package: 2:postfix-2.10.1-7.el7.x86_64
+--> Processing Dependency: libmysqlclient.so.18(libmysqlclient_18)(64bit) for package: 2:postfix-2.10.1-7.el7.x86_64
+---> Package mysql-community-libs.x86_64 0:8.0.15-1.el7 will be obsoleting
+---> Package perl-Carp.noarch 0:1.26-244.el7 will be installed
+---> Package perl-Exporter.noarch 0:5.68-3.el7 will be installed
+---> Package perl-File-Path.noarch 0:2.09-2.el7 will be installed
+---> Package perl-File-Temp.noarch 0:0.23.01-3.el7 will be installed
+---> Package perl-Filter.x86_64 0:1.49-3.el7 will be installed
+---> Package perl-PathTools.x86_64 0:3.40-5.el7 will be installed
+---> Package perl-Pod-Simple.noarch 1:3.28-4.el7 will be installed
+--> Processing Dependency: perl(Pod::Escapes) >= 1.04 for package: 1:perl-Pod-Simple-3.28-4.el7.noarch
+--> Processing Dependency: perl(Encode) for package: 1:perl-Pod-Simple-3.28-4.el7.noarch
+---> Package perl-Pod-Usage.noarch 0:1.63-3.el7 will be installed
+--> Processing Dependency: perl(Pod::Text) >= 3.15 for package: perl-Pod-Usage-1.63-3.el7.noarch
+--> Processing Dependency: perl-Pod-Perldoc for package: perl-Pod-Usage-1.63-3.el7.noarch
+---> Package perl-Scalar-List-Utils.x86_64 0:1.27-248.el7 will be installed
+---> Package perl-Socket.x86_64 0:2.010-4.el7 will be installed
+---> Package perl-Storable.x86_64 0:2.45-3.el7 will be installed
+---> Package perl-Text-ParseWords.noarch 0:3.29-4.el7 will be installed
+---> Package perl-Time-HiRes.x86_64 4:1.9725-3.el7 will be installed
+---> Package perl-Time-Local.noarch 0:1.2300-2.el7 will be installed
+---> Package perl-constant.noarch 0:1.27-2.el7 will be installed
+---> Package perl-libs.x86_64 4:5.16.3-294.el7_6 will be installed
+---> Package perl-macros.x86_64 4:5.16.3-294.el7_6 will be installed
+---> Package perl-threads.x86_64 0:1.87-4.el7 will be installed
+---> Package perl-threads-shared.x86_64 0:1.43-6.el7 will be installed
+--> Running transaction check
+---> Package mysql-community-libs-compat.x86_64 0:8.0.15-1.el7 will be obsoleting
+---> Package perl-Encode.x86_64 0:2.51-7.el7 will be installed
+---> Package perl-Pod-Escapes.noarch 1:1.04-294.el7_6 will be installed
+---> Package perl-Pod-Perldoc.noarch 0:3.20-4.el7 will be installed
+--> Processing Dependency: perl(HTTP::Tiny) for package: perl-Pod-Perldoc-3.20-4.el7.noarch
+--> Processing Dependency: perl(parent) for package: perl-Pod-Perldoc-3.20-4.el7.noarch
+---> Package perl-podlators.noarch 0:2.5.1-3.el7 will be installed
+--> Running transaction check
+---> Package perl-HTTP-Tiny.noarch 0:0.033-3.el7 will be installed
+---> Package perl-parent.noarch 1:0.225-244.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package          Arch   Version         Repository                        Size
+================================================================================
+Installing:
+ mysql-community-libs
+                  x86_64 8.0.15-1.el7    mysql80-community                2.2 M
+     replacing  mariadb-libs.x86_64 1:5.5.60-1.el7_5
+ mysql-community-libs-compat
+                  x86_64 8.0.15-1.el7    mysql80-community                2.1 M
+     replacing  mariadb-libs.x86_64 1:5.5.60-1.el7_5
+ mysql-community-server
+                  x86_64 8.0.15-1.el7    mysql80-community                360 M
+Installing for dependencies:
+ libaio           x86_64 0.3.109-13.el7  rhui-REGION-rhel-server-releases  24 k
+ mysql-community-client
+                  x86_64 8.0.15-1.el7    mysql80-community                 25 M
+ mysql-community-common
+                  x86_64 8.0.15-1.el7    mysql80-community                566 k
+ perl             x86_64 4:5.16.3-294.el7_6
+                                         rhui-REGION-rhel-server-releases 8.0 M
+ perl-Carp        noarch 1.26-244.el7    rhui-REGION-rhel-server-releases  19 k
+ perl-Encode      x86_64 2.51-7.el7      rhui-REGION-rhel-server-releases 1.5 M
+ perl-Exporter    noarch 5.68-3.el7      rhui-REGION-rhel-server-releases  28 k
+ perl-File-Path   noarch 2.09-2.el7      rhui-REGION-rhel-server-releases  27 k
+ perl-File-Temp   noarch 0.23.01-3.el7   rhui-REGION-rhel-server-releases  56 k
+ perl-Filter      x86_64 1.49-3.el7      rhui-REGION-rhel-server-releases  76 k
+ perl-Getopt-Long noarch 2.40-3.el7      rhui-REGION-rhel-server-releases  56 k
+ perl-HTTP-Tiny   noarch 0.033-3.el7     rhui-REGION-rhel-server-releases  38 k
+ perl-PathTools   x86_64 3.40-5.el7      rhui-REGION-rhel-server-releases  83 k
+ perl-Pod-Escapes noarch 1:1.04-294.el7_6
+                                         rhui-REGION-rhel-server-releases  51 k
+ perl-Pod-Perldoc noarch 3.20-4.el7      rhui-REGION-rhel-server-releases  87 k
+ perl-Pod-Simple  noarch 1:3.28-4.el7    rhui-REGION-rhel-server-releases 216 k
+ perl-Pod-Usage   noarch 1.63-3.el7      rhui-REGION-rhel-server-releases  27 k
+ perl-Scalar-List-Utils
+                  x86_64 1.27-248.el7    rhui-REGION-rhel-server-releases  36 k
+ perl-Socket      x86_64 2.010-4.el7     rhui-REGION-rhel-server-releases  49 k
+ perl-Storable    x86_64 2.45-3.el7      rhui-REGION-rhel-server-releases  77 k
+ perl-Text-ParseWords
+                  noarch 3.29-4.el7      rhui-REGION-rhel-server-releases  14 k
+ perl-Time-HiRes  x86_64 4:1.9725-3.el7  rhui-REGION-rhel-server-releases  45 k
+ perl-Time-Local  noarch 1.2300-2.el7    rhui-REGION-rhel-server-releases  24 k
+ perl-constant    noarch 1.27-2.el7      rhui-REGION-rhel-server-releases  19 k
+ perl-libs        x86_64 4:5.16.3-294.el7_6
+                                         rhui-REGION-rhel-server-releases 688 k
+ perl-macros      x86_64 4:5.16.3-294.el7_6
+                                         rhui-REGION-rhel-server-releases  44 k
+ perl-parent      noarch 1:0.225-244.el7 rhui-REGION-rhel-server-releases  12 k
+ perl-podlators   noarch 2.5.1-3.el7     rhui-REGION-rhel-server-releases 112 k
+ perl-threads     x86_64 1.87-4.el7      rhui-REGION-rhel-server-releases  49 k
+ perl-threads-shared
+                  x86_64 1.43-6.el7      rhui-REGION-rhel-server-releases  39 k
+
+Transaction Summary
+================================================================================
+Install  3 Packages (+30 Dependent packages)
+
+Total download size: 402 M
+Is this ok [y/d/N]: n
+Exiting on user command
+Your transaction was saved, rerun it with:
+ yum load-transaction /tmp/yum_save_tx.2019-02-04.08-55.XOpamd.yumtx
+[root@ip-172-31-87-210 opt]# cd
+[root@ip-172-31-87-210 ~]# yum install mysql-community-server
+Loaded plugins: amazon-id, rhui-lb, search-disabled-repos
+Resolving Dependencies
+--> Running transaction check
+---> Package mysql-community-server.x86_64 0:8.0.15-1.el7 will be installed
+--> Processing Dependency: mysql-community-common(x86-64) = 8.0.15-1.el7 for package: mysql-community-server-8.0.15-1.el7.x86_64
+--> Processing Dependency: mysql-community-client(x86-64) >= 8.0.0 for package: mysql-community-server-8.0.15-1.el7.x86_64
+--> Processing Dependency: perl(strict) for package: mysql-community-server-8.0.15-1.el7.x86_64
+--> Processing Dependency: perl(Getopt::Long) for package: mysql-community-server-8.0.15-1.el7.x86_64
+--> Processing Dependency: libaio.so.1(LIBAIO_0.4)(64bit) for package: mysql-community-server-8.0.15-1.el7.x86_64
+--> Processing Dependency: libaio.so.1(LIBAIO_0.1)(64bit) for package: mysql-community-server-8.0.15-1.el7.x86_64
+--> Processing Dependency: /usr/bin/perl for package: mysql-community-server-8.0.15-1.el7.x86_64
+--> Processing Dependency: libaio.so.1()(64bit) for package: mysql-community-server-8.0.15-1.el7.x86_64
+--> Running transaction check
+---> Package libaio.x86_64 0:0.3.109-13.el7 will be installed
+---> Package mysql-community-client.x86_64 0:8.0.15-1.el7 will be installed
+--> Processing Dependency: mysql-community-libs(x86-64) >= 8.0.0 for package: mysql-community-client-8.0.15-1.el7.x86_64
+---> Package mysql-community-common.x86_64 0:8.0.15-1.el7 will be installed
+---> Package perl.x86_64 4:5.16.3-294.el7_6 will be installed
+--> Processing Dependency: perl-libs = 4:5.16.3-294.el7_6 for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Scalar::Util) >= 1.10 for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Socket) >= 1.3 for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Carp) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Cwd) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Exporter) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(File::Path) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(File::Spec) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(File::Spec::Functions) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(File::Spec::Unix) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(File::Temp) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Filter::Util::Call) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Pod::Simple::Search) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Pod::Simple::XHTML) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Scalar::Util) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Socket) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Storable) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Time::HiRes) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(Time::Local) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(constant) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(threads) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl(threads::shared) for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl-libs for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: perl-macros for package: 4:perl-5.16.3-294.el7_6.x86_64
+--> Processing Dependency: libperl.so()(64bit) for package: 4:perl-5.16.3-294.el7_6.x86_64
+---> Package perl-Getopt-Long.noarch 0:2.40-3.el7 will be installed
+--> Processing Dependency: perl(Pod::Usage) >= 1.14 for package: perl-Getopt-Long-2.40-3.el7.noarch
+--> Processing Dependency: perl(Text::ParseWords) for package: perl-Getopt-Long-2.40-3.el7.noarch
+--> Running transaction check
+---> Package mariadb-libs.x86_64 1:5.5.60-1.el7_5 will be obsoleted
+--> Processing Dependency: libmysqlclient.so.18()(64bit) for package: 2:postfix-2.10.1-7.el7.x86_64
+--> Processing Dependency: libmysqlclient.so.18(libmysqlclient_18)(64bit) for package: 2:postfix-2.10.1-7.el7.x86_64
+---> Package mysql-community-libs.x86_64 0:8.0.15-1.el7 will be obsoleting
+---> Package perl-Carp.noarch 0:1.26-244.el7 will be installed
+---> Package perl-Exporter.noarch 0:5.68-3.el7 will be installed
+---> Package perl-File-Path.noarch 0:2.09-2.el7 will be installed
+---> Package perl-File-Temp.noarch 0:0.23.01-3.el7 will be installed
+---> Package perl-Filter.x86_64 0:1.49-3.el7 will be installed
+---> Package perl-PathTools.x86_64 0:3.40-5.el7 will be installed
+---> Package perl-Pod-Simple.noarch 1:3.28-4.el7 will be installed
+--> Processing Dependency: perl(Pod::Escapes) >= 1.04 for package: 1:perl-Pod-Simple-3.28-4.el7.noarch
+--> Processing Dependency: perl(Encode) for package: 1:perl-Pod-Simple-3.28-4.el7.noarch
+---> Package perl-Pod-Usage.noarch 0:1.63-3.el7 will be installed
+--> Processing Dependency: perl(Pod::Text) >= 3.15 for package: perl-Pod-Usage-1.63-3.el7.noarch
+--> Processing Dependency: perl-Pod-Perldoc for package: perl-Pod-Usage-1.63-3.el7.noarch
+---> Package perl-Scalar-List-Utils.x86_64 0:1.27-248.el7 will be installed
+---> Package perl-Socket.x86_64 0:2.010-4.el7 will be installed
+---> Package perl-Storable.x86_64 0:2.45-3.el7 will be installed
+---> Package perl-Text-ParseWords.noarch 0:3.29-4.el7 will be installed
+---> Package perl-Time-HiRes.x86_64 4:1.9725-3.el7 will be installed
+---> Package perl-Time-Local.noarch 0:1.2300-2.el7 will be installed
+---> Package perl-constant.noarch 0:1.27-2.el7 will be installed
+---> Package perl-libs.x86_64 4:5.16.3-294.el7_6 will be installed
+---> Package perl-macros.x86_64 4:5.16.3-294.el7_6 will be installed
+---> Package perl-threads.x86_64 0:1.87-4.el7 will be installed
+---> Package perl-threads-shared.x86_64 0:1.43-6.el7 will be installed
+--> Running transaction check
+---> Package mysql-community-libs-compat.x86_64 0:8.0.15-1.el7 will be obsoleting
+---> Package perl-Encode.x86_64 0:2.51-7.el7 will be installed
+---> Package perl-Pod-Escapes.noarch 1:1.04-294.el7_6 will be installed
+---> Package perl-Pod-Perldoc.noarch 0:3.20-4.el7 will be installed
+--> Processing Dependency: perl(HTTP::Tiny) for package: perl-Pod-Perldoc-3.20-4.el7.noarch
+--> Processing Dependency: perl(parent) for package: perl-Pod-Perldoc-3.20-4.el7.noarch
+---> Package perl-podlators.noarch 0:2.5.1-3.el7 will be installed
+--> Running transaction check
+---> Package perl-HTTP-Tiny.noarch 0:0.033-3.el7 will be installed
+---> Package perl-parent.noarch 1:0.225-244.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package          Arch   Version         Repository                        Size
+================================================================================
+Installing:
+ mysql-community-libs
+                  x86_64 8.0.15-1.el7    mysql80-community                2.2 M
+     replacing  mariadb-libs.x86_64 1:5.5.60-1.el7_5
+ mysql-community-libs-compat
+                  x86_64 8.0.15-1.el7    mysql80-community                2.1 M
+     replacing  mariadb-libs.x86_64 1:5.5.60-1.el7_5
+ mysql-community-server
+                  x86_64 8.0.15-1.el7    mysql80-community                360 M
+Installing for dependencies:
+ libaio           x86_64 0.3.109-13.el7  rhui-REGION-rhel-server-releases  24 k
+ mysql-community-client
+                  x86_64 8.0.15-1.el7    mysql80-community                 25 M
+ mysql-community-common
+                  x86_64 8.0.15-1.el7    mysql80-community                566 k
+ perl             x86_64 4:5.16.3-294.el7_6
+                                         rhui-REGION-rhel-server-releases 8.0 M
+ perl-Carp        noarch 1.26-244.el7    rhui-REGION-rhel-server-releases  19 k
+ perl-Encode      x86_64 2.51-7.el7      rhui-REGION-rhel-server-releases 1.5 M
+ perl-Exporter    noarch 5.68-3.el7      rhui-REGION-rhel-server-releases  28 k
+ perl-File-Path   noarch 2.09-2.el7      rhui-REGION-rhel-server-releases  27 k
+ perl-File-Temp   noarch 0.23.01-3.el7   rhui-REGION-rhel-server-releases  56 k
+ perl-Filter      x86_64 1.49-3.el7      rhui-REGION-rhel-server-releases  76 k
+ perl-Getopt-Long noarch 2.40-3.el7      rhui-REGION-rhel-server-releases  56 k
+ perl-HTTP-Tiny   noarch 0.033-3.el7     rhui-REGION-rhel-server-releases  38 k
+ perl-PathTools   x86_64 3.40-5.el7      rhui-REGION-rhel-server-releases  83 k
+ perl-Pod-Escapes noarch 1:1.04-294.el7_6
+                                         rhui-REGION-rhel-server-releases  51 k
+ perl-Pod-Perldoc noarch 3.20-4.el7      rhui-REGION-rhel-server-releases  87 k
+ perl-Pod-Simple  noarch 1:3.28-4.el7    rhui-REGION-rhel-server-releases 216 k
+ perl-Pod-Usage   noarch 1.63-3.el7      rhui-REGION-rhel-server-releases  27 k
+ perl-Scalar-List-Utils
+                  x86_64 1.27-248.el7    rhui-REGION-rhel-server-releases  36 k
+ perl-Socket      x86_64 2.010-4.el7     rhui-REGION-rhel-server-releases  49 k
+ perl-Storable    x86_64 2.45-3.el7      rhui-REGION-rhel-server-releases  77 k
+ perl-Text-ParseWords
+                  noarch 3.29-4.el7      rhui-REGION-rhel-server-releases  14 k
+ perl-Time-HiRes  x86_64 4:1.9725-3.el7  rhui-REGION-rhel-server-releases  45 k
+ perl-Time-Local  noarch 1.2300-2.el7    rhui-REGION-rhel-server-releases  24 k
+ perl-constant    noarch 1.27-2.el7      rhui-REGION-rhel-server-releases  19 k
+ perl-libs        x86_64 4:5.16.3-294.el7_6
+                                         rhui-REGION-rhel-server-releases 688 k
+ perl-macros      x86_64 4:5.16.3-294.el7_6
+                                         rhui-REGION-rhel-server-releases  44 k
+ perl-parent      noarch 1:0.225-244.el7 rhui-REGION-rhel-server-releases  12 k
+ perl-podlators   noarch 2.5.1-3.el7     rhui-REGION-rhel-server-releases 112 k
+ perl-threads     x86_64 1.87-4.el7      rhui-REGION-rhel-server-releases  49 k
+ perl-threads-shared
+                  x86_64 1.43-6.el7      rhui-REGION-rhel-server-releases  39 k
+
+Transaction Summary
+================================================================================
+Install  3 Packages (+30 Dependent packages)
+
+Total download size: 402 M
+Is this ok [y/d/N]: y
+Downloading packages:
+warning: /var/cache/yum/x86_64/7Server/mysql80-community/packages/mysql-community-common-8.0.15-1.el7.x86_64.rpm: Header V3 DSA/SHA1 Signature, key ID 5072e1f5: NOKEY
+Public key for mysql-community-common-8.0.15-1.el7.x86_64.rpm is not installed
+(1/33): mysql-community-common-8.0.15-1.el7.x86_64.rpm     | 566 kB   00:00
+(2/33): libaio-0.3.109-13.el7.x86_64.rpm                   |  24 kB   00:00
+(3/33): mysql-community-libs-8.0.15-1.el7.x86_64.rpm       | 2.2 MB   00:00
+(4/33): mysql-community-libs-compat-8.0.15-1.el7.x86_64.rp | 2.1 MB   00:00
+(5/33): perl-Encode-2.51-7.el7.x86_64.rpm                  | 1.5 MB   00:00
+(6/33): perl-Carp-1.26-244.el7.noarch.rpm                  |  19 kB   00:00
+(7/33): perl-5.16.3-294.el7_6.x86_64.rpm                   | 8.0 MB   00:00
+(8/33): perl-Exporter-5.68-3.el7.noarch.rpm                |  28 kB   00:00
+(9/33): perl-File-Path-2.09-2.el7.noarch.rpm               |  27 kB   00:00
+(10/33): perl-Filter-1.49-3.el7.x86_64.rpm                 |  76 kB   00:00
+(11/33): perl-Getopt-Long-2.40-3.el7.noarch.rpm            |  56 kB   00:00
+(12/33): perl-File-Temp-0.23.01-3.el7.noarch.rpm           |  56 kB   00:00
+(13/33): perl-HTTP-Tiny-0.033-3.el7.noarch.rpm             |  38 kB   00:00
+(14/33): perl-PathTools-3.40-5.el7.x86_64.rpm              |  83 kB   00:00
+(15/33): perl-Pod-Escapes-1.04-294.el7_6.noarch.rpm        |  51 kB   00:00
+(16/33): mysql-community-client-8.0.15-1.el7.x86_64.rpm    |  25 MB   00:00
+(17/33): perl-Pod-Perldoc-3.20-4.el7.noarch.rpm            |  87 kB   00:00
+(18/33): perl-Pod-Usage-1.63-3.el7.noarch.rpm              |  27 kB   00:00
+(19/33): perl-Pod-Simple-3.28-4.el7.noarch.rpm             | 216 kB   00:00
+(20/33): perl-Scalar-List-Utils-1.27-248.el7.x86_64.rpm    |  36 kB   00:00
+(21/33): perl-Socket-2.010-4.el7.x86_64.rpm                |  49 kB   00:00
+(22/33): perl-Text-ParseWords-3.29-4.el7.noarch.rpm        |  14 kB   00:00
+(23/33): perl-Storable-2.45-3.el7.x86_64.rpm               |  77 kB   00:00
+(24/33): perl-Time-HiRes-1.9725-3.el7.x86_64.rpm           |  45 kB   00:00
+(25/33): perl-Time-Local-1.2300-2.el7.noarch.rpm           |  24 kB   00:00
+(26/33): perl-constant-1.27-2.el7.noarch.rpm               |  19 kB   00:00
+(27/33): perl-libs-5.16.3-294.el7_6.x86_64.rpm             | 688 kB   00:00
+(28/33): perl-macros-5.16.3-294.el7_6.x86_64.rpm           |  44 kB   00:00
+(29/33): perl-parent-0.225-244.el7.noarch.rpm              |  12 kB   00:00
+(30/33): perl-podlators-2.5.1-3.el7.noarch.rpm             | 112 kB   00:00
+(31/33): perl-threads-1.87-4.el7.x86_64.rpm                |  49 kB   00:00
+(32/33): perl-threads-shared-1.43-6.el7.x86_64.rpm         |  39 kB   00:00
+(33/33): mysql-community-server-8.0.15-1.el7.x86_64.rpm    | 360 MB   00:07
+--------------------------------------------------------------------------------
+Total                                               54 MB/s | 402 MB  00:07
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
+Importing GPG key 0x5072E1F5:
+ Userid     : "MySQL Release Engineering <mysql-build@oss.oracle.com>"
+ Fingerprint: a4a9 4068 76fc bd3c 4567 70c8 8c71 8d3b 5072 e1f5
+ Package    : mysql80-community-release-el7-1.noarch (installed)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
+Is this ok [y/N]: y
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+Warning: RPMDB altered outside of yum.
+  Installing : mysql-community-common-8.0.15-1.el7.x86_64                  1/34
+  Installing : mysql-community-libs-8.0.15-1.el7.x86_64                    2/34
+  Installing : mysql-community-client-8.0.15-1.el7.x86_64                  3/34
+  Installing : 1:perl-parent-0.225-244.el7.noarch                          4/34
+  Installing : perl-HTTP-Tiny-0.033-3.el7.noarch                           5/34
+  Installing : perl-podlators-2.5.1-3.el7.noarch                           6/34
+  Installing : perl-Pod-Perldoc-3.20-4.el7.noarch                          7/34
+  Installing : 1:perl-Pod-Escapes-1.04-294.el7_6.noarch                    8/34
+  Installing : perl-Encode-2.51-7.el7.x86_64                               9/34
+  Installing : perl-Text-ParseWords-3.29-4.el7.noarch                     10/34
+  Installing : perl-Pod-Usage-1.63-3.el7.noarch                           11/34
+  Installing : 4:perl-libs-5.16.3-294.el7_6.x86_64                        12/34
+  Installing : 4:perl-macros-5.16.3-294.el7_6.x86_64                      13/34
+  Installing : perl-Storable-2.45-3.el7.x86_64                            14/34
+  Installing : perl-Exporter-5.68-3.el7.noarch                            15/34
+  Installing : perl-constant-1.27-2.el7.noarch                            16/34
+  Installing : perl-Time-Local-1.2300-2.el7.noarch                        17/34
+  Installing : perl-Socket-2.010-4.el7.x86_64                             18/34
+  Installing : perl-Carp-1.26-244.el7.noarch                              19/34
+  Installing : 4:perl-Time-HiRes-1.9725-3.el7.x86_64                      20/34
+  Installing : 1:perl-Pod-Simple-3.28-4.el7.noarch                        21/34
+  Installing : perl-PathTools-3.40-5.el7.x86_64                           22/34
+  Installing : perl-Scalar-List-Utils-1.27-248.el7.x86_64                 23/34
+  Installing : perl-File-Temp-0.23.01-3.el7.noarch                        24/34
+  Installing : perl-File-Path-2.09-2.el7.noarch                           25/34
+  Installing : perl-threads-shared-1.43-6.el7.x86_64                      26/34
+  Installing : perl-threads-1.87-4.el7.x86_64                             27/34
+  Installing : perl-Filter-1.49-3.el7.x86_64                              28/34
+  Installing : perl-Getopt-Long-2.40-3.el7.noarch                         29/34
+  Installing : 4:perl-5.16.3-294.el7_6.x86_64                             30/34
+  Installing : libaio-0.3.109-13.el7.x86_64                               31/34
+  Installing : mysql-community-server-8.0.15-1.el7.x86_64                 32/34
+  Installing : mysql-community-libs-compat-8.0.15-1.el7.x86_64            33/34
+  Erasing    : 1:mariadb-libs-5.5.60-1.el7_5.x86_64                       34/34
+  Verifying  : perl-HTTP-Tiny-0.033-3.el7.noarch                           1/34
+  Verifying  : perl-threads-shared-1.43-6.el7.x86_64                       2/34
+  Verifying  : perl-Storable-2.45-3.el7.x86_64                             3/34
+  Verifying  : 1:perl-Pod-Escapes-1.04-294.el7_6.noarch                    4/34
+  Verifying  : perl-Exporter-5.68-3.el7.noarch                             5/34
+  Verifying  : perl-constant-1.27-2.el7.noarch                             6/34
+  Verifying  : perl-PathTools-3.40-5.el7.x86_64                            7/34
+  Verifying  : 1:perl-parent-0.225-244.el7.noarch                          8/34
+  Verifying  : 4:perl-libs-5.16.3-294.el7_6.x86_64                         9/34
+  Verifying  : perl-File-Temp-0.23.01-3.el7.noarch                        10/34
+  Verifying  : 1:perl-Pod-Simple-3.28-4.el7.noarch                        11/34
+  Verifying  : perl-Time-Local-1.2300-2.el7.noarch                        12/34
+  Verifying  : mysql-community-libs-8.0.15-1.el7.x86_64                   13/34
+  Verifying  : libaio-0.3.109-13.el7.x86_64                               14/34
+  Verifying  : 4:perl-macros-5.16.3-294.el7_6.x86_64                      15/34
+  Verifying  : perl-Socket-2.010-4.el7.x86_64                             16/34
+  Verifying  : perl-Encode-2.51-7.el7.x86_64                              17/34
+  Verifying  : perl-Carp-1.26-244.el7.noarch                              18/34
+  Verifying  : mysql-community-server-8.0.15-1.el7.x86_64                 19/34
+  Verifying  : 4:perl-Time-HiRes-1.9725-3.el7.x86_64                      20/34
+  Verifying  : perl-Scalar-List-Utils-1.27-248.el7.x86_64                 21/34
+  Verifying  : mysql-community-client-8.0.15-1.el7.x86_64                 22/34
+  Verifying  : perl-Pod-Usage-1.63-3.el7.noarch                           23/34
+  Verifying  : mysql-community-libs-compat-8.0.15-1.el7.x86_64            24/34
+  Verifying  : mysql-community-common-8.0.15-1.el7.x86_64                 25/34
+  Verifying  : perl-Pod-Perldoc-3.20-4.el7.noarch                         26/34
+  Verifying  : perl-podlators-2.5.1-3.el7.noarch                          27/34
+  Verifying  : perl-File-Path-2.09-2.el7.noarch                           28/34
+  Verifying  : perl-threads-1.87-4.el7.x86_64                             29/34
+  Verifying  : perl-Filter-1.49-3.el7.x86_64                              30/34
+  Verifying  : perl-Getopt-Long-2.40-3.el7.noarch                         31/34
+  Verifying  : perl-Text-ParseWords-3.29-4.el7.noarch                     32/34
+  Verifying  : 4:perl-5.16.3-294.el7_6.x86_64                             33/34
+  Verifying  : 1:mariadb-libs-5.5.60-1.el7_5.x86_64                       34/34
+
+Installed:
+  mysql-community-libs.x86_64 0:8.0.15-1.el7
+  mysql-community-libs-compat.x86_64 0:8.0.15-1.el7
+  mysql-community-server.x86_64 0:8.0.15-1.el7
+
+Dependency Installed:
+  libaio.x86_64 0:0.3.109-13.el7
+  mysql-community-client.x86_64 0:8.0.15-1.el7
+  mysql-community-common.x86_64 0:8.0.15-1.el7
+  perl.x86_64 4:5.16.3-294.el7_6
+  perl-Carp.noarch 0:1.26-244.el7
+  perl-Encode.x86_64 0:2.51-7.el7
+  perl-Exporter.noarch 0:5.68-3.el7
+  perl-File-Path.noarch 0:2.09-2.el7
+  perl-File-Temp.noarch 0:0.23.01-3.el7
+  perl-Filter.x86_64 0:1.49-3.el7
+  perl-Getopt-Long.noarch 0:2.40-3.el7
+  perl-HTTP-Tiny.noarch 0:0.033-3.el7
+  perl-PathTools.x86_64 0:3.40-5.el7
+  perl-Pod-Escapes.noarch 1:1.04-294.el7_6
+  perl-Pod-Perldoc.noarch 0:3.20-4.el7
+  perl-Pod-Simple.noarch 1:3.28-4.el7
+  perl-Pod-Usage.noarch 0:1.63-3.el7
+  perl-Scalar-List-Utils.x86_64 0:1.27-248.el7
+  perl-Socket.x86_64 0:2.010-4.el7
+  perl-Storable.x86_64 0:2.45-3.el7
+  perl-Text-ParseWords.noarch 0:3.29-4.el7
+  perl-Time-HiRes.x86_64 4:1.9725-3.el7
+  perl-Time-Local.noarch 0:1.2300-2.el7
+  perl-constant.noarch 0:1.27-2.el7
+  perl-libs.x86_64 4:5.16.3-294.el7_6
+  perl-macros.x86_64 4:5.16.3-294.el7_6
+  perl-parent.noarch 1:0.225-244.el7
+  perl-podlators.noarch 0:2.5.1-3.el7
+  perl-threads.x86_64 0:1.87-4.el7
+  perl-threads-shared.x86_64 0:1.43-6.el7
+
+Replaced:
+  mariadb-libs.x86_64 1:5.5.60-1.el7_5
+
+Complete!
+[root@ip-172-31-87-210 ~]# service mysqld start
+Redirecting to /bin/systemctl start mysqld.service
+[root@ip-172-31-87-210 ~]# service mysqld status
+Redirecting to /bin/systemctl status mysqld.service
+● mysqld.service - MySQL Server
+   Loaded: loaded (/usr/lib/systemd/system/mysqld.service; enabled; vendor preset: disabled)
+   Active: active (running) since Mon 2019-02-04 08:58:16 UTC; 20s ago
+     Docs: man:mysqld(8)
+           http://dev.mysql.com/doc/refman/en/using-systemd.html
+  Process: 13323 ExecStartPre=/usr/bin/mysqld_pre_systemd (code=exited, status=0/SUCCESS)
+ Main PID: 13397 (mysqld)
+   Status: "SERVER_OPERATING"
+   CGroup: /system.slice/mysqld.service
+           └─13397 /usr/sbin/mysqld
+
+Feb 04 08:58:08 ip-172-31-87-210.ec2.internal systemd[1]: Starting MySQL Serv...
+Feb 04 08:58:16 ip-172-31-87-210.ec2.internal systemd[1]: Started MySQL Server.
+Hint: Some lines were ellipsized, use -l to show in full.
+[root@ip-172-31-87-210 ~]# grep 'temporary password' /var/log/mysqld.log
+2019-02-04T08:58:13.293295Z 5 [Note] [MY-010454] [Server] A temporary password is generated for root@localhost: id-:yiHqx4ps
+[root@ip-172-31-87-210 ~]# mysql_secure_installation
+
+Securing the MySQL server deployment.
+
+Enter password for user root:
+Error: Access denied for user 'root'@'localhost' (using password: YES)
+[root@ip-172-31-87-210 ~]# mysql_secure_installation
+
+Securing the MySQL server deployment.
+
+Enter password for user root:
+Error: Access denied for user 'root'@'localhost' (using password: YES)
+[root@ip-172-31-87-210 ~]# mysql_secure_installation
+
+Securing the MySQL server deployment.
+
+Enter password for user root:
+
+The existing password for the user account root has expired. Please set a new password.
+
+New password:
+
+Re-enter new password:
+ ... Failed! Error: Your password does not satisfy the current policy requirements
+
+New password:
+
+Re-enter new password:
+ ... Failed! Error: Your password does not satisfy the current policy requirements
+
+New password:
+
+Re-enter new password:
+ ... Failed! Error: Your password does not satisfy the current policy requirements
+
+New password:
+
+Re-enter new password:
+The 'validate_password' component is installed on the server.
+The subsequent steps will run with the existing configuration
+of the component.
+Using existing password for root.
+
+Estimated strength of the password: 100
+Change the password for root ? ((Press y|Y for Yes, any other key for No) : n
+
+ ... skipping.
+By default, a MySQL installation has an anonymous user,
+allowing anyone to log into MySQL without having to have
+a user account created for them. This is intended only for
+testing, and to make the installation go a bit smoother.
+You should remove them before moving into a production
+environment.
+
+Remove anonymous users? (Press y|Y for Yes, any other key for No) : y
+Success.
+
+
+Normally, root should only be allowed to connect from
+'localhost'. This ensures that someone cannot guess at
+the root password from the network.
+
+Disallow root login remotely? (Press y|Y for Yes, any other key for No) : n
+
+ ... skipping.
+By default, MySQL comes with a database named 'test' that
+anyone can access. This is also intended only for testing,
+and should be removed before moving into a production
+environment.
+
+
+Remove test database and access to it? (Press y|Y for Yes, any other key for No) : y
+ - Dropping test database...
+Success.
+
+ - Removing privileges on test database...
+Success.
+
+Reloading the privilege tables will ensure that all changes
+made so far will take effect immediately.
+
+Reload privilege tables now? (Press y|Y for Yes, any other key for No) : y
+Success.
+
+All done!
+[root@ip-172-31-87-210 ~]# mysql -u root -p
+Enter password:
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+[root@ip-172-31-87-210 ~]# mysql -u root -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 16
+Server version: 8.0.15 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> CREATE DATABASE sonar CHARACTER SET utf8 COLLATE utf8_general_ci;
+Query OK, 1 row affected, 2 warnings (0.01 sec)
+
+mysql> CREATE USER 'sonar' IDENTIFIED BY 'sonar';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql> CREATE USER 'sonar' IDENTIFIED BY 'sonar';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql> CREATE USER 'sonar' IDENTIFIED BY 'sonar:4091';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql> CREATE USER 'sonar' IDENTIFIED BY 'sonar@4091';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql> CREATE USER 'sonar' IDENTIFIED BY 'sonar@1234';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql> CREATE USER 'sonar' IDENTIFIED BY 'Sonar:4091';
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> GRANT ALL ON sonar.* TO 'sonar'@'%' IDENTIFIED BY 'Sonar:4091';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IDENTIFIED BY 'Sonar:4091'' at line 1
+mysql> GRANT ALL ON sonar.* TO 'sonar'@'%' IDENTIFIED BY 'Sonar:4091';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IDENTIFIED BY 'Sonar:4091'' at line 1
+mysql> GRANT ALL ON sonar.*TO 'sonar'@'%' IDENTIFIED BY 'Sonar:4091'
+    ->
+    -> ^C
+mysql> GRANT ALL ON sonar.*TO 'sonar'@'%' IDENTIFIED BY 'Sonar:4091';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IDENTIFIED BY 'Sonar:4091'' at line 1
+mysql> GRANT ALL ON sonar.* TO 'sonar' @ '%'  IDENTIFIED BY 'Sonar:4091';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''%'  IDENTIFIED BY 'Sonar:4091'' at line 1
+mysql> GRANT ALL ON sonar.* TO 'sonar'@'%'IDENTIFIED BY 'Sonar:4091';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IDENTIFIED BY 'Sonar:4091'' at line 1
+mysql> GRANT ALL ON sonar.* TO 'sonar'@'%'  IDENTIFIED BY 'Sonar:4091';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IDENTIFIED BY 'Sonar:4091'' at line 1
+mysql> GRANT ALL ON sonar.* TO 'sonar'@'%'IDENTIFIED BY 'Sonar:4091';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IDENTIFIED BY 'Sonar:4091'' at line 1
+mysql> GRANT ALL ON sonar.* TO 'sonar' @ '%' IDENTIFIED BY 'Sonar:4091';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''%' IDENTIFIED BY 'Sonar:4091'' at line 1
+mysql> GRANT ALL ON sonar.* TO 'sonar'@'%' IDENTIFIED BY 'Sonar:4091';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IDENTIFIED BY 'Sonar:4091'' at line 1
+mysql> GRANT ALL ON sonar;
+ERROR 1046 (3D000): No database selected
+mysql> GRANT ALL ON sonar.* TO 'sonar'@'web.kasrls.in' IDENTIFIED BY 'sonar';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IDENTIFIED BY 'sonar'' at line 1
+mysql> GRANT ALL ON sonar.* TO 'sonar'@'web.kasrls.in' IDENTIFIED BY 'Sonar:4091';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IDENTIFIED BY 'Sonar:4091'' at line 1
+mysql> CREATE DATABASE raja CHARACTER SET utf8 COLLATE utf8_general_ci;
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> create user 'raja' identified by 'Raja@1234'
+    -> ;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> grant all on raja.* to 'raja'@'%' identified by 'Raja@1234';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'identified by 'Raja@1234'' at line 1
+mysql> GRANT ALL PRIVILLEGES ON *.* to 'raja';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PRIVILLEGES ON *.* to 'raja'' at line 1
+mysql> GRANT ALL PRIVILLEGES ON *.* to 'raja'@ identified by 'Raja@1234';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PRIVILLEGES ON *.* to 'raja'@ identified by 'Raja@1234'' at line 1
+mysql> GRANT ALL PRIVILLEGES ON *.* to 'raja'@'localhost';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PRIVILLEGES ON *.* to 'raja'@'localhost'' at line 1
+mysql> GRANT ALL PRIVILLEGES ON *.* to 'raja';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PRIVILLEGES ON *.* to 'raja'' at line 1
+mysql> GRANT ALL PRIVILLEGES ON *.* to 'raja'@'Raja@1234';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PRIVILLEGES ON *.* to 'raja'@'Raja@1234'' at line 1
+mysql> flush privilleges;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'privilleges' at line 1
+mysql> exit
+Bye
+[root@ip-172-31-87-210 ~]# wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-6.7.6.zip
+--2019-02-04 09:30:17--  https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-6.7.6.zip
+Resolving binaries.sonarsource.com (binaries.sonarsource.com)... 91.134.125.245
+Connecting to binaries.sonarsource.com (binaries.sonarsource.com)|91.134.125.245|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 159610886 (152M) [application/zip]
+Saving to: ‘sonarqube-6.7.6.zip’
+
+100%[======================================>] 159,610,886 17.1MB/s   in 9.4s
+
+2019-02-04 09:30:27 (16.2 MB/s) - ‘sonarqube-6.7.6.zip’ saved [159610886/159610886]
+
+[root@ip-172-31-87-210 ~]# unzip sonarqube-6.7.6.zip
+-bash: unzip: command not found
+[root@ip-172-31-87-210 ~]# unzip sonarqube-6.7.6.zip
+-bash: unzip: command not found
+[root@ip-172-31-87-210 ~]# yum install unzip -y
+Loaded plugins: amazon-id, rhui-lb, search-disabled-repos
+Resolving Dependencies
+--> Running transaction check
+---> Package unzip.x86_64 0:6.0-19.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package   Arch       Version        Repository                            Size
+================================================================================
+Installing:
+ unzip     x86_64     6.0-19.el7     rhui-REGION-rhel-server-releases     170 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 170 k
+Installed size: 365 k
+Downloading packages:
+unzip-6.0-19.el7.x86_64.rpm                                | 170 kB   00:00
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : unzip-6.0-19.el7.x86_64                                      1/1
+  Verifying  : unzip-6.0-19.el7.x86_64                                      1/1
+
+Installed:
+  unzip.x86_64 0:6.0-19.el7
+
+Complete!
+[root@ip-172-31-87-210 ~]# unzip sonarqube-6.7.6.zip
+Archive:  sonarqube-6.7.6.zip
+   creating: sonarqube-6.7.6/
+   creating: sonarqube-6.7.6/lib/
+   creating: sonarqube-6.7.6/lib/common/
+   creating: sonarqube-6.7.6/bin/
+   creating: sonarqube-6.7.6/bin/macosx-universal-64/
+   creating: sonarqube-6.7.6/bin/macosx-universal-64/lib/
+   creating: sonarqube-6.7.6/bin/linux-x86-64/
+   creating: sonarqube-6.7.6/bin/linux-x86-64/lib/
+   creating: sonarqube-6.7.6/bin/linux-x86-32/
+   creating: sonarqube-6.7.6/bin/linux-x86-32/lib/
+   creating: sonarqube-6.7.6/bin/windows-x86-32/
+   creating: sonarqube-6.7.6/bin/windows-x86-32/lib/
+   creating: sonarqube-6.7.6/bin/windows-x86-64/
+   creating: sonarqube-6.7.6/bin/windows-x86-64/lib/
+   creating: sonarqube-6.7.6/elasticsearch/
+   creating: sonarqube-6.7.6/elasticsearch/bin/
+   creating: sonarqube-6.7.6/conf/
+   creating: sonarqube-6.7.6/extensions/
+   creating: sonarqube-6.7.6/extensions/plugins/
+   creating: sonarqube-6.7.6/extensions/jdbc-driver/
+   creating: sonarqube-6.7.6/extensions/jdbc-driver/oracle/
+   creating: sonarqube-6.7.6/temp/
+   creating: sonarqube-6.7.6/data/
+   creating: sonarqube-6.7.6/bin/jsw-license/
+   creating: sonarqube-6.7.6/elasticsearch/modules/
+   creating: sonarqube-6.7.6/elasticsearch/modules/ingest-common/
+   creating: sonarqube-6.7.6/elasticsearch/modules/transport-netty4/
+   creating: sonarqube-6.7.6/elasticsearch/modules/parent-join/
+   creating: sonarqube-6.7.6/elasticsearch/modules/reindex/
+   creating: sonarqube-6.7.6/elasticsearch/modules/aggs-matrix-stats/
+   creating: sonarqube-6.7.6/elasticsearch/modules/percolator/
+   creating: sonarqube-6.7.6/elasticsearch/lib/
+   creating: sonarqube-6.7.6/elasticsearch/config/
+   creating: sonarqube-6.7.6/logs/
+   creating: sonarqube-6.7.6/elasticsearch/plugins/
+   creating: sonarqube-6.7.6/lib/jsw/
+   creating: sonarqube-6.7.6/lib/server/
+   creating: sonarqube-6.7.6/lib/ce/
+   creating: sonarqube-6.7.6/lib/scanner/
+   creating: sonarqube-6.7.6/lib/bundled-plugins/
+   creating: sonarqube-6.7.6/web/
+   creating: sonarqube-6.7.6/web/META-INF/
+   creating: sonarqube-6.7.6/web/src/
+   creating: sonarqube-6.7.6/web/src/main/
+   creating: sonarqube-6.7.6/web/src/main/js/
+   creating: sonarqube-6.7.6/web/src/main/js/app/
+   creating: sonarqube-6.7.6/web/src/main/js/app/components/
+   creating: sonarqube-6.7.6/web/src/main/webapp/
+   creating: sonarqube-6.7.6/web/src/main/webapp/images/
+   creating: sonarqube-6.7.6/web/META-INF/maven/
+   creating: sonarqube-6.7.6/web/META-INF/maven/com.sonarsource/
+   creating: sonarqube-6.7.6/web/META-INF/maven/com.sonarsource/sonarsource-branding/
+   creating: sonarqube-6.7.6/web/WEB-INF/
+   creating: sonarqube-6.7.6/web/WEB-INF/classes/
+   creating: sonarqube-6.7.6/web/WEB-INF/classes/com/
+   creating: sonarqube-6.7.6/web/WEB-INF/classes/com/sonarsource/
+   creating: sonarqube-6.7.6/web/fonts/
+   creating: sonarqube-6.7.6/web/images/
+   creating: sonarqube-6.7.6/web/images/scanner-logos/
+   creating: sonarqube-6.7.6/web/js/
+   creating: sonarqube-6.7.6/web/css/
+   creating: sonarqube-6.7.6/web/META-INF/maven/org.sonarsource.sonarqube/
+   creating: sonarqube-6.7.6/web/META-INF/maven/org.sonarsource.sonarqube/sonar-web/
+   creating: sonarqube-6.7.6/lib/jdbc/
+   creating: sonarqube-6.7.6/lib/jdbc/mssql/
+   creating: sonarqube-6.7.6/lib/jdbc/mysql/
+   creating: sonarqube-6.7.6/lib/jdbc/postgresql/
+   creating: sonarqube-6.7.6/lib/jdbc/h2/
+  inflating: sonarqube-6.7.6/web/META-INF/MANIFEST.MF
+  inflating: sonarqube-6.7.6/web/src/main/js/app/components/GlobalFooterBranding.js
+  inflating: sonarqube-6.7.6/web/robots.txt
+  inflating: sonarqube-6.7.6/web/.htaccess
+  inflating: sonarqube-6.7.6/web/apple-touch-icon-120x120.png
+  inflating: sonarqube-6.7.6/web/js/3.fab59ed4.chunk.js
+  inflating: sonarqube-6.7.6/web/js/5.076bb6d1.chunk.js
+  inflating: sonarqube-6.7.6/web/js/7.299b4bee.chunk.js
+  inflating: sonarqube-6.7.6/web/js/9.38b4751c.chunk.js
+  inflating: sonarqube-6.7.6/web/js/11.d51bfadd.chunk.js
+  inflating: sonarqube-6.7.6/web/js/13.ed441df2.chunk.js
+  inflating: sonarqube-6.7.6/web/js/15.9dfb824d.chunk.js
+  inflating: sonarqube-6.7.6/web/js/17.3720a8fa.chunk.js
+  inflating: sonarqube-6.7.6/web/js/19.e909fd3f.chunk.js
+  inflating: sonarqube-6.7.6/web/js/21.dc6bb2f9.chunk.js
+  inflating: sonarqube-6.7.6/web/js/22.012ef223.chunk.js
+  inflating: sonarqube-6.7.6/web/js/25.2dc853f9.chunk.js
+  inflating: sonarqube-6.7.6/web/js/27.618e5d53.chunk.js
+  inflating: sonarqube-6.7.6/web/js/29.921cbe76.chunk.js
+  inflating: sonarqube-6.7.6/web/js/31.8a7cb6c5.chunk.js
+  inflating: sonarqube-6.7.6/web/js/32.9f0698dc.chunk.js
+  inflating: sonarqube-6.7.6/web/js/35.d090ddd2.chunk.js
+  inflating: sonarqube-6.7.6/web/js/37.3ddbe747.chunk.js
+  inflating: sonarqube-6.7.6/web/js/39.978485c1.chunk.js
+  inflating: sonarqube-6.7.6/web/js/41.12a81d3c.chunk.js
+  inflating: sonarqube-6.7.6/web/js/43.2af755aa.chunk.js
+  inflating: sonarqube-6.7.6/web/js/52.a39a7aaa.chunk.js
+  inflating: sonarqube-6.7.6/web/js/54.6c94f040.chunk.js
+  inflating: sonarqube-6.7.6/web/js/56.241e4676.chunk.js
+  inflating: sonarqube-6.7.6/web/js/58.8f42db19.chunk.js
+  inflating: sonarqube-6.7.6/web/js/60.eee5f561.chunk.js
+  inflating: sonarqube-6.7.6/web/js/61.f4335f14.chunk.js
+  inflating: sonarqube-6.7.6/web/js/63.72851e47.chunk.js
+  inflating: sonarqube-6.7.6/web/js/65.c2e0c78a.chunk.js
+  inflating: sonarqube-6.7.6/web/js/67.ab72a29d.chunk.js
+  inflating: sonarqube-6.7.6/web/js/69.c7a1a484.chunk.js
+  inflating: sonarqube-6.7.6/web/js/71.6967aa6d.chunk.js
+  inflating: sonarqube-6.7.6/web/js/73.a0345551.chunk.js
+  inflating: sonarqube-6.7.6/web/js/75.35ad7c63.chunk.js
+  inflating: sonarqube-6.7.6/web/js/78.76f47b09.chunk.js
+  inflating: sonarqube-6.7.6/web/js/79.d2273a23.chunk.js
+  inflating: sonarqube-6.7.6/web/js/81.b83a35bb.chunk.js
+  inflating: sonarqube-6.7.6/web/js/83.7ed4d307.chunk.js
+  inflating: sonarqube-6.7.6/web/js/85.81ee0315.chunk.js
+  inflating: sonarqube-6.7.6/web/js/87.ef969445.chunk.js
+  inflating: sonarqube-6.7.6/web/js/89.d4dfb79d.chunk.js
+  inflating: sonarqube-6.7.6/web/js/91.fc64d24c.chunk.js
+  inflating: sonarqube-6.7.6/web/js/156.b104db10.chunk.js
+  inflating: sonarqube-6.7.6/web/js/158.c5407a66.chunk.js
+  inflating: sonarqube-6.7.6/web/js/160.6c94f065.chunk.js
+  inflating: sonarqube-6.7.6/web/js/163.ce8f3177.chunk.js
+  inflating: sonarqube-6.7.6/web/js/165.a8e3636e.chunk.js
+  inflating: sonarqube-6.7.6/web/js/167.a4dcc61a.chunk.js
+  inflating: sonarqube-6.7.6/web/js/169.74bafdee.chunk.js
+  inflating: sonarqube-6.7.6/web/js/172.56fd4846.chunk.js
+  inflating: sonarqube-6.7.6/web/js/174.120cf625.chunk.js
+  inflating: sonarqube-6.7.6/web/js/176.43ec5654.chunk.js
+  inflating: sonarqube-6.7.6/web/js/178.86ae928b.chunk.js
+  inflating: sonarqube-6.7.6/web/js/180.bae974c4.chunk.js
+  inflating: sonarqube-6.7.6/web/js/182.9ed04744.chunk.js
+  inflating: sonarqube-6.7.6/web/js/185.2f0db85f.chunk.js
+  inflating: sonarqube-6.7.6/web/js/187.8d5f56bc.chunk.js
+  inflating: sonarqube-6.7.6/web/js/190.59d28ed1.chunk.js
+  inflating: sonarqube-6.7.6/web/js/192.d39c198a.chunk.js
+  inflating: sonarqube-6.7.6/web/js/193.1a451b5b.chunk.js
+  inflating: sonarqube-6.7.6/web/js/195.e330d0cb.chunk.js
+  inflating: sonarqube-6.7.6/web/js/198.22287e7a.chunk.js
+  inflating: sonarqube-6.7.6/web/js/199.df681237.chunk.js
+  inflating: sonarqube-6.7.6/web/js/201.aeb57798.chunk.js
+  inflating: sonarqube-6.7.6/web/js/204.4dfaa05e.chunk.js
+  inflating: sonarqube-6.7.6/web/js/206.4a04f9d8.chunk.js
+  inflating: sonarqube-6.7.6/web/js/208.d486e717.chunk.js
+  inflating: sonarqube-6.7.6/web/js/211.00b71e29.chunk.js
+  inflating: sonarqube-6.7.6/web/js/213.1f00b19b.chunk.js
+  inflating: sonarqube-6.7.6/web/js/215.e96b8c42.chunk.js
+  inflating: sonarqube-6.7.6/web/js/216.a0706a56.chunk.js
+  inflating: sonarqube-6.7.6/web/js/218.3a31dd4c.chunk.js
+  inflating: sonarqube-6.7.6/web/js/221.9801125b.chunk.js
+  inflating: sonarqube-6.7.6/web/js/223.59713040.chunk.js
+  inflating: sonarqube-6.7.6/web/js/225.a94e605c.chunk.js
+  inflating: sonarqube-6.7.6/web/js/227.77a3c7bb.chunk.js
+  inflating: sonarqube-6.7.6/web/js/228.c892df9e.chunk.js
+  inflating: sonarqube-6.7.6/web/js/230.3fafcf2d.chunk.js
+  inflating: sonarqube-6.7.6/web/js/233.151aa2e7.chunk.js
+  inflating: sonarqube-6.7.6/web/js/235.43f5dcfa.chunk.js
+  inflating: sonarqube-6.7.6/web/js/0.65b6d563.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/1.5648eb5b.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/26.a6bc9c25.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/27.618e5d53.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/28.214b8656.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/29.921cbe76.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/30.0aeaea95.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/31.8a7cb6c5.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/32.9f0698dc.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/33.fe821895.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/34.d10fd8b1.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/35.d090ddd2.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/36.0e8a69f6.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/37.3ddbe747.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/38.897e2689.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/39.978485c1.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/40.36e23877.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/41.12a81d3c.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/42.dd7ce10a.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/43.2af755aa.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/44.68f7c38b.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/45.298aefc6.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/46.ee5ad4ee.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/47.6b456b6f.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/48.4def6464.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/49.96c960b2.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/50.b678391f.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/51.eb77c8eb.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/52.a39a7aaa.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/53.372154a2.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/54.6c94f040.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/55.776746b2.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/56.241e4676.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/57.861ba649.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/58.8f42db19.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/59.c08a3a46.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/60.eee5f561.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/61.f4335f14.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/62.4eef70fc.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/63.72851e47.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/64.be54d415.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/65.c2e0c78a.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/66.73b9b4f6.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/67.ab72a29d.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/68.a81cdb85.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/69.c7a1a484.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/70.cab53312.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/71.6967aa6d.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/72.39411cef.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/73.a0345551.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/74.d2523541.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/75.35ad7c63.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/76.d8cc8a97.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/77.73d4b73a.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/78.76f47b09.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/79.d2273a23.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/80.9371e8a9.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/81.b83a35bb.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/82.71824896.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/83.7ed4d307.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/84.1950451c.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/85.81ee0315.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/86.4556b62a.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/87.ef969445.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/145.eb7e5d31.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/147.f18bc4ef.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/149.33b30dfa.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/151.ea5b99dc.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/153.b45eb236.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/172.56fd4846.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/174.120cf625.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/175.67b131c8.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/176.43ec5654.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/177.93dcb1f3.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/178.86ae928b.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/179.24b71709.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/180.bae974c4.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/181.416bbbdf.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/182.9ed04744.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/183.d9991578.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/184.cfa90fc6.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/185.2f0db85f.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/186.64257b14.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/187.8d5f56bc.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/188.59a6387e.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/189.5a4aa447.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/190.59d28ed1.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/191.51b597c3.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/192.d39c198a.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/193.1a451b5b.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/194.b80037fb.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/195.e330d0cb.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/196.1b5fe87b.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/197.8f52c24f.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/198.22287e7a.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/199.df681237.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/200.17d6bbbd.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/201.aeb57798.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/202.08028c9b.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/203.7ee91e94.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/204.4dfaa05e.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/205.cdcb0571.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/206.4a04f9d8.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/207.e1e0715d.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/208.d486e717.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/209.8340964f.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/210.d156e1fc.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/211.00b71e29.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/212.9be2971f.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/213.1f00b19b.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/214.60a69d65.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/215.e96b8c42.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/216.a0706a56.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/217.d94d3e09.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/221.9801125b.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/222.347b6392.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/223.59713040.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/224.3bd6e8ef.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/225.a94e605c.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/227.77a3c7bb.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/228.c892df9e.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/230.3fafcf2d.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/233.151aa2e7.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/235.43f5dcfa.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/243.22510a9b.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/248.99897e27.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/249.1b402237.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/251.f8a590b7.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/253.fa75cf74.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/255.c90bfed4.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/257.91684c57.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/259.ad744d5c.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/261.6975b132.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/263.05d65cbf.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/266.dabeed39.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/268.a2db9399.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/269.9c1f65f0.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/271.558c6e02.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/273.35a1be39.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/275.f3ba00a4.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/276.47a6b528.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/277.c254f90b.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/278.0ed03a81.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/279.90dd9b94.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/280.cb89a2ee.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/app.9b56e4b1.js.map
+  inflating: sonarqube-6.7.6/web/src/main/webapp/images/logo.svg
+  inflating: sonarqube-6.7.6/web/apple-touch-icon-57x57.png
+  inflating: sonarqube-6.7.6/web/apple-touch-icon-180x180.png
+  inflating: sonarqube-6.7.6/web/apple-touch-icon-60x60.png
+  inflating: sonarqube-6.7.6/web/favicon.ico
+  inflating: sonarqube-6.7.6/web/index.html
+  inflating: sonarqube-6.7.6/web/META-INF/maven/com.sonarsource/sonarsource-branding/pom.xml
+  inflating: sonarqube-6.7.6/web/fonts/sonar-5.2.woff
+  inflating: sonarqube-6.7.6/web/fonts/sonar-5.2.ttf
+  inflating: sonarqube-6.7.6/web/images/logo.svg
+  inflating: sonarqube-6.7.6/web/images/select2.png
+  inflating: sonarqube-6.7.6/web/images/loading.gif
+  inflating: sonarqube-6.7.6/web/images/select2x2.png
+  inflating: sonarqube-6.7.6/web/images/scanner-logos/msbuild.svg
+  inflating: sonarqube-6.7.6/web/images/scanner-logos/maven.svg
+  inflating: sonarqube-6.7.6/web/images/scanner-logos/jenkins.svg
+  inflating: sonarqube-6.7.6/web/images/scanner-logos/sonarqube.svg
+  inflating: sonarqube-6.7.6/web/images/scanner-logos/ant.svg
+  inflating: sonarqube-6.7.6/web/js/1.5648eb5b.chunk.js
+  inflating: sonarqube-6.7.6/web/js/237.d24591c3.chunk.js
+  inflating: sonarqube-6.7.6/web/js/238.b37380a8.chunk.js
+  inflating: sonarqube-6.7.6/web/js/239.de87b0aa.chunk.js
+  inflating: sonarqube-6.7.6/web/js/vendor.1a4350d0.js
+  inflating: sonarqube-6.7.6/web/js/241.abf924f5.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/244.1c7af17a.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/247.9ef0e705.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/252.623af49e.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/254.7104cf95.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/258.15ca7660.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/262.166cedeb.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/265.cb54965a.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/267.a2e103ee.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/270.7af7c8a1.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/272.5a2a036e.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/274.e06a0df2.chunk.js.map
+  inflating: sonarqube-6.7.6/web/apple-touch-icon-72x72.png
+  inflating: sonarqube-6.7.6/web/apple-touch-icon-76x76.png
+  inflating: sonarqube-6.7.6/web/mstile-512x512.png
+  inflating: sonarqube-6.7.6/web/apple-touch-icon-precomposed.png
+  inflating: sonarqube-6.7.6/web/apple-touch-icon-152x152.png
+  inflating: sonarqube-6.7.6/web/apple-touch-icon-114x114.png
+  inflating: sonarqube-6.7.6/web/META-INF/maven/com.sonarsource/sonarsource-branding/pom.properties
+  inflating: sonarqube-6.7.6/web/WEB-INF/classes/com/sonarsource/branding
+  inflating: sonarqube-6.7.6/web/WEB-INF/web.xml
+  inflating: sonarqube-6.7.6/web/fonts/sonar-5.2.eot
+  inflating: sonarqube-6.7.6/web/fonts/sonar-5.2.svg
+  inflating: sonarqube-6.7.6/web/images/scanner-logos/gradle.svg
+  inflating: sonarqube-6.7.6/web/js/0.65b6d563.chunk.js
+  inflating: sonarqube-6.7.6/web/js/72.39411cef.chunk.js
+  inflating: sonarqube-6.7.6/web/js/74.d2523541.chunk.js
+  inflating: sonarqube-6.7.6/web/js/76.d8cc8a97.chunk.js
+  inflating: sonarqube-6.7.6/web/js/77.73d4b73a.chunk.js
+  inflating: sonarqube-6.7.6/web/js/80.9371e8a9.chunk.js
+  inflating: sonarqube-6.7.6/web/js/82.71824896.chunk.js
+  inflating: sonarqube-6.7.6/web/js/84.1950451c.chunk.js
+  inflating: sonarqube-6.7.6/web/js/86.4556b62a.chunk.js
+  inflating: sonarqube-6.7.6/web/js/88.aaddebd4.chunk.js
+  inflating: sonarqube-6.7.6/web/js/90.2cc5e44c.chunk.js
+  inflating: sonarqube-6.7.6/web/js/92.eaf4f942.chunk.js
+  inflating: sonarqube-6.7.6/web/js/93.36e8cf31.chunk.js
+  inflating: sonarqube-6.7.6/web/js/94.119abf02.chunk.js
+  inflating: sonarqube-6.7.6/web/js/95.6c63911a.chunk.js
+  inflating: sonarqube-6.7.6/web/js/96.432e50fa.chunk.js
+  inflating: sonarqube-6.7.6/web/js/97.38840f5f.chunk.js
+  inflating: sonarqube-6.7.6/web/js/98.22360720.chunk.js
+  inflating: sonarqube-6.7.6/web/js/99.f06852d3.chunk.js
+  inflating: sonarqube-6.7.6/web/js/100.ca215765.chunk.js
+  inflating: sonarqube-6.7.6/web/js/101.813539ea.chunk.js
+  inflating: sonarqube-6.7.6/web/js/102.34be4854.chunk.js
+  inflating: sonarqube-6.7.6/web/js/103.038aedcf.chunk.js
+  inflating: sonarqube-6.7.6/web/js/104.01d1df1d.chunk.js
+  inflating: sonarqube-6.7.6/web/js/105.16bd75e3.chunk.js
+  inflating: sonarqube-6.7.6/web/js/106.bca3e21a.chunk.js
+  inflating: sonarqube-6.7.6/web/js/107.74672043.chunk.js
+  inflating: sonarqube-6.7.6/web/js/108.c5a6a319.chunk.js
+  inflating: sonarqube-6.7.6/web/js/109.4f6bfdff.chunk.js
+  inflating: sonarqube-6.7.6/web/js/110.d387162b.chunk.js
+  inflating: sonarqube-6.7.6/web/js/111.738be675.chunk.js
+  inflating: sonarqube-6.7.6/web/js/112.c10873ad.chunk.js
+  inflating: sonarqube-6.7.6/web/js/113.37ef9487.chunk.js
+  inflating: sonarqube-6.7.6/web/js/114.4d28bf93.chunk.js
+  inflating: sonarqube-6.7.6/web/js/115.3c43bdb7.chunk.js
+  inflating: sonarqube-6.7.6/web/js/116.c607d385.chunk.js
+  inflating: sonarqube-6.7.6/web/js/117.3f42d10c.chunk.js
+  inflating: sonarqube-6.7.6/web/js/118.92efdf75.chunk.js
+  inflating: sonarqube-6.7.6/web/js/119.244133cf.chunk.js
+  inflating: sonarqube-6.7.6/web/js/120.f95f74cd.chunk.js
+  inflating: sonarqube-6.7.6/web/js/121.6eb3c0f3.chunk.js
+  inflating: sonarqube-6.7.6/web/js/122.6921070f.chunk.js
+  inflating: sonarqube-6.7.6/web/js/123.0d4a9e0d.chunk.js
+  inflating: sonarqube-6.7.6/web/js/124.46e12172.chunk.js
+  inflating: sonarqube-6.7.6/web/js/125.03c16ed9.chunk.js
+  inflating: sonarqube-6.7.6/web/js/126.c22a3b74.chunk.js
+  inflating: sonarqube-6.7.6/web/js/127.09266314.chunk.js
+  inflating: sonarqube-6.7.6/web/js/128.170e97af.chunk.js
+  inflating: sonarqube-6.7.6/web/js/129.bb891ec9.chunk.js
+  inflating: sonarqube-6.7.6/web/js/130.61cd9a2b.chunk.js
+  inflating: sonarqube-6.7.6/web/js/131.83745a03.chunk.js
+  inflating: sonarqube-6.7.6/web/js/132.a11bb174.chunk.js
+  inflating: sonarqube-6.7.6/web/js/133.caa86ced.chunk.js
+  inflating: sonarqube-6.7.6/web/js/134.0fcf8274.chunk.js
+  inflating: sonarqube-6.7.6/web/js/135.9f7419a6.chunk.js
+  inflating: sonarqube-6.7.6/web/js/136.b702a3ec.chunk.js
+  inflating: sonarqube-6.7.6/web/js/137.c7a46c0c.chunk.js
+  inflating: sonarqube-6.7.6/web/js/138.3eba599a.chunk.js
+  inflating: sonarqube-6.7.6/web/js/139.34cd2e4c.chunk.js
+  inflating: sonarqube-6.7.6/web/js/140.4f556cef.chunk.js
+  inflating: sonarqube-6.7.6/web/js/141.2f3342fd.chunk.js
+  inflating: sonarqube-6.7.6/web/js/142.5129cc7a.chunk.js
+  inflating: sonarqube-6.7.6/web/js/143.ab902bb0.chunk.js
+  inflating: sonarqube-6.7.6/web/js/144.46a2db08.chunk.js
+  inflating: sonarqube-6.7.6/web/js/145.eb7e5d31.chunk.js
+  inflating: sonarqube-6.7.6/web/js/146.b1b54995.chunk.js
+  inflating: sonarqube-6.7.6/web/js/147.f18bc4ef.chunk.js
+  inflating: sonarqube-6.7.6/web/js/148.c32ea824.chunk.js
+  inflating: sonarqube-6.7.6/web/js/149.33b30dfa.chunk.js
+  inflating: sonarqube-6.7.6/web/js/150.d4bc66fe.chunk.js
+  inflating: sonarqube-6.7.6/web/js/151.ea5b99dc.chunk.js
+  inflating: sonarqube-6.7.6/web/js/152.4ad5f84f.chunk.js
+  inflating: sonarqube-6.7.6/web/js/153.b45eb236.chunk.js
+  inflating: sonarqube-6.7.6/web/js/154.06ddfe19.chunk.js
+  inflating: sonarqube-6.7.6/web/js/155.8efc77d0.chunk.js
+  inflating: sonarqube-6.7.6/web/js/157.ce6178bf.chunk.js
+  inflating: sonarqube-6.7.6/web/js/159.95cad9ed.chunk.js
+  inflating: sonarqube-6.7.6/web/js/161.e7129621.chunk.js
+  inflating: sonarqube-6.7.6/web/js/162.940e92cf.chunk.js
+  inflating: sonarqube-6.7.6/web/js/164.7b348423.chunk.js
+  inflating: sonarqube-6.7.6/web/js/166.30fb1b14.chunk.js
+  inflating: sonarqube-6.7.6/web/js/168.5a2bfb62.chunk.js
+  inflating: sonarqube-6.7.6/web/js/170.8077b47a.chunk.js
+  inflating: sonarqube-6.7.6/web/js/171.ccf0c51d.chunk.js
+  inflating: sonarqube-6.7.6/web/js/173.91752667.chunk.js
+  inflating: sonarqube-6.7.6/web/js/175.67b131c8.chunk.js
+  inflating: sonarqube-6.7.6/web/js/177.93dcb1f3.chunk.js
+  inflating: sonarqube-6.7.6/web/js/179.24b71709.chunk.js
+  inflating: sonarqube-6.7.6/web/js/181.416bbbdf.chunk.js
+  inflating: sonarqube-6.7.6/web/js/183.d9991578.chunk.js
+  inflating: sonarqube-6.7.6/web/js/184.cfa90fc6.chunk.js
+  inflating: sonarqube-6.7.6/web/js/186.64257b14.chunk.js
+  inflating: sonarqube-6.7.6/web/js/188.59a6387e.chunk.js
+  inflating: sonarqube-6.7.6/web/js/189.5a4aa447.chunk.js
+  inflating: sonarqube-6.7.6/web/js/191.51b597c3.chunk.js
+  inflating: sonarqube-6.7.6/web/js/194.b80037fb.chunk.js
+  inflating: sonarqube-6.7.6/web/js/196.1b5fe87b.chunk.js
+  inflating: sonarqube-6.7.6/web/js/197.8f52c24f.chunk.js
+  inflating: sonarqube-6.7.6/web/js/200.17d6bbbd.chunk.js
+  inflating: sonarqube-6.7.6/web/js/202.08028c9b.chunk.js
+  inflating: sonarqube-6.7.6/web/js/203.7ee91e94.chunk.js
+  inflating: sonarqube-6.7.6/web/js/205.cdcb0571.chunk.js
+  inflating: sonarqube-6.7.6/web/js/207.e1e0715d.chunk.js
+  inflating: sonarqube-6.7.6/web/js/209.8340964f.chunk.js
+  inflating: sonarqube-6.7.6/web/js/210.d156e1fc.chunk.js
+  inflating: sonarqube-6.7.6/web/js/212.9be2971f.chunk.js
+  inflating: sonarqube-6.7.6/web/js/214.60a69d65.chunk.js
+  inflating: sonarqube-6.7.6/web/js/217.d94d3e09.chunk.js
+  inflating: sonarqube-6.7.6/web/js/219.8d9d74c2.chunk.js
+  inflating: sonarqube-6.7.6/web/js/220.fa9f5676.chunk.js
+  inflating: sonarqube-6.7.6/web/js/222.347b6392.chunk.js
+  inflating: sonarqube-6.7.6/web/js/224.3bd6e8ef.chunk.js
+  inflating: sonarqube-6.7.6/web/js/226.3bc6cbfd.chunk.js
+  inflating: sonarqube-6.7.6/web/js/229.37505d91.chunk.js
+  inflating: sonarqube-6.7.6/web/js/231.2e8a1da5.chunk.js
+  inflating: sonarqube-6.7.6/web/js/232.244b3571.chunk.js
+  inflating: sonarqube-6.7.6/web/js/234.bacc2f78.chunk.js
+  inflating: sonarqube-6.7.6/web/js/236.c1633180.chunk.js
+  inflating: sonarqube-6.7.6/web/js/243.22510a9b.chunk.js
+  inflating: sonarqube-6.7.6/web/js/245.35e07eab.chunk.js
+  inflating: sonarqube-6.7.6/web/js/246.3bd0bf0f.chunk.js
+  inflating: sonarqube-6.7.6/web/js/247.9ef0e705.chunk.js
+  inflating: sonarqube-6.7.6/web/js/248.99897e27.chunk.js
+  inflating: sonarqube-6.7.6/web/js/249.1b402237.chunk.js
+  inflating: sonarqube-6.7.6/web/js/257.91684c57.chunk.js
+  inflating: sonarqube-6.7.6/web/js/258.15ca7660.chunk.js
+  inflating: sonarqube-6.7.6/web/js/259.ad744d5c.chunk.js
+  inflating: sonarqube-6.7.6/web/js/260.254c8ba7.chunk.js
+  inflating: sonarqube-6.7.6/web/js/261.6975b132.chunk.js
+  inflating: sonarqube-6.7.6/web/js/262.166cedeb.chunk.js
+  inflating: sonarqube-6.7.6/web/js/263.05d65cbf.chunk.js
+  inflating: sonarqube-6.7.6/web/js/264.cf13858a.chunk.js
+  inflating: sonarqube-6.7.6/web/js/265.cb54965a.chunk.js
+  inflating: sonarqube-6.7.6/web/js/266.dabeed39.chunk.js
+  inflating: sonarqube-6.7.6/web/js/267.a2e103ee.chunk.js
+  inflating: sonarqube-6.7.6/web/js/268.a2db9399.chunk.js
+  inflating: sonarqube-6.7.6/web/js/269.9c1f65f0.chunk.js
+  inflating: sonarqube-6.7.6/web/js/270.7af7c8a1.chunk.js
+  inflating: sonarqube-6.7.6/web/js/271.558c6e02.chunk.js
+  inflating: sonarqube-6.7.6/web/js/272.5a2a036e.chunk.js
+  inflating: sonarqube-6.7.6/web/js/273.35a1be39.chunk.js
+  inflating: sonarqube-6.7.6/web/js/274.e06a0df2.chunk.js
+  inflating: sonarqube-6.7.6/web/js/275.f3ba00a4.chunk.js
+  inflating: sonarqube-6.7.6/web/js/276.47a6b528.chunk.js
+  inflating: sonarqube-6.7.6/web/js/277.c254f90b.chunk.js
+  inflating: sonarqube-6.7.6/web/js/278.0ed03a81.chunk.js
+  inflating: sonarqube-6.7.6/web/js/279.90dd9b94.chunk.js
+  inflating: sonarqube-6.7.6/web/js/280.cb89a2ee.chunk.js
+  inflating: sonarqube-6.7.6/web/js/app.9b56e4b1.js
+  inflating: sonarqube-6.7.6/web/js/237.d24591c3.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/238.b37380a8.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/220.fa9f5676.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/219.8d9d74c2.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/218.3a31dd4c.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/240.70855aa1.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/242.34792898.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/245.35e07eab.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/246.3bd0bf0f.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/250.3614943e.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/256.ddea8d48.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/260.254c8ba7.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/264.cf13858a.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/vendor.1a4350d0.js.map
+  inflating: sonarqube-6.7.6/web/apple-touch-icon.png
+  inflating: sonarqube-6.7.6/web/apple-touch-icon-144x144.png
+  inflating: sonarqube-6.7.6/web/js/2.93d00213.chunk.js
+  inflating: sonarqube-6.7.6/web/js/4.b4dc746c.chunk.js
+  inflating: sonarqube-6.7.6/web/js/6.a9e4b8c3.chunk.js
+  inflating: sonarqube-6.7.6/web/js/8.11f2bc4a.chunk.js
+  inflating: sonarqube-6.7.6/web/js/10.9dd62640.chunk.js
+  inflating: sonarqube-6.7.6/web/js/12.452b315c.chunk.js
+  inflating: sonarqube-6.7.6/web/js/14.f909d56d.chunk.js
+  inflating: sonarqube-6.7.6/web/js/16.f3caea41.chunk.js
+  inflating: sonarqube-6.7.6/web/js/18.348ab977.chunk.js
+  inflating: sonarqube-6.7.6/web/js/20.87cfbba0.chunk.js
+  inflating: sonarqube-6.7.6/web/js/23.fb41e83d.chunk.js
+  inflating: sonarqube-6.7.6/web/js/24.93924a6f.chunk.js
+  inflating: sonarqube-6.7.6/web/js/26.a6bc9c25.chunk.js
+  inflating: sonarqube-6.7.6/web/js/28.214b8656.chunk.js
+  inflating: sonarqube-6.7.6/web/js/30.0aeaea95.chunk.js
+  inflating: sonarqube-6.7.6/web/js/33.fe821895.chunk.js
+  inflating: sonarqube-6.7.6/web/js/34.d10fd8b1.chunk.js
+  inflating: sonarqube-6.7.6/web/js/36.0e8a69f6.chunk.js
+  inflating: sonarqube-6.7.6/web/js/38.897e2689.chunk.js
+  inflating: sonarqube-6.7.6/web/js/40.36e23877.chunk.js
+  inflating: sonarqube-6.7.6/web/js/42.dd7ce10a.chunk.js
+  inflating: sonarqube-6.7.6/web/js/44.68f7c38b.chunk.js
+  inflating: sonarqube-6.7.6/web/js/45.298aefc6.chunk.js
+  inflating: sonarqube-6.7.6/web/js/46.ee5ad4ee.chunk.js
+  inflating: sonarqube-6.7.6/web/js/47.6b456b6f.chunk.js
+  inflating: sonarqube-6.7.6/web/js/48.4def6464.chunk.js
+  inflating: sonarqube-6.7.6/web/js/49.96c960b2.chunk.js
+  inflating: sonarqube-6.7.6/web/js/50.b678391f.chunk.js
+  inflating: sonarqube-6.7.6/web/js/51.eb77c8eb.chunk.js
+  inflating: sonarqube-6.7.6/web/js/53.372154a2.chunk.js
+  inflating: sonarqube-6.7.6/web/js/55.776746b2.chunk.js
+  inflating: sonarqube-6.7.6/web/js/57.861ba649.chunk.js
+  inflating: sonarqube-6.7.6/web/js/59.c08a3a46.chunk.js
+  inflating: sonarqube-6.7.6/web/js/62.4eef70fc.chunk.js
+  inflating: sonarqube-6.7.6/web/js/64.be54d415.chunk.js
+  inflating: sonarqube-6.7.6/web/js/66.73b9b4f6.chunk.js
+  inflating: sonarqube-6.7.6/web/js/68.a81cdb85.chunk.js
+  inflating: sonarqube-6.7.6/web/js/70.cab53312.chunk.js
+  inflating: sonarqube-6.7.6/web/js/240.70855aa1.chunk.js
+  inflating: sonarqube-6.7.6/web/js/241.abf924f5.chunk.js
+  inflating: sonarqube-6.7.6/web/js/242.34792898.chunk.js
+  inflating: sonarqube-6.7.6/web/js/244.1c7af17a.chunk.js
+  inflating: sonarqube-6.7.6/web/js/250.3614943e.chunk.js
+  inflating: sonarqube-6.7.6/web/js/251.f8a590b7.chunk.js
+  inflating: sonarqube-6.7.6/web/js/252.623af49e.chunk.js
+  inflating: sonarqube-6.7.6/web/js/253.fa75cf74.chunk.js
+  inflating: sonarqube-6.7.6/web/js/254.7104cf95.chunk.js
+  inflating: sonarqube-6.7.6/web/js/255.c90bfed4.chunk.js
+  inflating: sonarqube-6.7.6/web/js/256.ddea8d48.chunk.js
+  inflating: sonarqube-6.7.6/web/js/2.93d00213.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/3.fab59ed4.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/4.b4dc746c.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/5.076bb6d1.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/6.a9e4b8c3.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/7.299b4bee.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/8.11f2bc4a.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/9.38b4751c.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/10.9dd62640.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/11.d51bfadd.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/12.452b315c.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/13.ed441df2.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/14.f909d56d.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/15.9dfb824d.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/16.f3caea41.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/17.3720a8fa.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/18.348ab977.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/19.e909fd3f.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/20.87cfbba0.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/21.dc6bb2f9.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/22.012ef223.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/23.fb41e83d.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/24.93924a6f.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/25.2dc853f9.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/88.aaddebd4.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/89.d4dfb79d.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/90.2cc5e44c.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/91.fc64d24c.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/92.eaf4f942.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/93.36e8cf31.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/94.119abf02.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/95.6c63911a.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/96.432e50fa.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/97.38840f5f.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/98.22360720.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/99.f06852d3.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/100.ca215765.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/101.813539ea.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/102.34be4854.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/103.038aedcf.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/104.01d1df1d.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/105.16bd75e3.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/106.bca3e21a.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/107.74672043.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/108.c5a6a319.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/109.4f6bfdff.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/110.d387162b.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/111.738be675.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/112.c10873ad.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/113.37ef9487.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/114.4d28bf93.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/115.3c43bdb7.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/116.c607d385.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/117.3f42d10c.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/118.92efdf75.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/119.244133cf.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/120.f95f74cd.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/121.6eb3c0f3.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/122.6921070f.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/123.0d4a9e0d.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/124.46e12172.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/125.03c16ed9.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/126.c22a3b74.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/127.09266314.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/128.170e97af.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/129.bb891ec9.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/130.61cd9a2b.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/131.83745a03.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/132.a11bb174.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/133.caa86ced.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/134.0fcf8274.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/135.9f7419a6.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/136.b702a3ec.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/137.c7a46c0c.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/138.3eba599a.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/139.34cd2e4c.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/140.4f556cef.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/141.2f3342fd.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/142.5129cc7a.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/143.ab902bb0.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/144.46a2db08.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/146.b1b54995.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/148.c32ea824.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/150.d4bc66fe.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/152.4ad5f84f.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/154.06ddfe19.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/155.8efc77d0.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/156.b104db10.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/157.ce6178bf.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/158.c5407a66.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/159.95cad9ed.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/160.6c94f065.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/161.e7129621.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/162.940e92cf.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/163.ce8f3177.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/164.7b348423.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/165.a8e3636e.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/166.30fb1b14.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/167.a4dcc61a.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/168.5a2bfb62.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/169.74bafdee.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/170.8077b47a.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/171.ccf0c51d.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/173.91752667.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/226.3bc6cbfd.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/229.37505d91.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/231.2e8a1da5.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/232.244b3571.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/234.bacc2f78.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/236.c1633180.chunk.js.map
+  inflating: sonarqube-6.7.6/web/js/239.de87b0aa.chunk.js.map
+  inflating: sonarqube-6.7.6/web/css/sonar.9b56e4b1.css
+  inflating: sonarqube-6.7.6/web/css/sonar.9b56e4b1.css.map
+  inflating: sonarqube-6.7.6/web/META-INF/maven/org.sonarsource.sonarqube/sonar-web/pom.xml
+  inflating: sonarqube-6.7.6/web/META-INF/maven/org.sonarsource.sonarqube/sonar-web/pom.properties
+  inflating: sonarqube-6.7.6/lib/common/parent-join-client-5.6.3.jar
+  inflating: sonarqube-6.7.6/lib/common/httpasyncclient-4.1.2.jar
+  inflating: sonarqube-6.7.6/lib/common/elasticsearch-rest-client-5.6.3.jar
+  inflating: sonarqube-6.7.6/lib/common/reindex-client-5.6.3.jar
+  inflating: sonarqube-6.7.6/lib/common/netty-transport-4.1.13.Final.jar
+  inflating: sonarqube-6.7.6/lib/common/netty-codec-http-4.1.13.Final.jar
+  inflating: sonarqube-6.7.6/lib/common/joda-time-2.9.5.jar
+  inflating: sonarqube-6.7.6/lib/common/lucene-misc-6.6.1.jar
+  inflating: sonarqube-6.7.6/lib/common/lucene-grouping-6.6.1.jar
+  inflating: sonarqube-6.7.6/lib/common/elasticsearch-5.6.3.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/HdrHistogram-2.1.9.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/lucene-spatial3d-6.6.1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/lucene-misc-6.6.1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/jts-1.13.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/lucene-highlighter-6.6.1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/lucene-queryparser-6.6.1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/lucene-memory-6.6.1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/jackson-core-2.8.6.jar
+  inflating: sonarqube-6.7.6/elasticsearch/bin/elasticsearch-plugin
+  inflating: sonarqube-6.7.6/elasticsearch/config/log4j2.properties
+  inflating: sonarqube-6.7.6/elasticsearch/config/elasticsearch.yml
+  inflating: sonarqube-6.7.6/elasticsearch/config/jvm.options
+  inflating: sonarqube-6.7.6/elasticsearch/LICENSE.txt
+  inflating: sonarqube-6.7.6/COPYING
+  inflating: sonarqube-6.7.6/lib/sonar-application-6.7.6.jar
+  inflating: sonarqube-6.7.6/lib/server/sonar-server-6.7.6.jar
+  inflating: sonarqube-6.7.6/lib/server/woodstox-core-lgpl-4.4.0.jar
+  inflating: sonarqube-6.7.6/lib/server/stax2-api-3.1.4.jar
+  inflating: sonarqube-6.7.6/lib/server/staxmate-2.0.1.jar
+  inflating: sonarqube-6.7.6/lib/server/sonar-update-center-common-1.18.0.487.jar
+  inflating: sonarqube-6.7.6/lib/server/log4j-over-slf4j-1.7.25.jar
+  inflating: sonarqube-6.7.6/lib/server/sonar-db-dao-6.7.6.jar
+  inflating: sonarqube-6.7.6/lib/server/sonar-db-core-6.7.6.jar
+  inflating: sonarqube-6.7.6/lib/server/commons-csv-1.4.jar
+  inflating: sonarqube-6.7.6/lib/server/sonar-scanner-protocol-6.7.6.jar
+  inflating: sonarqube-6.7.6/lib/server/mybatis-3.4.4.jar
+  inflating: sonarqube-6.7.6/lib/server/activation-1.1.jar
+  inflating: sonarqube-6.7.6/lib/server/jaxb-api-2.3.0.jar
+  inflating: sonarqube-6.7.6/lib/server/jackson-annotations-2.9.5.jar
+  inflating: sonarqube-6.7.6/lib/ce/sonar-ce-6.7.6.jar
+  inflating: sonarqube-6.7.6/lib/ce/nanohttpd-2.3.0.jar
+  inflating: sonarqube-6.7.6/lib/scanner/sonar-scanner-engine-shaded-6.7.6.jar
+  inflating: sonarqube-6.7.6/lib/common/percolator-client-5.6.3.jar
+  inflating: sonarqube-6.7.6/lib/common/httpcore-4.4.5.jar
+  inflating: sonarqube-6.7.6/lib/common/netty-resolver-4.1.13.Final.jar
+  inflating: sonarqube-6.7.6/lib/common/netty-handler-4.1.13.Final.jar
+  inflating: sonarqube-6.7.6/lib/common/netty-buffer-4.1.13.Final.jar
+  inflating: sonarqube-6.7.6/lib/common/jna-4.4.0-1.jar
+  inflating: sonarqube-6.7.6/lib/common/securesm-1.1.jar
+  inflating: sonarqube-6.7.6/lib/common/lucene-suggest-6.6.1.jar
+  inflating: sonarqube-6.7.6/lib/common/lucene-spatial-extras-6.6.1.jar
+  inflating: sonarqube-6.7.6/lib/common/lucene-sandbox-6.6.1.jar
+  inflating: sonarqube-6.7.6/lib/common/lucene-queries-6.6.1.jar
+  inflating: sonarqube-6.7.6/lib/common/lucene-memory-6.6.1.jar
+  inflating: sonarqube-6.7.6/lib/common/lucene-join-6.6.1.jar
+  inflating: sonarqube-6.7.6/lib/common/lucene-highlighter-6.6.1.jar
+  inflating: sonarqube-6.7.6/lib/common/lucene-backward-codecs-6.6.1.jar
+  inflating: sonarqube-6.7.6/lib/common/lucene-analyzers-common-6.6.1.jar
+  inflating: sonarqube-6.7.6/lib/common/log4j-core-2.8.2.jar
+  inflating: sonarqube-6.7.6/lib/common/commons-lang-2.6.jar
+  inflating: sonarqube-6.7.6/lib/common/commons-codec-1.8.jar
+  inflating: sonarqube-6.7.6/lib/common/logback-classic-1.2.3.jar
+  inflating: sonarqube-6.7.6/lib/common/sonar-process-6.7.6.jar
+  inflating: sonarqube-6.7.6/bin/macosx-universal-64/lib/libwrapper.jnilib
+  inflating: sonarqube-6.7.6/bin/macosx-universal-64/wrapper
+  inflating: sonarqube-6.7.6/bin/linux-x86-32/lib/libwrapper.so
+  inflating: sonarqube-6.7.6/bin/linux-x86-32/wrapper
+  inflating: sonarqube-6.7.6/bin/windows-x86-64/lib/wrapper.dll
+  inflating: sonarqube-6.7.6/bin/windows-x86-64/wrapper.exe
+  inflating: sonarqube-6.7.6/elasticsearch/modules/ingest-common/plugin-descriptor.properties
+  inflating: sonarqube-6.7.6/elasticsearch/modules/transport-netty4/netty-handler-4.1.13.Final.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/transport-netty4/netty-transport-4.1.13.Final.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/transport-netty4/transport-netty4-5.6.3.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/transport-netty4/netty-common-4.1.13.Final.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/reindex/commons-logging-1.1.3.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/reindex/plugin-security.policy
+  inflating: sonarqube-6.7.6/elasticsearch/modules/reindex/httpclient-4.5.2.jar 
+  inflating: sonarqube-6.7.6/elasticsearch/modules/reindex/elasticsearch-rest-client-5.6.3.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/reindex/commons-codec-1.10.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/reindex/plugin-descriptor.properties
+  inflating: sonarqube-6.7.6/elasticsearch/modules/reindex/reindex-5.6.3.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/aggs-matrix-stats/aggs-matrix-stats-5.6.3.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/aggs-matrix-stats/plugin-descriptor.properties
+  inflating: sonarqube-6.7.6/elasticsearch/modules/percolator/percolator-5.6.3.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/percolator/plugin-descriptor.properties
+  inflating: sonarqube-6.7.6/elasticsearch/lib/joda-time-2.9.5.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/lucene-sandbox-6.6.1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/lucene-grouping-6.6.1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/lucene-suggest-6.6.1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/jackson-dataformat-cbor-2.8.6.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/lucene-join-6.6.1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/jopt-simple-5.0.2.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/hppc-0.7.1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/securesm-1.1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/java-version-checker-5.6.3.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/jna-4.4.0-1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/lucene-queries-6.6.1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/snakeyaml-1.15.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/spatial4j-0.6.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/log4j-core-2.9.1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/log4j-1.2-api-2.9.1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/jackson-dataformat-smile-2.8.6.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/elasticsearch-5.6.3.jar
+  inflating: sonarqube-6.7.6/lib/server/jjwt-0.9.0.jar
+  inflating: sonarqube-6.7.6/lib/server/jackson-databind-2.9.5.jar
+  inflating: sonarqube-6.7.6/lib/bundled-plugins/sonar-javascript-plugin-3.2.0.5506.jar
+  inflating: sonarqube-6.7.6/lib/bundled-plugins/sonar-scm-git-plugin-1.3.0.869.jar
+  inflating: sonarqube-6.7.6/lib/bundled-plugins/sonar-python-plugin-1.8.0.1496.jar
+  inflating: sonarqube-6.7.6/lib/jdbc/mssql/mssql-jdbc-6.2.2.jre8.jar
+  inflating: sonarqube-6.7.6/lib/jdbc/postgresql/postgresql-42.2.1.jar
+  inflating: sonarqube-6.7.6/lib/common/commons-logging-1.1.3.jar
+  inflating: sonarqube-6.7.6/lib/common/httpclient-4.5.2.jar
+  inflating: sonarqube-6.7.6/lib/common/netty-codec-4.1.13.Final.jar
+  inflating: sonarqube-6.7.6/lib/common/transport-netty4-client-5.6.3.jar
+  inflating: sonarqube-6.7.6/lib/common/t-digest-3.0.jar
+  inflating: sonarqube-6.7.6/lib/common/jackson-dataformat-cbor-2.8.6.jar
+  inflating: sonarqube-6.7.6/lib/common/jackson-dataformat-yaml-2.8.6.jar
+  inflating: sonarqube-6.7.6/lib/common/jackson-dataformat-smile-2.8.6.jar
+  inflating: sonarqube-6.7.6/lib/common/hppc-0.7.1.jar
+  inflating: sonarqube-6.7.6/lib/common/transport-5.6.3.jar
+  inflating: sonarqube-6.7.6/lib/common/snakeyaml-1.15.jar
+  inflating: sonarqube-6.7.6/lib/common/hazelcast-client-3.8.6.jar
+  inflating: sonarqube-6.7.6/lib/common/log4j-api-2.8.2.jar
+  inflating: sonarqube-6.7.6/lib/common/log4j-to-slf4j-2.8.2.jar
+  inflating: sonarqube-6.7.6/lib/common/sonar-main-6.7.6.jar
+  inflating: sonarqube-6.7.6/lib/common/guava-18.0.jar
+  inflating: sonarqube-6.7.6/lib/common/commons-io-2.4.jar
+  inflating: sonarqube-6.7.6/lib/common/logback-core-1.2.3.jar
+  inflating: sonarqube-6.7.6/lib/common/jul-to-slf4j-1.7.25.jar
+  inflating: sonarqube-6.7.6/lib/common/slf4j-api-1.7.25.jar
+  inflating: sonarqube-6.7.6/lib/common/hazelcast-3.8.6.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/jackson-dataformat-yaml-2.8.6.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/log4j-api-2.9.1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/lucene-analyzers-common-6.6.1.jar
+  inflating: sonarqube-6.7.6/lib/server/tomcat-annotations-api-8.5.23.jar
+  inflating: sonarqube-6.7.6/lib/server/gson-2.3.1.jar
+  inflating: sonarqube-6.7.6/lib/server/sonar-core-6.7.6.jar
+  inflating: sonarqube-6.7.6/lib/server/commons-dbcp-1.4.jar
+  inflating: sonarqube-6.7.6/lib/server/sonar-db-migration-6.7.6.jar
+  inflating: sonarqube-6.7.6/lib/server/okhttp-3.7.0.jar
+  inflating: sonarqube-6.7.6/lib/server/okio-1.12.0.jar
+  inflating: sonarqube-6.7.6/lib/server/sonar-plugin-bridge-6.7.6.jar
+  inflating: sonarqube-6.7.6/lib/server/commons-email-1.5.jar
+  inflating: sonarqube-6.7.6/lib/server/javax.mail-1.5.6.jar
+  inflating: sonarqube-6.7.6/lib/bundled-plugins/sonar-java-plugin-4.15.0.12310.jar
+  inflating: sonarqube-6.7.6/lib/bundled-plugins/sonar-php-plugin-2.11.0.2485.jar
+  inflating: sonarqube-6.7.6/lib/bundled-plugins/sonar-typescript-plugin-1.1.0.1079.jar
+  inflating: sonarqube-6.7.6/lib/jdbc/mysql/mysql-connector-java-5.1.42.jar
+  inflating: sonarqube-6.7.6/lib/jdbc/h2/h2-1.3.176.jar
+  inflating: sonarqube-6.7.6/lib/common/httpcore-nio-4.4.5.jar
+  inflating: sonarqube-6.7.6/lib/common/netty-common-4.1.13.Final.jar
+  inflating: sonarqube-6.7.6/lib/common/HdrHistogram-2.1.9.jar
+  inflating: sonarqube-6.7.6/lib/common/jackson-core-2.9.5.jar
+  inflating: sonarqube-6.7.6/lib/common/jopt-simple-5.0.2.jar
+  inflating: sonarqube-6.7.6/lib/common/lucene-spatial3d-6.6.1.jar
+  inflating: sonarqube-6.7.6/lib/common/lucene-spatial-6.6.1.jar
+  inflating: sonarqube-6.7.6/lib/common/lucene-queryparser-6.6.1.jar
+  inflating: sonarqube-6.7.6/lib/common/lucene-core-6.6.1.jar
+  inflating: sonarqube-6.7.6/bin/linux-x86-64/lib/libwrapper.so
+  inflating: sonarqube-6.7.6/bin/linux-x86-64/wrapper
+  inflating: sonarqube-6.7.6/bin/windows-x86-32/lib/wrapper.dll
+  inflating: sonarqube-6.7.6/bin/windows-x86-32/wrapper.exe
+  inflating: sonarqube-6.7.6/elasticsearch/bin/elasticsearch.bat
+  inflating: sonarqube-6.7.6/elasticsearch/bin/elasticsearch
+  inflating: sonarqube-6.7.6/conf/wrapper.conf
+  inflating: sonarqube-6.7.6/conf/sonar.properties
+  inflating: sonarqube-6.7.6/bin/windows-x86-32/StopNTService.bat
+  inflating: sonarqube-6.7.6/bin/windows-x86-32/StartSonar.bat
+  inflating: sonarqube-6.7.6/bin/windows-x86-32/UninstallNTService.bat
+  inflating: sonarqube-6.7.6/bin/windows-x86-32/StartNTService.bat
+  inflating: sonarqube-6.7.6/bin/windows-x86-32/InstallNTService.bat
+  inflating: sonarqube-6.7.6/bin/windows-x86-64/StopNTService.bat
+  inflating: sonarqube-6.7.6/bin/windows-x86-64/StartSonar.bat
+  inflating: sonarqube-6.7.6/bin/windows-x86-64/UninstallNTService.bat
+  inflating: sonarqube-6.7.6/bin/windows-x86-64/StartNTService.bat
+  inflating: sonarqube-6.7.6/bin/windows-x86-64/InstallNTService.bat
+  inflating: sonarqube-6.7.6/elasticsearch/bin/elasticsearch.in.bat
+  inflating: sonarqube-6.7.6/elasticsearch/bin/elasticsearch-keystore.bat
+  inflating: sonarqube-6.7.6/elasticsearch/bin/elasticsearch-translog.bat
+  inflating: sonarqube-6.7.6/elasticsearch/bin/elasticsearch-plugin.bat
+  inflating: sonarqube-6.7.6/elasticsearch/bin/elasticsearch-service.bat
+  inflating: sonarqube-6.7.6/bin/macosx-universal-64/sonar.sh
+  inflating: sonarqube-6.7.6/bin/linux-x86-64/sonar.sh
+  inflating: sonarqube-6.7.6/bin/linux-x86-32/sonar.sh
+  inflating: sonarqube-6.7.6/elasticsearch/bin/elasticsearch.in.sh
+  inflating: sonarqube-6.7.6/extensions/plugins/README.txt
+  inflating: sonarqube-6.7.6/extensions/jdbc-driver/oracle/README.txt
+  inflating: sonarqube-6.7.6/temp/README.txt
+  inflating: sonarqube-6.7.6/data/README.txt
+  inflating: sonarqube-6.7.6/bin/jsw-license/LICENSE.txt
+  inflating: sonarqube-6.7.6/elasticsearch/modules/ingest-common/joni-2.1.6.jar 
+  inflating: sonarqube-6.7.6/elasticsearch/modules/ingest-common/ingest-common-5.6.3.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/ingest-common/jcodings-1.0.12.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/transport-netty4/netty-codec-4.1.13.Final.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/transport-netty4/netty-resolver-4.1.13.Final.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/transport-netty4/netty-codec-http-4.1.13.Final.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/transport-netty4/plugin-security.policy
+  inflating: sonarqube-6.7.6/elasticsearch/modules/transport-netty4/netty-buffer-4.1.13.Final.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/transport-netty4/plugin-descriptor.properties
+  inflating: sonarqube-6.7.6/elasticsearch/modules/parent-join/parent-join-5.6.3.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/parent-join/plugin-descriptor.properties
+  inflating: sonarqube-6.7.6/elasticsearch/modules/reindex/httpasyncclient-4.1.2.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/reindex/httpcore-nio-4.4.5.jar
+  inflating: sonarqube-6.7.6/elasticsearch/modules/reindex/httpcore-4.4.5.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/lucene-spatial-extras-6.6.1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/lucene-spatial-6.6.1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/t-digest-3.0.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/lucene-backward-codecs-6.6.1.jar 
+  inflating: sonarqube-6.7.6/elasticsearch/lib/plugin-cli-5.6.3.jar
+  inflating: sonarqube-6.7.6/elasticsearch/lib/lucene-core-6.6.1.jar
+  inflating: sonarqube-6.7.6/elasticsearch/VERSION.txt
+  inflating: sonarqube-6.7.6/elasticsearch/NOTICE.txt
+  inflating: sonarqube-6.7.6/elasticsearch/README.textile
+  inflating: sonarqube-6.7.6/elasticsearch/bin/elasticsearch-translog
+  inflating: sonarqube-6.7.6/elasticsearch/bin/elasticsearch-service-x86.exe
+  inflating: sonarqube-6.7.6/elasticsearch/bin/elasticsearch-service-mgr.exe
+  inflating: sonarqube-6.7.6/elasticsearch/bin/elasticsearch-systemd-pre-exec
+  inflating: sonarqube-6.7.6/elasticsearch/bin/elasticsearch-keystore
+  inflating: sonarqube-6.7.6/elasticsearch/bin/elasticsearch-service-x64.exe
+  inflating: sonarqube-6.7.6/lib/jsw/wrapper-3.2.3.jar
+  inflating: sonarqube-6.7.6/lib/server/jcl-over-slf4j-1.7.25.jar
+  inflating: sonarqube-6.7.6/lib/server/logback-access-1.2.3.jar
+  inflating: sonarqube-6.7.6/lib/server/tomcat-embed-core-8.5.23.jar
+  inflating: sonarqube-6.7.6/lib/server/picocontainer-2.15.jar
+  inflating: sonarqube-6.7.6/lib/server/protobuf-java-3.0.0-beta-2.jar
+  inflating: sonarqube-6.7.6/lib/server/sonar-classloader-1.0.jar
+  inflating: sonarqube-6.7.6/lib/server/sonar-plugin-api-6.7.6.jar
+  inflating: sonarqube-6.7.6/lib/server/lz4-1.3.0.jar
+  inflating: sonarqube-6.7.6/lib/server/commons-pool-1.5.4.jar
+  inflating: sonarqube-6.7.6/lib/server/commons-dbutils-1.5.jar
+  inflating: sonarqube-6.7.6/lib/server/sonar-markdown-6.7.6.jar
+  inflating: sonarqube-6.7.6/lib/server/sonar-ws-6.7.6.jar
+  inflating: sonarqube-6.7.6/lib/bundled-plugins/sonar-csharp-plugin-6.5.0.3766.jar
+  inflating: sonarqube-6.7.6/lib/bundled-plugins/sonar-flex-plugin-2.3.jar
+  inflating: sonarqube-6.7.6/lib/bundled-plugins/sonar-scm-svn-plugin-1.6.0.860.jar
+  inflating: sonarqube-6.7.6/lib/bundled-plugins/sonar-xml-plugin-1.4.3.1027.jar
+[root@ip-172-31-87-210 ~]# mv sonarqube-6.7.6 /opt
+[root@ip-172-31-87-210 ~]# top
+top - 09:34:10 up 52 min,  1 user,  load average: 0.01, 0.04, 0.05
+Tasks:  95 total,   1 running,  94 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.2 sy,  0.0 ni, 99.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem :  3878876 total,   117108 free,   485000 used,  3276768 buff/cache
+KiB Swap:        0 total,        0 free,        0 used.  3066236 avail Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+13397 mysql     20   0 1827752 395020  15560 S   0.7 10.2   0:07.97 mysqld
+    1 root      20   0  128028   6644   4184 S   0.0  0.2   0:02.85 systemd
+    2 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kthreadd
+    3 root      20   0       0      0      0 S   0.0  0.0   0:00.08 ksoftirqd/0
+    5 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:+
+    6 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/u3+
+    7 root      rt   0       0      0      0 S   0.0  0.0   0:00.01 migration/0
+    8 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh
+    9 root      20   0       0      0      0 S   0.0  0.0   0:00.21 rcu_sched
+   10 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 lru-add-dr+
+   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.01 watchdog/0
+   12 root      rt   0       0      0      0 S   0.0  0.0   0:00.00 watchdog/1
+   13 root      rt   0       0      0      0 S   0.0  0.0   0:00.01 migration/1
+   14 root      20   0       0      0      0 S   0.0  0.0   0:00.07 ksoftirqd/1
+   16 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/1:+
+   18 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kdevtmpfs
+   19 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 netns
+   20 root      20   0       0      0      0 S   0.0  0.0   0:00.00 xenwatch
+   21 root      20   0       0      0      0 S   0.0  0.0   0:00.00 xenbus
+[root@ip-172-31-87-210 ~]# cd /opt/
+[root@ip-172-31-87-210 opt]# cd sonarqube-6.7.6/conf/
+[root@ip-172-31-87-210 conf]# vi sonar.properties
+[root@ip-172-31-87-210 conf]# cd ..
+[root@ip-172-31-87-210 sonarqube-6.7.6]# cdbin
+-bash: cdbin: command not found
+[root@ip-172-31-87-210 sonarqube-6.7.6]# cd bin/linux-x86-64
+[root@ip-172-31-87-210 linux-x86-64]# ls
+lib  sonar.sh  wrapper
+[root@ip-172-31-87-210 linux-x86-64]# vi sonar.sh
+[root@ip-172-31-87-210 linux-x86-64]# cat sonar.sh
+#! /bin/sh
+
+#
+# Copyright (c) 1999, 2006 Tanuki Software Inc.
+#
+# Java Service Wrapper sh script.  Suitable for starting and stopping
+#  wrapped Java applications on UNIX platforms.
+#
+
+#-----------------------------------------------------------------------------
+# These settings can be modified to fit the needs of your application
+
+# Default values for the Application variables, below.
+#
+# NOTE: The build for specific applications may override this during the resource-copying
+# phase, to fill in a concrete name and avoid the use of the defaults specified here.
+DEF_APP_NAME="SonarQube"
+DEF_APP_LONG_NAME="SonarQube"
+
+# Application
+APP_NAME="${DEF_APP_NAME}"
+APP_LONG_NAME="${DEF_APP_LONG_NAME}"
+
+# Wrapper
+WRAPPER_CMD="./wrapper"
+WRAPPER_CONF="../../conf/wrapper.conf"
+
+# Priority at which to run the wrapper.  See "man nice" for valid priorities.
+#  nice is only used if a priority is specified.
+PRIORITY=
+
+# Location of the pid file.
+PIDDIR="."
+
+# If uncommented, causes the Wrapper to be shutdown using an anchor file.
+#  When launched with the 'start' command, it will also ignore all INT and
+#  TERM signals.
+#IGNORE_SIGNALS=true
+
+# If specified, the Wrapper will be run as the specified user.
+# IMPORTANT - Make sure that the user has the required privileges to write
+#  the PID file and wrapper.log files.  Failure to be able to write the log
+#  file will cause the Wrapper to exit without any way to write out an error
+#  message.
+# NOTE - This will set the user which is used to run the Wrapper as well as
+#  the JVM and is not useful in situations where a privileged resource or
+#  port needs to be allocated prior to the user being changed.
+RUN_AS_USER=ec2-user
+
+# The following two lines are used by the chkconfig command. Change as is
+#  appropriate for your application.  They should remain commented.
+# chkconfig: 2345 20 80
+# description: Test Wrapper Sample Application
+
+# Do not modify anything beyond this point
+#-----------------------------------------------------------------------------
+
+# Get the fully qualified path to the script
+case $0 in
+    /*)
+        SCRIPT="$0"
+        ;;
+    *)
+        PWD=`pwd`
+        SCRIPT="$PWD/$0"
+        ;;
+esac
+
+# Resolve the true real path without any sym links.
+CHANGED=true
+while [ "X$CHANGED" != "X" ]
+do
+    # Change spaces to ":" so the tokens can be parsed.
+    SAFESCRIPT=`echo $SCRIPT | sed -e 's; ;:;g'`
+    # Get the real path to this script, resolving any symbolic links
+    TOKENS=`echo $SAFESCRIPT | sed -e 's;/; ;g'`
+    REALPATH=
+    for C in $TOKENS; do
+        # Change any ":" in the token back to a space.
+        C=`echo $C | sed -e 's;:; ;g'`
+        REALPATH="$REALPATH/$C"
+        # If REALPATH is a sym link, resolve it.  Loop for nested links.
+        while [ -h "$REALPATH" ] ; do
+            LS="`ls -ld "$REALPATH"`"
+            LINK="`expr "$LS" : '.*-> \(.*\)$'`"
+            if expr "$LINK" : '/.*' > /dev/null; then
+                # LINK is absolute.
+                REALPATH="$LINK"
+            else
+                # LINK is relative.
+                REALPATH="`dirname "$REALPATH"`""/$LINK"
+            fi
+        done
+    done
+
+    if [ "$REALPATH" = "$SCRIPT" ]
+    then
+        CHANGED=""
+    else
+        SCRIPT="$REALPATH"
+    fi
+done
+
+# Change the current directory to the location of the script
+cd "`dirname "$REALPATH"`"
+REALDIR=`pwd`
+
+# If the PIDDIR is relative, set its value relative to the full REALPATH to avoid problems if
+#  the working directory is later changed.
+FIRST_CHAR=`echo $PIDDIR | cut -c1,1`
+if [ "$FIRST_CHAR" != "/" ]
+then
+    PIDDIR=$REALDIR/$PIDDIR
+fi
+# Same test for WRAPPER_CMD
+FIRST_CHAR=`echo $WRAPPER_CMD | cut -c1,1`
+if [ "$FIRST_CHAR" != "/" ]
+then
+    WRAPPER_CMD=$REALDIR/$WRAPPER_CMD
+fi
+# Same test for WRAPPER_CONF
+FIRST_CHAR=`echo $WRAPPER_CONF | cut -c1,1`
+if [ "$FIRST_CHAR" != "/" ]
+then
+    WRAPPER_CONF=$REALDIR/$WRAPPER_CONF
+fi
+
+# Process ID
+ANCHORFILE="$PIDDIR/$APP_NAME.anchor"
+PIDFILE="$PIDDIR/$APP_NAME.pid"
+LOCKDIR="/var/lock/subsys"
+LOCKFILE="$LOCKDIR/$APP_NAME"
+pid=""
+
+# Resolve the location of the 'ps' command
+PSEXE="/usr/bin/ps"
+if [ ! -x "$PSEXE" ]
+then
+    PSEXE="/bin/ps"
+    if [ ! -x "$PSEXE" ]
+    then
+        echo "Unable to locate 'ps'."
+        echo "Please report this message along with the location of the command on your system."
+        exit 1
+    fi
+fi
+
+# Resolve the os
+DIST_OS=`uname -s | tr [:upper:] [:lower:] | tr -d [:blank:]`
+case "$DIST_OS" in
+    'sunos')
+        DIST_OS="solaris"
+        ;;
+    'hp-ux' | 'hp-ux64')
+        DIST_OS="hpux"
+        ;;
+    'darwin')
+        DIST_OS="macosx"
+        ;;
+    'unix_sv')
+        DIST_OS="unixware"
+        ;;
+esac
+
+# Resolve the architecture
+DIST_ARCH=`uname -p | tr [:upper:] [:lower:] | tr -d [:blank:]`
+if [ "$DIST_ARCH" = "unknown" ]
+then
+    DIST_ARCH=`uname -m | tr [:upper:] [:lower:] | tr -d [:blank:]`
+fi
+case "$DIST_ARCH" in
+    'amd64' | 'athlon' | 'ia32' | 'ia64' | 'i386' | 'i486' | 'i586' | 'i686' | 'x86_64')
+        DIST_ARCH="x86"
+        ;;
+    'ip27')
+        DIST_ARCH="mips"
+        ;;
+    'power' | 'powerpc' | 'power_pc' | 'ppc64')
+        DIST_ARCH="ppc"
+        ;;
+    'pa_risc' | 'pa-risc')
+        DIST_ARCH="parisc"
+        ;;
+    'sun4u' | 'sparcv9')
+        DIST_ARCH="sparc"
+        ;;
+    '9000/800')
+        DIST_ARCH="parisc"
+        ;;
+esac
+
+outputFile() {
+    if [ -f "$1" ]
+    then
+        echo "  $1 (Found but not executable.)";
+    else
+        echo "  $1"
+    fi
+}
+
+# Decide on the wrapper binary to use.
+# If a 32-bit wrapper binary exists then it will work on 32 or 64 bit
+#  platforms, if the 64-bit binary exists then the distribution most
+#  likely wants to use long names.  Otherwise, look for the default.
+# For macosx, we also want to look for universal binaries.
+WRAPPER_TEST_CMD="$WRAPPER_CMD-$DIST_OS-$DIST_ARCH-32"
+if [ -x "$WRAPPER_TEST_CMD" ]
+then
+    WRAPPER_CMD="$WRAPPER_TEST_CMD"
+else
+    if [ "$DIST_OS" = "macosx" ]
+    then
+        WRAPPER_TEST_CMD="$WRAPPER_CMD-$DIST_OS-universal-32"
+        if [ -x "$WRAPPER_TEST_CMD" ]
+        then
+            WRAPPER_CMD="$WRAPPER_TEST_CMD"
+        else
+            WRAPPER_TEST_CMD="$WRAPPER_CMD-$DIST_OS-$DIST_ARCH-64"
+            if [ -x "$WRAPPER_TEST_CMD" ]
+            then
+                WRAPPER_CMD="$WRAPPER_TEST_CMD"
+            else
+                WRAPPER_TEST_CMD="$WRAPPER_CMD-$DIST_OS-universal-64"
+                if [ -x "$WRAPPER_TEST_CMD" ]
+                then
+                    WRAPPER_CMD="$WRAPPER_TEST_CMD"
+                else
+                    if [ ! -x "$WRAPPER_CMD" ]
+                    then
+                        echo "Unable to locate any of the following binaries:"
+                        outputFile "$WRAPPER_CMD-$DIST_OS-$DIST_ARCH-32"
+                        outputFile "$WRAPPER_CMD-$DIST_OS-universal-32"
+                        outputFile "$WRAPPER_CMD-$DIST_OS-$DIST_ARCH-64"
+                        outputFile "$WRAPPER_CMD-$DIST_OS-universal-64"
+                        outputFile "$WRAPPER_CMD"
+                        exit 1
+                    fi
+                fi
+            fi
+        fi
+    else
+        WRAPPER_TEST_CMD="$WRAPPER_CMD-$DIST_OS-$DIST_ARCH-64"
+        if [ -x "$WRAPPER_TEST_CMD" ]
+        then
+            WRAPPER_CMD="$WRAPPER_TEST_CMD"
+        else
+            if [ ! -x "$WRAPPER_CMD" ]
+            then
+                echo "Unable to locate any of the following binaries:"
+                outputFile "$WRAPPER_CMD-$DIST_OS-$DIST_ARCH-32"
+                outputFile "$WRAPPER_CMD-$DIST_OS-$DIST_ARCH-64"
+                outputFile "$WRAPPER_CMD"
+                exit 1
+            fi
+        fi
+    fi
+fi
+
+# Build the nice clause
+if [ "X$PRIORITY" = "X" ]
+then
+    CMDNICE=""
+else
+    CMDNICE="nice -$PRIORITY"
+fi
+
+# Build the anchor file clause.
+if [ "X$IGNORE_SIGNALS" = "X" ]
+then
+   ANCHORPROP=
+   IGNOREPROP=
+else
+   ANCHORPROP=wrapper.anchorfile=\"$ANCHORFILE\"
+   IGNOREPROP=wrapper.ignore_signals=TRUE
+fi
+
+# Build the lock file clause.  Only create a lock file if the lock directory exists on this platform.
+LOCKPROP=
+if [ -d $LOCKDIR ]
+then
+    if [ -w $LOCKDIR ]
+    then
+        LOCKPROP=wrapper.lockfile=\"$LOCKFILE\"
+    fi
+fi
+
+checkUser() {
+    # $1 touchLock flag
+    # $2 command
+
+    # Check the configured user.  If necessary rerun this script as the desired user.
+    if [ "X$RUN_AS_USER" != "X" ]
+    then
+        # Resolve the location of the 'id' command
+        IDEXE="/usr/xpg4/bin/id"
+        if [ ! -x "$IDEXE" ]
+        then
+            IDEXE="/usr/bin/id"
+            if [ ! -x "$IDEXE" ]
+            then
+                echo "Unable to locate 'id'."
+                echo "Please report this message along with the location of the command on your system."
+                exit 1
+            fi
+        fi
+
+        if [ "`$IDEXE -u -n`" = "$RUN_AS_USER" ]
+        then
+            # Already running as the configured user.  Avoid password prompts by not calling su.
+            RUN_AS_USER=""
+        fi
+    fi
+    if [ "X$RUN_AS_USER" != "X" ]
+    then
+        # If LOCKPROP and $RUN_AS_USER are defined then the new user will most likely not be
+        # able to create the lock file.  The Wrapper will be able to update this file once it
+        # is created but will not be able to delete it on shutdown.  If $2 is defined then
+        # the lock file should be created for the current command
+        if [ "X$LOCKPROP" != "X" ]
+        then
+            if [ "X$1" != "X" ]
+            then
+                # Resolve the primary group
+                RUN_AS_GROUP=`groups $RUN_AS_USER | awk '{print $3}' | tail -1`
+                if [ "X$RUN_AS_GROUP" = "X" ]
+                then
+                    RUN_AS_GROUP=$RUN_AS_USER
+                fi
+                touch $LOCKFILE
+                chown $RUN_AS_USER:$RUN_AS_GROUP $LOCKFILE
+            fi
+        fi
+
+        # Still want to change users, recurse.  This means that the user will only be
+        #  prompted for a password once. Variables shifted by 1
+        su -m $RUN_AS_USER -c "\"$REALPATH\" $2"
+        RETVAL=$?
+
+        # Now that we are the original user again, we may need to clean up the lock file.
+        if [ "X$LOCKPROP" != "X" ]
+        then
+            getpid
+            if [ "X$pid" = "X" ]
+            then
+                # Wrapper is not running so make sure the lock file is deleted.
+                if [ -f "$LOCKFILE" ]
+                then
+                    rm "$LOCKFILE"
+                fi
+            fi
+        fi
+
+        exit $RETVAL
+    fi
+}
+
+getpid() {
+    if [ -f "$PIDFILE" ]
+    then
+        if [ -r "$PIDFILE" ]
+        then
+            pid=`cat "$PIDFILE"`
+            if [ "X$pid" != "X" ]
+            then
+                # It is possible that 'a' process with the pid exists but that it is not the
+                #  correct process.  This can happen in a number of cases, but the most
+                #  common is during system startup after an unclean shutdown.
+                # The ps statement below looks for the specific wrapper command running as
+                #  the pid.  If it is not found then the pid file is considered to be stale.
+                pidtest=`$PSEXE -p $pid -o args | grep "$WRAPPER_CMD" | tail -1`
+                if [ "X$pidtest" = "X" ]
+                then
+                    # This is a stale pid file.
+                    rm -f "$PIDFILE"
+                    echo "Removed stale pid file: $PIDFILE"
+                    pid=""
+                fi
+            fi
+        else
+            echo "Cannot read $PIDFILE."
+            exit 1
+        fi
+    fi
+}
+
+testpid() {
+    pid=`$PSEXE -p $pid | grep $pid | grep -v grep | awk '{print $1}' | tail -1`
+    if [ "X$pid" = "X" ]
+    then
+        # Process is gone so remove the pid file.
+        rm -f "$PIDFILE"
+        pid=""
+    fi
+}
+
+console() {
+    echo "Running $APP_LONG_NAME..."
+    getpid
+    if [ "X$pid" = "X" ]
+    then
+        # The string passed to eval must handles spaces in paths correctly.
+        COMMAND_LINE="$CMDNICE \"$WRAPPER_CMD\" \"$WRAPPER_CONF\" wrapper.syslog.ident=$APP_NAME wrapper.pidfile=\"$PIDFILE\" $ANCHORPROP $LOCKPROP"
+        eval $COMMAND_LINE
+    else
+        echo "$APP_LONG_NAME is already running."
+        exit 1
+    fi
+}
+
+start() {
+    echo "Starting $APP_LONG_NAME..."
+    getpid
+    if [ "X$pid" = "X" ]
+    then
+        # The string passed to eval must handles spaces in paths correctly.
+        COMMAND_LINE="$CMDNICE \"$WRAPPER_CMD\" \"$WRAPPER_CONF\" wrapper.syslog.ident=$APP_NAME wrapper.pidfile=\"$PIDFILE\" wrapper.daemonize=TRUE $ANCHORPROP $IGNOREPROP $LOCKPROP"
+        eval $COMMAND_LINE
+    else
+        echo "$APP_LONG_NAME is already running."
+        exit 1
+    fi
+    getpid
+    if [ "X$pid" != "X" ]
+    then
+        echo "Started $APP_LONG_NAME."
+    else
+        echo "Failed to start $APP_LONG_NAME."
+    fi
+}
+
+stopit() {
+    echo "Stopping $APP_LONG_NAME..."
+    getpid
+    if [ "X$pid" = "X" ]
+    then
+        echo "$APP_LONG_NAME was not running."
+    else
+        if [ "X$IGNORE_SIGNALS" = "X" ]
+        then
+            # Running so try to stop it.
+            kill $pid
+            if [ $? -ne 0 ]
+            then
+                # An explanation for the failure should have been given
+                echo "Unable to stop $APP_LONG_NAME."
+                exit 1
+            fi
+        else
+            rm -f "$ANCHORFILE"
+            if [ -f "$ANCHORFILE" ]
+            then
+                # An explanation for the failure should have been given
+                echo "Unable to stop $APP_LONG_NAME."
+                exit 1
+            fi
+        fi
+
+        # We can not predict how long it will take for the wrapper to
+        #  actually stop as it depends on settings in wrapper.conf.
+        #  Loop until it does.
+        savepid=$pid
+        CNT=0
+        TOTCNT=0
+        while [ "X$pid" != "X" ]
+        do
+            # Show a waiting message every 5 seconds.
+            if [ "$CNT" -lt "5" ]
+            then
+                CNT=`expr $CNT + 1`
+            else
+                echo "Waiting for $APP_LONG_NAME to exit..."
+                CNT=0
+            fi
+            TOTCNT=`expr $TOTCNT + 1`
+
+            sleep 1
+
+            testpid
+        done
+
+        pid=$savepid
+        testpid
+        if [ "X$pid" != "X" ]
+        then
+            echo "Failed to stop $APP_LONG_NAME."
+            exit 1
+        else
+            echo "Stopped $APP_LONG_NAME."
+        fi
+    fi
+}
+
+status() {
+    getpid
+    if [ "X$pid" = "X" ]
+    then
+        echo "$APP_LONG_NAME is not running."
+        exit 1
+    else
+        echo "$APP_LONG_NAME is running ($pid)."
+        exit 0
+    fi
+}
+
+dump() {
+    echo "Dumping $APP_LONG_NAME..."
+    getpid
+    if [ "X$pid" = "X" ]
+    then
+        echo "$APP_LONG_NAME was not running."
+
+    else
+        kill -3 $pid
+
+        if [ $? -ne 0 ]
+        then
+            echo "Failed to dump $APP_LONG_NAME."
+            exit 1
+        else
+            echo "Dumped $APP_LONG_NAME."
+        fi
+    fi
+}
+
+case "$1" in
+
+    'console')
+        checkUser touchlock $1
+        console
+        ;;
+
+    'start')
+        checkUser touchlock $1
+        start
+        ;;
+
+    'stop')
+        checkUser "" $1
+        stopit
+        ;;
+
+    'restart')
+        checkUser touchlock $1
+        stopit
+        start
+        ;;
+
+    'status')
+        checkUser "" $1
+        status
+        ;;
+
+    'dump')
+        checkUser "" $1
+        dump
+        ;;
+
+    *)
+        echo "Usage: $0 { console | start | stop | restart | status | dump }"
+        exit 1
+        ;;
+esac
+
+exit 0
+[root@ip-172-31-87-210 linux-x86-64]# Run_as
+-bash: Run_as: command not found
+[root@ip-172-31-87-210 linux-x86-64]# cd ..
+[root@ip-172-31-87-210 bin]# cd ..
+[root@ip-172-31-87-210 sonarqube-6.7.6]# cd ..
+[root@ip-172-31-87-210 opt]# chmod 777 -R sonarqube-6.7.6
+[root@ip-172-31-87-210 opt]# cd sonarqube-6.7.6/
+[root@ip-172-31-87-210 sonarqube-6.7.6]# cd /bin/linux
+linux32            linux64            linux-boot-prober
+[root@ip-172-31-87-210 sonarqube-6.7.6]# cd /bin
+[root@ip-172-31-87-210 bin]# ls
+[                                   nl-route-delete
+a2p                                 nl-route-get
+abs2rel                             nl-route-list
+addr2line                           nl-rule-list
+alias                               nl-tctree-list
+apropos                             nl-util-addr
+ar                                  nm
+arch                                nmcli
+as                                  nm-online
+aserver                             nmtui
+audit2allow                         nmtui-connect
+audit2why                           nmtui-edit
+aulast                              nmtui-hostname
+aulastlog                           nohup
+ausyscall                           nproc
+auvirt                              nroff
+awk                                 nsenter
+base64                              numfmt
+basename                            objcopy
+bash                                objdump
+bashbug                             od
+bashbug-64                          oldfind
+bdftopcf                            open
+bdftruncate                         openssl
+bg                                  openvt
+bond2team                           orbd
+bootctl                             os-prober
+build-classpath                     p11-kit
+build-classpath-directory           pack200
+build-jar-repository                package-cleanup
+busctl                              passwd
+c2ph                                paste
+cal                                 pathchk
+ca-legacy                           pchrt
+captoinfo                           perl
+cat                                 perl5.16.3
+catchsegv                           perlbug
+catman                              perldoc
+cd                                  perlthanks
+centrino-decode                     perror
+certutil                            pflags
+c++filt                             pgawk
+chacl                               pgrep
+chage                               pic
+chardetect                          piconv
+chattr                              pinentry
+chcat                               pinentry-curses
+chcon                               ping
+check-binary-files                  ping6
+checkmodule                         pinky
+checkpolicy                         pk12util
+checksctp                           pkaction
+chfn                                pkcheck
+chgrp                               pkexec
+chmem                               pkg-config
+chmod                               pkill
+chown                               pkla-admin-identities
+chronyc                             pkla-check-authorization
+chrt                                pkttyagent
+chsh                                pl2pm
+chvt                                pldd
+cksum                               pmap
+clean-binary-files                  pod2html
+clear                               pod2man
+cloud-init                          pod2text
+cloud-init-per                      pod2usage
+cmp                                 policytool
+cmsutil                             post-grohtml
+col                                 powernow-k8-decode
+colcrt                              pr
+colrm                               preconv
+column                              pre-grohtml
+comm                                printenv
+command                             printf
+consolehelper                       prlimit
+coredumpctl                         ps
+cp                                  psed
+cpio                                psfaddtable
+cpupower                            psfgettable
+create-jar-links                    psfstriptable
+crlutil                             psfxtable
+crontab                             pstruct
+csplit                              ptaskset
+csslint-0.6                         ptx
+curl                                pwd
+cut                                 pwdx
+cvtsudoers                          pwmake
+date                                pwscore
+db_archive                          pydoc
+db_checkpoint                       pyinotify
+db_deadlock                         python
+db_dump                             python2
+db_dump185                          python2.7
+db_hotbackup                        qemu-ga
+db_load                             ranlib
+db_log_verify                       raw
+db_printlog                         rct
+db_recover                          read
+db_replicate                        readelf
+db_stat                             readlink
+db_tuner                            realpath
+db_upgrade                          rebuild-jar-repository
+dbus-binding-tool                   recode-sr-latin
+dbus-cleanup-sockets                redhat-support-tool
+dbus-daemon                         rename
+dbus-monitor                        renice
+dbus-run-session                    repoclosure
+dbus-send                           repodiff
+dbus-test-tool                      repo-graph
+dbus-update-activation-environment  repomanage
+dbus-uuidgen                        repoquery
+db_verify                           repo-rss
+dd                                  reposync
+deallocvt                           repotrack
+debuginfo-install                   rescan-scsi-bus.sh
+desktop-file-edit                   reset
+desktop-file-install                resizecons
+desktop-file-validate               rev
+df                                  rhn_register
+dgawk                               rhsmcertd
+diff                                rhsm-debug
+diff3                               rm
+diff-jars                           rmail
+dir                                 rmail.postfix
+dircolors                           rmdir
+dirname                             rmid
+dmesg                               rmiregistry
+dnsdomainname                       rpcgen
+domainname                          rpm
+dracut                              rpm2cpio
+du                                  rpmdb
+dumpkeys                            rpmkeys
+dwp                                 rpmquery
+easy_install                        rpmverify
+easy_install-2.7                    rsync
+echo                                rsyslog-recover-qi.pl
+egrep                               runcon
+eject                               run-parts
+elfedit                             rvi
+env                                 rview
+envsubst                            s2p
+eqn                                 sandbox
+ex                                  scp
+expand                              script
+expr                                scriptreplay
+factor                              scsi_logging_level
+fallocate                           scsi_mandat
+false                               scsi_readcap
+fc                                  scsi_ready
+fc-cache                            scsi-rescan
+fc-cache-64                         scsi_satl
+fc-cat                              scsi_start
+fc-conflist                         scsi_stop
+fc-list                             scsi_temperature
+fc-match                            sctp_darn
+fc-pattern                          sctp_status
+fc-query                            sctp_test
+fc-scan                             sdiff
+fc-validate                         secon
+fg                                  sed
+fgconsole                           sedismod
+fgrep                               sedispol
+file                                semodule_package
+find                                seq
+find2perl                           servertool
+find-jar                            setarch
+findmnt                             setfacl
+find-repos-of-install               setfont
+fipscheck                           setkeycodes
+fipshmac                            setleds
+flock                               setmetamode
+fmt                                 setpriv
+fold                                setsid
+fonttosfnt                          setterm
+free                                setup-nsssysinit
+funzip                              setup-nsssysinit.sh
+gapplication                        setvtrgb
+gawk                                sftp
+gdbus                               sg
+gencat                              sg_compare_and_write
+genl-ctrl-list                      sg_copy_results
+geoiplookup                         sg_dd
+geoiplookup6                        sg_decode_sense
+geoipupdate                         sg_emc_trespass
+geqn                                sg_format
+getconf                             sg_get_config
+getent                              sg_get_lba_status
+getfacl                             sg_ident
+getkeycodes                         sginfo
+getopt                              sg_inq
+getopts                             sg_logs
+gettext                             sg_luns
+gettext.sh                          sg_map
+gio                                 sg_map26
+gio-querymodules-64                 sgm_dd
+glib-compile-schemas                sg_modes
+gmake                               sg_opcodes
+gneqn                               sgp_dd
+gnroff                              sg_persist
+gpasswd                             sg_prevent
+gpg                                 sg_raw
+gpg2                                sg_rbuf
+gpg-agent                           sg_rdac
+gpgconf                             sg_read
+gpg-connect-agent                   sg_read_block_limits
+gpg-error                           sg_read_buffer
+gpgparsemail                        sg_readcap
+gpgsplit                            sg_read_long
+gpgv                                sg_reassign
+gpgv2                               sg_referrals
+gpg-zip                             sg_requests
+gpic                                sg_reset
+gprof                               sg_rmsn
+grep                                sg_rtpg
+groff                               sg_safte
+grops                               sg_sanitize
+grotty                              sg_sat_identify
+groups                              sg_sat_phy_event
+growpart                            sg_sat_set_features
+grub2-editenv                       sg_scan
+grub2-file                          sg_senddiag
+grub2-fstest                        sg_ses
+grub2-glue-efi                      sg_start
+grub2-kbdcomp                       sg_stpg
+grub2-menulst2cfg                   sg_sync
+grub2-mkfont                        sg_test_rwbuf
+grub2-mkimage                       sg_turs
+grub2-mklayout                      sg_unmap
+grub2-mknetdir                      sg_verify
+grub2-mkpasswd-pbkdf2               sg_vpd
+grub2-mkrelpath                     sg_write_buffer
+grub2-mkrescue                      sg_write_long
+grub2-mkstandalone                  sg_write_same
+grub2-render-label                  sg_wr_mode
+grub2-script-check                  sg_xcopy
+grub2-syslinux2cfg                  sh
+gsettings                           sha1sum
+gsoelim                             sha224sum
+gtar                                sha256sum
+gtbl                                sha384sum
+gtroff                              sha512sum
+gunzip                              show-changed-rco
+gzexe                               showconsolefont
+gzip                                show-installed
+h2ph                                showkey
+head                                shred
+hexdump                             shuf
+hostid                              signtool
+hostname                            signver
+hostnamectl                         size
+i386                                skill
+ibd2sdi                             slabtop
+iconv                               sleep
+id                                  slogin
+idiag-socket-details                snice
+idn                                 soelim
+igawk                               sort
+info                                sotruss
+infocmp                             splain
+infokey                             split
+infotocap                           sprof
+innochecksum                        sqlite3
+install                             ssh
+ionice                              ssh-add
+ipcalc                              ssh-agent
+ipcmk                               ssh-copy-id
+ipcrm                               ssh-keygen
+ipcs                                ssh-keyscan
+iptables-xml                        ssltap
+isosize                             stat
+java                                stdbuf
+jjs                                 strings
+jobs                                strip
+join                                stty
+journalctl                          su
+jsonpointer                         subscription-manager
+jvmjar                              sudo
+kbdinfo                             sudoedit
+kbd_mode                            sudoreplay
+kbdrate                             sum
+kdumpctl                            sync
+kernel-install                      systemctl
+keytool                             systemd-analyze
+kill                                systemd-ask-password
+kmod                                systemd-cat
+last                                systemd-cgls
+lastb                               systemd-cgtop
+lastlog                             systemd-coredumpctl
+lchfn                               systemd-delta
+lchsh                               systemd-detect-virt
+ld                                  systemd-escape
+ld.bfd                              systemd-firstboot
+ldd                                 systemd-hwdb
+ld.gold                             systemd-inhibit
+less                                systemd-loginctl
+lessecho                            systemd-machine-id-setup
+lesskey                             systemd-notify
+lesspipe.sh                         systemd-nspawn
+lexgrog                             systemd-path
+link                                systemd-run
+linux32                             systemd-stdio-bridge
+linux64                             systemd-sysv-convert
+linux-boot-prober                   systemd-tmpfiles
+ln                                  systemd-tty-ask-password-agent
+loadkeys                            tabs
+loadunimap                          tac
+locale                              tail
+localectl                           tailf
+localedef                           tar
+logger                              taskset
+login                               tbl
+loginctl                            teamd
+logname                             teamdctl
+look                                teamnl
+ls                                  tee
+lsattr                              test
+lsblk                               testgdbm
+lscpu                               tic
+lsinitrd                            timedatectl
+lsipc                               timeout
+lslocks                             tload
+lslogins                            tmon
+lsmem                               tnameserv
+lsns                                toe
+lua                                 top
+luac                                touch
+lz4                                 tput
+lz4c                                tr
+lz4cat                              tracepath
+lz4_decompress                      tracepath6
+machinectl                          troff
+mailq                               true
+mailq.postfix                       truncate
+make                                trust
+makedb                              tset
+man                                 tsort
+mandb                               ttmkfdir
+manpath                             tty
+mapscrn                             turbostat
+mcookie                             tzselect
+md5sum                              ucs2any
+mesg                                udevadm
+miniterm.py                         ul
+mkdir                               umask
+mkfifo                              umount
+mkfontdir                           unalias
+mkfontscale                         uname
+mkinitrd                            unexpand
+mknod                               unicode_start
+mktemp                              unicode_stop
+modutil                             uniq
+more                                unlink
+mount                               unlz4
+mountpoint                          unpack200
+msgattrib                           unshare
+msgcat                              unxz
+msgcmp                              unzip
+msgcomm                             unzipsfx
+msgconv                             update-ca-trust
+msgen                               update-desktop-database
+msgexec                             update-mime-database
+msgfilter                           uptime
+msgfmt                              urlgrabber
+msggrep                             users
+msghack                             usleep
+msginit                             utmpdump
+msgmerge                            uuidgen
+msgunfmt                            vdir
+msguniq                             verifytree
+mv                                  vi
+myisamchk                           view
+myisam_ftdump                       vlock
+myisamlog                           vmstat
+myisampack                          w
+my_print_defaults                   wait
+mysql                               wall
+mysqladmin                          watch
+mysqlbinlog                         watchgnupg
+mysqlcheck                          wc
+mysql_config_editor                 wdctl
+mysqld_pre_systemd                  wget
+mysqldump                           whatis
+mysqldumpslow                       whereis
+mysqlimport                         which
+mysqlpump                           whiptail
+mysql_secure_installation           who
+mysqlshow                           whoami
+mysqlslap                           withsctp
+mysql_ssl_rsa_setup                 write
+mysql_tzinfo_to_sql                 x86_64
+mysql_upgrade                       x86_energy_perf_policy
+namei                               xargs
+ndptool                             xdg-desktop-icon
+needs-restarting                    xdg-desktop-menu
+neqn                                xdg-email
+netstat                             xdg-icon-resource
+newaliases                          xdg-mime
+newaliases.postfix                  xdg-open
+newgrp                              xdg-screensaver
+nf-ct-add                           xdg-settings
+nf-ct-list                          xgettext
+nf-exp-add                          xmlcatalog
+nf-exp-delete                       xmllint
+nf-exp-list                         xmlwf
+nf-log                              xmvn-builddep
+nf-monitor                          xorg-x11-fonts-update-dirs
+nf-queue                            xsltproc
+ngettext                            xz
+nice                                xzcat
+nisdomainname                       xzcmp
+nl                                  xzdec
+nl-addr-add                         xzdiff
+nl-addr-delete                      xzegrep
+nl-addr-list                        xzfgrep
+nl-class-add                        xzgrep
+nl-class-delete                     xzless
+nl-classid-lookup                   xzmore
+nl-class-list                       yes
+nl-cls-add                          ypdomainname
+nl-cls-delete                       yum
+nl-cls-list                         yum-builddep
+nl-fib-lookup                       yum-config-manager
+nl-link-enslave                     yum-debug-dump
+nl-link-ifindex2name                yum-debug-restore
+nl-link-list                        yumdownloader
+nl-link-name2ifindex                yum-groups-manager
+nl-link-release                     zcat
+nl-link-set                         zcmp
+nl-link-stats                       zdiff
+nl-list-caches                      zegrep
+nl-list-sockets                     zfgrep
+nl-monitor                          zforce
+nl-neigh-add                        zgrep
+nl-neigh-delete                     zipgrep
+nl-neigh-list                       zipinfo
+nl-neightbl-list                    zless
+nl-pktloc-lookup                    zlib_decompress
+nl-qdisc-add                        zmore
+nl-qdisc-delete                     znew
+nl-qdisc-list                       zsoelim
+nl-route-add
+[root@ip-172-31-87-210 bin]# cd /opt/sonarqube-6.7.6/bin/linux-x86-64
+[root@ip-172-31-87-210 linux-x86-64]# ls
+lib  sonar.sh  wrapper
+[root@ip-172-31-87-210 linux-x86-64]# chown -R ec2-user sonar.sh
+[root@ip-172-31-87-210 linux-x86-64]# chgrp -R ec2-user sonar.sh
+[root@ip-172-31-87-210 linux-x86-64]# ./sonar.sh
+Usage: ./sonar.sh { console | start | stop | restart | status | dump }
+[root@ip-172-31-87-210 linux-x86-64]# ./sonar.sh start
+Starting SonarQube...
+Started SonarQube.
+[root@ip-172-31-87-210 linux-x86-64]# ./sonar.sh status
+SonarQube is not running.
+[root@ip-172-31-87-210 linux-x86-64]# ./sonar.sh start
+Starting SonarQube...
+Started SonarQube.
+[root@ip-172-31-87-210 linux-x86-64]# ./sonar.sh status
+SonarQube is running (24048).
+[root@ip-172-31-87-210 linux-x86-64]# ./sonar.sh start
+Starting SonarQube...
+Started SonarQube.
+[root@ip-172-31-87-210 linux-x86-64]# ./sonar.sh start
+Starting SonarQube...
+SonarQube is already running.
+[root@ip-172-31-87-210 linux-x86-64]# ./sonar.sh start
+Starting SonarQube...
+SonarQube is already running.
+[root@ip-172-31-87-210 linux-x86-64]# ./sonar.sh start
+Starting SonarQube...
+SonarQube is already running.
+[root@ip-172-31-87-210 linux-x86-64]# ./sonar.sh start
+Starting SonarQube...
+Started SonarQube.
+[root@ip-172-31-87-210 linux-x86-64]# ./sonar.sh start
+Starting SonarQube...
+SonarQube is already running.
+[root@ip-172-31-87-210 linux-x86-64]# ./sonar.sh start
+Starting SonarQube...
+SonarQube is already running.
+[root@ip-172-31-87-210 linux-x86-64]#
